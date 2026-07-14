@@ -1,0 +1,92 @@
+{
+  "target": "WebTracky",
+  "date": "2026-07-13",
+  "type": "Web/product analytics SaaS ('revenue-first' analytics + funnels + AI suggestions), Next/TS",
+  "asking_price": "$3,000 (6.3x revenue; listed Feb 2026; NO offers in ~5 months) — figures from authoritative .md, not the buggy MCP",
+  "verdict": "PASS",
+  "score": 36.4,
+  "completeness_pct": 72,
+  "one_line_reason": "Right shape (analytics SaaS in your wheelhouse, verified revenue, in budget) but hobby-tier and flat — ~$40 MRR from 5 subs after 7 months — in one of software's most saturated commodity markets (GA/Plausible/Fathom/PostHog/Umami), zero moat, priced at an expensive 6.3x, with no market interest (no offers in 5 months). Its only real distribution is the founder's YouTube, which doesn't transfer.",
+  "dimensions": {
+    "build_scale_fit": {
+      "score": 3,
+      "confidence": "med",
+      "note": "Analytics on Next/TS is squarely buildable/ownable by you — but that cuts both ways: it's a commodity you could rebuild in weeks, and the path to value is distribution/differentiation in a red ocean, not engineering."
+    },
+    "pmf_retention": {
+      "score": 1,
+      "confidence": "high",
+      "note": "5 paying subs, ~$40 MRR, flat/erratic over 7 months (one $1,020 launch spike in Sep 2025 that fizzled). No proven PMF."
+    },
+    "unit_economics": {
+      "score": 1,
+      "confidence": "med",
+      "note": "$40 MRR at 95% margin but negligible and flat; analytics is storage/query-heavy, so margin may compress as event volume grows."
+    },
+    "moat_channel": {
+      "score": 1,
+      "confidence": "high",
+      "note": "Zero moat in a hyper-saturated market with free incumbents (GA, Plausible, Fathom, PostHog, Umami, Vercel/Cloudflare analytics). DR 0; the only channel is the founder's YouTube (TubeGuruji), which stays with him."
+    },
+    "growth_market": {
+      "score": 1,
+      "confidence": "med",
+      "note": "Huge but brutally commoditized market; a DR-0 entrant with 5 subs has no wedge. Revenue flat."
+    },
+    "tech_ip": {
+      "score": 3,
+      "confidence": "med",
+      "note": "Clean modern stack (Next/React/TS/Tailwind), transferable — but trivially rebuildable, so low IP value."
+    },
+    "deal_quality": {
+      "score": 2,
+      "confidence": "med",
+      "note": "$3,000 at 6.3x revenue for flat $40 MRR is expensive-for-the-traction; the market agrees — no offers in ~5 months. In budget, poor value."
+    },
+    "seller_risk": {
+      "score": 3,
+      "confidence": "med",
+      "note": "Founder is an identifiable coding YouTuber (TubeGuruji); verified revenue = low deception. The risk is 'nothing there' (a fizzled side-project launched to his audience), not fraud."
+    }
+  },
+  "gates": {
+    "competence": false,
+    "revenue_verifiable": true,
+    "ip_transferable": "unknown",
+    "not_fragile": false
+  },
+  "key_unknowns": [
+    "Did the 5 customers come from the founder's YouTube, and does ANY of that distribution transfer — or does the only real asset walk away with him? (the crux)",
+    "Why flat at ~$40 MRR for 7 months, and what was the Sep-2025 $1,020 spike (launch/lifetime deals)?",
+    "Any differentiation vs free/cheap incumbents that would make someone pay for WebTracky specifically?",
+    "Does 100% of code + the 5 accounts + domain transfer, and is the tracking script/infra self-contained?",
+    "True margin as event volume scales (analytics = storage/query heavy)."
+  ],
+  "seller_questions": [
+    "Of the 5 subscriptions: plan mix, churn, and why has revenue been flat ~$40/mo for 7 months (with the one $1,020 spike in Sep 2025)? (PMF/revenue)",
+    "Where did the paying customers come from — your YouTube (TubeGuruji)? Does any of that audience/distribution transfer, or stay with you? (channel — likely the only real, and non-transferable, asset)",
+    "What's the differentiation vs PostHog/Plausible/Fathom/GA/Umami, and why pay for WebTracky over free incumbents? (moat)",
+    "Why price at 6.3x revenue ($3,000 for ~$480/yr), and why no offers in ~5 months listed? (deal quality/adverse selection)",
+    "What transfers: 100% code ownership, domain, the 5 customer accounts, docs — and is the tracking script/infra self-contained? (IP/transfer)",
+    "Event-volume infra costs — is 95% margin durable as data scales? (unit economics)"
+  ],
+  "inputs_provided": [
+    "WebTracky: 'revenue-first' web/product analytics — connects analytics, funnels, and revenue with AI suggestions [VERIFIED via .md]",
+    "MRR $39.97; 5 active subscriptions; 30d revenue $39.97 (+14.2%); trailing-12mo $2,830; all-time $4,366 [Stripe-VERIFIED via .md]",
+    "Monthly revenue ~$40-55 recently; one outlier of $1,020 in Sep 2025 (likely a launch/LTD batch) [VERIFIED .md]",
+    "Asking $3,000 at 6.3x revenue; listed 2026-02-03; 275 recent viewers; NO offers yet [VERIFIED .md]",
+    "Founded 2025-12-28 (~6.5 months); founder = TubeGuruji (a coding YouTuber) [VERIFIED .md]",
+    "Stack Next.js/React/TS/Tailwind + Stripe; Domain Rating 0; free tier up to 5K monthly events [VERIFIED .md]",
+    "NOTE: figures taken from the authoritative trustmrr.com/startup/webtracky.md, not the MCP tool (which misreports dollar values ~100x)"
+  ],
+  "sources": [
+    {
+      "title": "WebTracky — authoritative TrustMRR profile (.md, Stripe-verified)",
+      "url": "https://trustmrr.com/startup/webtracky.md"
+    },
+    {
+      "title": "WebTracky — product site",
+      "url": "https://www.webtracky.com/"
+    }
+  ]
+}

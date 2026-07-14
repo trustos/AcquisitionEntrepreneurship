@@ -1,0 +1,18 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+
+# temp files, locks, and render previews
+*.tmp
+.~lock.*#
+~$*
+page-*.jpg
+verify-*.jpg
+
+# NOTE: deals/deal-log.xlsx and deals/deal-log.csv are DERIVED artifacts.
+# They are safe to commit, but NEVER hand-merge them. On a conflict, accept
+# either side and regenerate: python acquisition-evaluator/scripts/rebuild_log.py --dir deals/

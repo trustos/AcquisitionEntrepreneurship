@@ -1,0 +1,96 @@
+{
+  "target": "pomocalm.com",
+  "date": "2026-07-13",
+  "type": "Productivity web-app / micro-SaaS (Pomodoro-style focus tool)",
+  "asking_price": "$1,500 (Reddit, DM)",
+  "verdict": "MARGINAL",
+  "score": 45.0,
+  "completeness_pct": 54,
+  "one_line_reason": "The first target that's the right shape — a web app your team can own and scale, so the competence gate finally PASSES — but almost certainly abandoned pre-revenue code: zero public footprint, no metrics disclosed, red-ocean category. Only worth it if the seller proves a real, engaged userbase.",
+  "dimensions": {
+    "build_scale_fit": {
+      "score": 5,
+      "confidence": "high",
+      "note": "A productivity web app is dead-center in the team's wheelhouse — they can own, modernize, add AI, and scale it. Competence gate PASSES (first of the three candidates)."
+    },
+    "pmf_retention": {
+      "score": 1,
+      "confidence": "low",
+      "note": "No users/revenue disclosed and zero public footprint; Pomodoro/focus tools are notoriously low-retention. No evidence of PMF."
+    },
+    "unit_economics": {
+      "score": 1,
+      "confidence": "low",
+      "note": "$1.5K price + no metrics = almost certainly pre-revenue; monetizing focus timers is hard (low willingness to pay)."
+    },
+    "moat_channel": {
+      "score": 1,
+      "confidence": "med",
+      "note": "Red-ocean category (Pomofocus, Forest, Session, Flow, Todoist, Notion); no moat, and no visible acquisition channel."
+    },
+    "growth_market": {
+      "score": 2,
+      "confidence": "med",
+      "note": "Huge but saturated market; an AI 'focus coach' angle is possible but everyone is doing it."
+    },
+    "tech_ip": {
+      "score": 3,
+      "confidence": "low",
+      "note": "It's a web app the team could own — but the site returned an empty shell and the codebase/stack/ownership is unverified (could be a template)."
+    },
+    "deal_quality": {
+      "score": 2,
+      "confidence": "low",
+      "note": "$1,500 is cheap in absolute terms, but poor value for a team that can build a Pomodoro app in a weekend — unless real users come with it."
+    },
+    "seller_risk": {
+      "score": 2,
+      "confidence": "med",
+      "note": "'Offloading distracting projects to focus on e-commerce' = abandoned hobby; withholding all metrics strongly implies ~no revenue."
+    }
+  },
+  "gates": {
+    "competence": true,
+    "revenue_verifiable": "unknown",
+    "ip_transferable": "unknown",
+    "not_fragile": "unknown"
+  },
+  "key_unknowns": [
+    "Are there ANY real, engaged users / any revenue? This is the whole deal — with none, you're buying rebuildable code. Swings from Pass to Promising.",
+    "Retention: do users come back after a few weeks? Pomodoro tools churn hard; decisive for whether there's a business.",
+    "Is there a functioning app at all (fetch returned an empty shell) and is 100% of the code owned + transferable (not a paid template/boilerplate)?",
+    "Any acquisition channel with traction? Zero public footprint suggests none.",
+    "Ongoing costs/liabilities (hosting, APIs) and whether any paying user transfers."
+  ],
+  "seller_questions": [
+    "The decisive one: current registered users, MAU/WAU, and any revenue/MRR — screen-shared from analytics + Stripe/billing. (PMF + unit economics + revenue verification)",
+    "Retention: of users who sign up, what share are still active at 4 weeks? (retention)",
+    "Where do users come from and how many visits/month — organic, Product Hunt, ads, none? (channel; there's no public footprint, so this reveals whether any distribution exists)",
+    "Exactly what transfers: repo/codebase, domain, and the user database — and is 100% of the code owned by you (no license-limited template/boilerplate)? What's the stack/hosting? (tech + IP transferability)",
+    "How long has it been live, is there any monetization today, and why sell at $1,500? (adverse selection)",
+    "Monthly running costs and any third-party dependencies (auth, payments, APIs)? (economics)"
+  ],
+  "inputs_provided": [
+    "Listing: 'web-app for organizing your workload and prompting you to work in a productive digital environment' [seller-stated]",
+    "Asking price $1,500, sale via Reddit DM [seller-stated]",
+    "Reason for sale: offloading distracting projects to focus on e-commerce [seller-stated -> abandonment signal]",
+    "No revenue, traffic, or user numbers disclosed [OBSERVED — notable omission]",
+    "pomocalm.com returned an empty shell on fetch; not verified as a functioning app [OBSERVED]",
+    "Public search for 'pomocalm': zero footprint — no Product Hunt, reviews, or mentions [OBSERVED -> no traction signal]",
+    "Category: Pomodoro/focus productivity — extremely crowded [known]"
+  ],
+  "sources": [
+    {
+      "title": "pomocalm.com (site — returned an empty shell)",
+      "url": "https://pomocalm.com/"
+    },
+    {
+      "title": "Product Hunt — Productivity category (category saturation)",
+      "url": "https://www.producthunt.com/categories/productivity"
+    },
+    {
+      "title": "Zapier — best productivity apps 2026 (competitive landscape)",
+      "url": "https://zapier.com/blog/best-productivity-apps/"
+    }
+  ]
+}

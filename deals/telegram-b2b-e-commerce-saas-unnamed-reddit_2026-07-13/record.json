@@ -1,0 +1,97 @@
+{
+  "target": "Telegram B2B e-commerce SaaS (unnamed, Reddit)",
+  "date": "2026-07-13",
+  "type": "B2B micro-SaaS — no-code Telegram storefront builder (Node.js / Vue 3 / Docker)",
+  "asking_price": null,
+  "verdict": "PASS",
+  "score": 41.0,
+  "completeness_pct": 46,
+  "one_line_reason": "The right TYPE (B2B SaaS, your stack, a genuinely growing Telegram-commerce market) — but a near-pre-revenue product whose creator, an engineer like you, couldn't sell it, whose sole stated growth lever is the marketing/distribution your team lacks, and which is locked to the Telegram platform. Buying it means inheriting his exact problem.",
+  "dimensions": {
+    "build_scale_fit": {
+      "score": 2,
+      "confidence": "med",
+      "note": "You can absolutely OPERATE the stack (Node/Vue/Docker), but the product is 'finished' and the seller states the lever is marketing/distribution — your weakness. B2B adoption in a nascent niche is a BD grind, not an engineering one."
+    },
+    "pmf_retention": {
+      "score": 2,
+      "confidence": "low",
+      "note": "'First revenue' after 18 months = demand not proven; no customer count or retention. Context: fewer than 2,000 of ~55,000 Telegram Mini Apps make >$500/mo, so the paying-merchant TAM is thin."
+    },
+    "unit_economics": {
+      "score": 2,
+      "confidence": "low",
+      "note": "B2B subscription is a good MODEL (recurring, high-margin), but current revenue is negligible and pricing/LTV/CoCA are unproven."
+    },
+    "moat_channel": {
+      "score": 1,
+      "confidence": "med",
+      "note": "No moat; no-code Telegram store builders are emerging competitors; no repeatable acquisition channel exists (that's why it's for sale)."
+    },
+    "growth_market": {
+      "score": 3,
+      "confidence": "med",
+      "note": "Real tailwind (Telegram Mini App commerce ~$1B 2025 -> $5B+ 2027, tx volume +150% YoY) but cooled from the 2024-25 hype and ROI inconsistent outside gaming/rewards."
+    },
+    "tech_ip": {
+      "score": 3,
+      "confidence": "med",
+      "note": "Modern, ownable stack in the team's wheelhouse; but 'enterprise-grade, zero maintenance' is sales language to verify — solo-built pre-revenue products are often over-engineered."
+    },
+    "deal_quality": {
+      "score": 2,
+      "confidence": "unknown",
+      "note": "No price stated."
+    },
+    "seller_risk": {
+      "score": 2,
+      "confidence": "med",
+      "note": "18 months solo to only 'first revenue', selling because he can't market it, no metrics/price, Reddit post with 0 upvotes — a product built with no proven demand."
+    }
+  },
+  "gates": {
+    "competence": false,
+    "revenue_verifiable": "unknown",
+    "ip_transferable": "unknown",
+    "not_fragile": false
+  },
+  "key_unknowns": [
+    "Actual MRR and paying-customer count ('first revenue' = how much, from how many?). Decisive: real growing MRR with product-led signups would flip this toward Promising.",
+    "How were the first customers acquired? If any repeatable/organic/product-led channel exists, fit improves; if every sale was manual/founder-led, it confirms the marketing-dependency trap.",
+    "Retention & real usage: of businesses that launched a storefront, how many still transact after 60-90 days, and what GMV flows through?",
+    "Telegram platform dependency: exposure to Telegram Mini App API / Payments / Stars / TON policy and fee changes.",
+    "Code/IP: is 100% owned and transferable, and is the 'enterprise-grade' architecture real or over-engineered for zero load? Asking price and basis."
+  ],
+  "seller_questions": [
+    "Exact MRR/ARR today, number of paying businesses, signups, and trial->paid conversion — screen-shared from Stripe + the admin dashboard. ('first revenue' means what, from how many customers?) (PMF + revenue verification — decisive)",
+    "How did each paying customer actually arrive, and what growth channels have you tried over 18 months with what result? (channel — reveals whether any repeatable acquisition exists, i.e. whether we'd be buying your marketing problem)",
+    "Retention/usage: of merchants who launched a storefront, how many are still active/transacting after 60-90 days, and what GMV runs through the platform? (retention + real usage)",
+    "What's the honest blocker that kept it at 'first revenue' for 18 months — demand, pricing, or distribution? (adverse selection — the crux)",
+    "Telegram dependency: which Telegram APIs / payment rails (Stars, TON, providers) does it rely on, and what breaks if Telegram changes terms or fees? (fragility)",
+    "What transfers (repo with 100% owned code, infra, customer accounts, domain), is any of it AI/agency-built or license-limited, and what's the asking price and its basis? (IP/transfer + deal quality)",
+    "Which competing no-code Telegram store builders exist, and why do customers choose yours? (moat)"
+  ],
+  "inputs_provided": [
+    "Listing: no-code B2B SaaS to launch branded e-commerce storefronts inside Telegram [seller-stated]",
+    "18 months building; 'fully functional'; 'generating its first revenue' [seller-stated -> near-pre-revenue]",
+    "Stack: Node.js, Vue 3, Docker; 'enterprise-grade, zero maintenance' [seller-stated -- hype, verify]",
+    "Seller is an engineer who admits no marketing/growth skill; selling because it 'needs distribution' [seller-stated -> growth lever = the team's weakness]",
+    "No URL, price, MRR, or customer count disclosed [OBSERVED -- notable omissions]",
+    "Posted on Reddit, 0 upvotes [OBSERVED]",
+    "Market: Telegram Mini App e-commerce growing ($1B 2025 -> $5B+ 2027, tx volume +150% YoY) but cooling vs hype; <2,000 of ~55,000 Mini Apps make >$500/mo [VERIFIED via research]"
+  ],
+  "sources": [
+    {
+      "title": "GramBase — Telegram Mini Apps 2026: stats, trends & revenue models",
+      "url": "https://grambase.ai/blog/telegram-mini-apps-2026"
+    },
+    {
+      "title": "Solar Engine — Build and scale profitable Telegram Mini Apps in 2026",
+      "url": "https://blog.solar-engine.com/en-blog/docs/telegram-mini-app-trends-monetization-market"
+    },
+    {
+      "title": "BlackHatWorld — Are Telegram Mini Apps losing momentum in 2026?",
+      "url": "https://www.blackhatworld.com/seo/are-telegram-mini-apps-losing-momentum-in-2026.1823094/"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "target": "Synta",
+  "date": "2026-07-13",
+  "type": "B2B dev tool — AI copilot + MCP server for building/debugging n8n workflows (Next/TS/Anthropic/GCP); YC-backed",
+  "asking_price": "$100,000 (0.7x revenue; 21 offers) — CORRECTED from a 100x-too-low MCP figure of $1,000",
+  "verdict": "MARGINAL",
+  "score": 56.0,
+  "completeness_pct": 76,
+  "one_line_reason": "A GENUINE business (verified ~$12k MRR, 260 paying subs, ~$113k trailing-year, YC-backed) in your exact domain — but declining ~20%+ from its March peak with an eroding moat (n8n's own AI + free open-source n8n MCP servers), and asking $100,000 (~33x your budget). The right shape, wrong price and wrong trajectory: a turnaround you can't currently afford.",
+  "dimensions": {
+    "build_scale_fit": {
+      "score": 4,
+      "confidence": "med",
+      "note": "Your exact wheelhouse (AI/MCP/n8n on Next/TS/Anthropic/GCP). You could operate and improve it; the turnaround lever (reverse churn, differentiate, extend beyond n8n) leans on product skill."
+    },
+    "pmf_retention": {
+      "score": 3,
+      "confidence": "high",
+      "note": "REAL PMF: 260 paying subs, ~$12k MRR (verified). But declining — MRR growth -14% (30d), revenue down from a $16.9k March peak to ~$13k. Proven, but eroding."
+    },
+    "unit_economics": {
+      "score": 3,
+      "confidence": "high",
+      "note": "$12k MRR, 92% gross margin, $34/$67 plans, ~$47 ARPU. Healthy recurring model; watch Anthropic/GCP cost pass-through and the decline."
+    },
+    "moat_channel": {
+      "score": 2,
+      "confidence": "med",
+      "note": "Thin, eroding moat: n8n ships its own AI and free open-source n8n MCP servers exist. YC brand + 16k users + content/SEO (DR 13) give some edge, but the decline shows it's being competed away."
+    },
+    "growth_market": {
+      "score": 2,
+      "confidence": "high",
+      "note": "Hot market (AI workflow automation) but this product is on the wrong side of it — declining ~20% from peak as the platform it depends on commoditizes the function."
+    },
+    "tech_ip": {
+      "score": 3,
+      "confidence": "med",
+      "note": "Modern wheelhouse stack, YC-grade eng likely, knowledge-base asset, transferable. Verify IP + user-list transfer."
+    },
+    "deal_quality": {
+      "score": 2,
+      "confidence": "med",
+      "note": "$100,000 at 0.7x trailing revenue is a fair-to-cheap SaaS multiple in the abstract — but it's ~33x the team's budget (not actionable without capital), the multiple flatters a declining asset (forward multiple is worse), and 21 offers = competition."
+    },
+    "seller_risk": {
+      "score": 2,
+      "confidence": "med",
+      "note": "Selling as revenue declines ~20% off peak. Reason cited: other opportunities + personal (family bereavement) — sympathetic and plausible, low deception (verified revenue), but the timing is classic adverse selection."
+    }
+  },
+  "gates": {
+    "competence": true,
+    "revenue_verifiable": true,
+    "ip_transferable": "unknown",
+    "not_fragile": false
+  },
+  "key_unknowns": [
+    "Cause and trajectory of the decline: is churn accelerating, and what's driving it (n8n native AI? a competitor? a pricing change)? Decisive for a turnaround thesis.",
+    "Can the team even fund $100k, or negotiate seller financing / an earnout tied to retention? Without capital this is moot regardless of fit.",
+    "Defensibility vs n8n's own AI + free open-source n8n MCP servers — is there a durable reason to keep paying?",
+    "Real churn + net revenue retention on the 260 paying subs, and cohort trend.",
+    "What transfers: 100% code + the 800+ node knowledge base + the 16k user/email list + domain; API-cost pass-through and true margin at scale."
+  ],
+  "seller_questions": [
+    "Revenue peaked ~$16.9k in March and is down to ~$13k — what's driving the decline, and is churn accelerating? (the turnaround crux)",
+    "Are you open to seller financing or an earnout tied to retained revenue, given the recent trend? (deal structure — the only way $100k works for us)",
+    "How do you defend against n8n's own AI features and free open-source n8n MCP servers? (moat)",
+    "Paying-subscriber monthly churn and net revenue retention, with cohort trend? (retention)",
+    "What exactly transfers — 100% code, the 800+ node knowledge base, the 16k user/email list, domain — and any license/API-cost pass-through? (IP/transfer)",
+    "Per-active-user Anthropic + GCP cost; is 92% margin durable at scale? (unit economics)",
+    "What are the '2 potential B2B customers ready to onboard' worth, and why sell now beyond the personal reasons? (upside + adverse selection)"
+  ],
+  "inputs_provided": [
+    "Synta: AI copilot + MCP server to build/edit/debug n8n workflows, self-healing, 800+ node knowledge base; YC-backed [VERIFIED via authoritative TrustMRR .md + site]",
+    "CORRECTED FIGURES (the MCP tool under-reported all dollar values by exactly 100x): MRR ~$12,180; last-30-days revenue $12,001; trailing-12-month $113,325; asking $100,000 at 0.7x [VERIFIED via trustmrr.com/startup/synta.md]",
+    "Monthly revenue: peaked $16,855 (Mar 2026), then $14,995 / $14,949 / $12,998 (Apr-Jun); 260 paying subs (~$47 ARPU) [VERIFIED .md]",
+    "16,374 users; DR 13; channels content/SEO/blog/X/LinkedIn/Reddit; 21 offers, 3,984 recent viewers [VERIFIED .md]",
+    "Founded 2025-09-11; stack React/Next/TS + Anthropic + GCP + Firebase [VERIFIED]",
+    "Seller reason: 'other opportunities + personal reasons including the passing of a family member'; claims 2 B2B customers ready to onboard [seller-stated, untrusted]"
+  ],
+  "sources": [
+    {
+      "title": "Synta — authoritative TrustMRR profile (.md, Stripe-verified)",
+      "url": "https://trustmrr.com/startup/synta.md"
+    },
+    {
+      "title": "Synta — product site + pricing",
+      "url": "https://synta.io"
+    }
+  ]
+}

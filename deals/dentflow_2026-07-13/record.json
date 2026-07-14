@@ -1,0 +1,93 @@
+{
+  "target": "DentFlow",
+  "date": "2026-07-13",
+  "type": "Vertical B2B/prosumer micro-SaaS — financial + CPD dashboard for UK associate dentists",
+  "asking_price": "$350 (TrustMRR; 1.6x revenue; 8 offers) — corrected: the earlier $169 was the all-time revenue, misread as the price",
+  "verdict": "PASS",
+  "score": 43.6,
+  "completeness_pct": 66,
+  "one_line_reason": "The first verified-revenue, trivially-priced ($169) target and the closest to interesting — but as a solo asset-buy it's a near-zero-traction UK dental-finance niche where the value levers are dental domain expertise and B2B distribution you lack. It becomes a cheap Investigate-worthy punt ONLY if the dentist-founder commits to partnering.",
+  "dimensions": {
+    "build_scale_fit": {
+      "score": 2,
+      "confidence": "med",
+      "note": "The app itself is trivial for the team to own/run. But the value levers are UK dental-domain knowledge (CPD rules, tax, associate pay) + niche B2B distribution into dentistry — both team gaps. The bottleneck isn't code."
+    },
+    "pmf_retention": {
+      "score": 1,
+      "confidence": "high",
+      "note": "Stripe-verified but tiny: $30 MRR, 2 subs after 6 months. 'Positive feedback, no real marketing.' PMF essentially unproven."
+    },
+    "unit_economics": {
+      "score": 2,
+      "confidence": "med",
+      "note": "Good MODEL (B2B recurring, GBP14/mo, professionals who pay for tax/time savings) but negligible current revenue; LTV/CoCA unproven."
+    },
+    "moat_channel": {
+      "score": 2,
+      "confidence": "med",
+      "note": "DR 0, LinkedIn only, no moat yet. A defined vertical niche is a targeting plus; potential moat (dental-community trust + workflow depth) is exactly what the team can't build without the founder."
+    },
+    "growth_market": {
+      "score": 2,
+      "confidence": "med",
+      "note": "Real but small single-country vertical (UK associate dentists). Expansion (other countries/professions) each needs fresh domain work."
+    },
+    "tech_ip": {
+      "score": 3,
+      "confidence": "med",
+      "note": "Simple web app + Stripe, UK GDPR compliant, transferable. Holding dentists' financial data carries a compliance/security burden."
+    },
+    "deal_quality": {
+      "score": 4,
+      "confidence": "med",
+      "note": "$169 is essentially free and low-risk on money; founder offers onboarding/support + 'consider partnership' (favorable terms). Only ding: cheap because there's ~nothing there yet; 8 competing offers."
+    },
+    "seller_risk": {
+      "score": 3,
+      "confidence": "med",
+      "note": "Transparent, identifiable (a real UK dentist), Stripe-verified, honest about tiny traction. Low deception risk; mild adverse selection (nice idea that didn't take off)."
+    }
+  },
+  "gates": {
+    "competence": "unknown",
+    "revenue_verifiable": true,
+    "ip_transferable": "unknown",
+    "not_fragile": false
+  },
+  "key_unknowns": [
+    "Will the dentist-founder actually partner (domain + dental-community distribution) — the single factor that flips competence from fail to viable. Without him you're software devs guessing at UK dental finance with no channel.",
+    "Real usage beyond 2 paid: free/active users, trial->paid, and what the 'positive feedback' concretely asked for.",
+    "Is there any repeatable channel into UK associate dentists (BDA, CPD providers, dental forums), or was it all the founder's personal network?",
+    "How much UK-specific domain logic is baked in (CPD hours, HMRC/tax, associate pay), and the compliance load of holding dentists' financial data.",
+    "Full IP/data ownership and transferability; stack/hosting."
+  ],
+  "seller_questions": [
+    "Would you stay on as a domain + distribution PARTNER (rev-share/equity) — we're strong engineers but not dentists or UK dental marketers? On what terms? (decisive: competence hinges on this)",
+    "Beyond the 2 paying subs: how many free/active users, what's trial->paid, and what specifically did the 'positive feedback' ask you to build? (PMF)",
+    "How did the first users find DentFlow, and what channels realistically reach UK associate dentists (associations, CPD providers, dental forums/FB)? (channel)",
+    "What UK-specific logic is built in (CPD rules, tax/HMRC, associate pay structures), and what compliance obligations come with holding dentists' financial data (GDPR/data processing)? (domain + tech)",
+    "Is 100% of code, domain, and user data owned by you and transferable? Any contractors? What's the stack and hosting? (IP/transfer)",
+    "Why sell at $169 after 6 months, and what are the 8 offers/other interested buyers? (adverse selection + competition)"
+  ],
+  "inputs_provided": [
+    "DentFlow: financial dashboard / income + CPD tracker for UK associate dentists (earnings across practices, expenses, CPD hours, practice performance) [VERIFIED via listing]",
+    "MRR $30, 2 active subscriptions, '$19 last 30 days' [Stripe-VERIFIED]",
+    "Asking price $169 (1.6x revenue); 188 recent viewers; 8 offers received [VERIFIED listing]",
+    "Founded January 2026 (~6 months); founder Imran Valiallah, a practising UK dentist [listing]",
+    "Pricing: Free / GBP14 per month / GBP99 per year; channel = LinkedIn; 'no real marketing done yet'; Domain Rating 0/100 [VERIFIED]",
+    "Tech: Stripe; UK GDPR compliant [listing]",
+    "Founder offers onboarding/support and 'would be happy to consider partnership' [listing]",
+    "CORRECTION: asking price is $350 (per .md), not $169 (which was the all-time-revenue figure). Verdict unchanged."
+  ],
+  "sources": [
+    {
+      "title": "DentFlow — TrustMRR listing (Stripe-verified revenue)",
+      "url": "https://trustmrr.com/startup/dentflow"
+    },
+    {
+      "title": "DentFlow — product site",
+      "url": "http://www.dentflow.io"
+    }
+  ]
+}

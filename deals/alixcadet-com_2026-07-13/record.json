@@ -1,0 +1,102 @@
+{
+  "target": "AlixCadet.com",
+  "date": "2026-07-13",
+  "type": "Affiliate coupon site (AliExpress via Admitad, WordPress)",
+  "asking_price": "$4,900 BIN (Flippa)",
+  "verdict": "PASS",
+  "score": 35.2,
+  "completeness_pct": 65,
+  "one_line_reason": "Cheap and cash-flowing, but a single-program AliExpress affiliate/SEO coupon site (the team's weakness), neglected and likely declining, ~100% revenue-concentrated, in a category under attribution assault (Honey/extension hijacking).",
+  "dimensions": {
+    "build_scale_fit": {
+      "score": 1,
+      "confidence": "high",
+      "note": "Affiliate/SEO/content business; growth = more content + more programs + audience work. Software skills add ~nothing (coupon-import automation is trivial and not the revenue driver)."
+    },
+    "pmf_retention": {
+      "score": 2,
+      "confidence": "low",
+      "note": "Transient coupon-seekers, no loyalty; Telegram audience a mild plus; seller admits it's been neglected/likely declining."
+    },
+    "unit_economics": {
+      "score": 2,
+      "confidence": "low",
+      "note": "~$245/mo net, 100% one affiliate program (AliExpress/Admitad), clawback-prone and seasonal (sale spikes), unverified; low ceiling for this team."
+    },
+    "moat_channel": {
+      "score": 1,
+      "confidence": "high",
+      "note": "Commodity coupon niche vs RetailMeNot/Honey/extensions; single SEO channel + single affiliate program; last-click attribution being hijacked industry-wide."
+    },
+    "growth_market": {
+      "score": 2,
+      "confidence": "med",
+      "note": "Claimed paths (Temu/SHEIN, display ads, Telegram) are all marketing work; category under structural pressure (Honey scandal, Google 2025 extension policy)."
+    },
+    "tech_ip": {
+      "score": 3,
+      "confidence": "med",
+      "note": "WordPress, simple and transferable; content is coupon listings (low IP). Jetpack-only stats weaken verification."
+    },
+    "deal_quality": {
+      "score": 3,
+      "confidence": "med",
+      "note": "$4,900 BIN ~= 20x monthly / ~1.7x annual net = below-market/cheapish, but risk-appropriate; all-cash BIN, no seller financing implied."
+    },
+    "seller_risk": {
+      "score": 1,
+      "confidence": "med",
+      "note": "Neglected several months (likely declining), ~100% revenue concentration in one program, seasonal average, Jetpack-only stats, selling on Reddit + Flippa."
+    }
+  },
+  "gates": {
+    "competence": false,
+    "revenue_verifiable": "unknown",
+    "ip_transferable": "unknown",
+    "not_fragile": false
+  },
+  "key_unknowns": [
+    "Real monthly earnings trend (Admitad) vs the '~$300 average' — how much is 11.11/big-sale spikes and what are the last 3 months, given the neglect? Swings unit economics and seller-risk.",
+    "Revenue concentration & transfer: 100% AliExpress/Admitad? Do the affiliate account and existing links transfer or must they be re-issued under a new account (often they don't transfer)?",
+    "Telegram 6,000+ subs: organic vs bought, engagement, and whether channel ownership can actually transfer — the one potentially real off-Google asset.",
+    "Traffic trend and quality (Search Console): any Google penalty/algo hit; how much US vs low-monetizing geos (Russia).",
+    "Exposure to the affiliate-attribution shift (Honey/extension hijacking, Google 2025 extension policy) on AliExpress conversions."
+  ],
+  "seller_questions": [
+    "Screen-share the Admitad dashboard: 12-24 months of monthly earnings, confirmed vs pending/clawed-back. Is '~$300/mo' a trailing average, and what are the last 3 months? (unit economics + adverse selection; verifies revenue and decline)",
+    "How seasonal is it — what share of revenue is AliExpress big-sale periods (11.11, etc.) vs baseline months? (revenue quality)",
+    "Search Console + Jetpack: 12-month traffic trend, top pages/queries, any manual penalty or core-update drop, and AI Overview presence on coupon queries? (fragility)",
+    "Is revenue 100% AliExpress/Admitad? On sale, does the affiliate account transfer, or do I re-apply and re-issue every link (and does AliExpress permit it)? (concentration + transferability)",
+    "Telegram 6,000+ subs: how acquired (organic vs paid), current engagement/opens, any revenue today, and can channel ownership actually transfer to me? (asset verification)",
+    "Why sell at $4,900 now, how long has it been neglected, other bidders? Any trademark/policy risk using 'AliExpress' branding, or content that's AI-generated/duplicated? (adverse selection + legal)"
+  ],
+  "inputs_provided": [
+    "Listing: AliExpress coupon affiliate site, WordPress, country coupon pages + blog [VERIFIED — site fetched: country pages, affiliate redirect links, Site Kit]",
+    "Revenue ~$300/mo, expenses ~$55/mo (net ~$245) [seller-stated, UNVERIFIED]",
+    "BIN $4,900, listed on Flippa [seller-stated]",
+    "~2,000 visitors/mo, ~4,500 pageviews (Jetpack) [seller-stated, UNVERIFIED]",
+    "Monetized exclusively via AliExpress affiliate through Admitad [seller-stated, consistent with site]",
+    "Geo: US, then Russia, Italy, Germany, France, UK [seller-stated]",
+    "Telegram 6,000+ subs; YouTube 118; TikTok 459 [seller-stated]",
+    "Reason: lack of time; neglected several months; 'was growing when active' [seller-stated -> decline signal]",
+    "Uses Jetpack Stats, not Google Analytics [seller-stated -> weaker verification]"
+  ],
+  "sources": [
+    {
+      "title": "AlixCadet.com (site)",
+      "url": "https://www.alixcadet.com/"
+    },
+    {
+      "title": "PPC.land — Awin confirms Honey violated affiliate policies, suspends payments (2026)",
+      "url": "https://ppc.land/awin-confirms-honey-violated-affiliate-policies-suspends-payments/"
+    },
+    {
+      "title": "Affiverse — Honey investigation: browser-extension risks for affiliate programs",
+      "url": "https://www.affiversemedia.com/honey-investigation-deepens-what-part-two-of-megalag-reveals-about-browser-extension-risks-for-affiliate-programs/"
+    },
+    {
+      "title": "Flippa — Coupons & Deals businesses for sale (category)",
+      "url": "https://flippa.com/buy/categories/internet/coupons-and-deals"
+    }
+  ]
+}

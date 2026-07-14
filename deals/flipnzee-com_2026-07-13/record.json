@@ -1,0 +1,90 @@
+{
+  "target": "Flipnzee.com",
+  "date": "2026-07-13",
+  "type": "Content blog (AI-generated) / storefront for a 'starter website' flipping operation (WordPress + custom auction plugin)",
+  "asking_price": null,
+  "verdict": "PASS",
+  "score": 23.6,
+  "completeness_pct": 75,
+  "one_line_reason": "The clearest pass of all, proven by the seller's own 'verified analytics': a ~6-month-old AI-generated content blog with 1 organic click on 1,053 impressions (1% of traffic is SEO), the rest mostly direct/datacenter-bot; no revenue; it's the storefront for a starter-site operation whose sites auction for ~$10. Content/SEO = the team's weakness, and there is no real business here.",
+  "dimensions": {
+    "build_scale_fit": {
+      "score": 1,
+      "confidence": "high",
+      "note": "Content/SEO/AdSense-flipping business; growth is 100% content + SEO = the team's weakness. The only code is a commodity WordPress auction plugin."
+    },
+    "pmf_retention": {
+      "score": 1,
+      "confidence": "high",
+      "note": "Verified from the seller's dashboard: 291 users/30d (mostly Direct 68% + datacenter bots), 2 returning visitors, 1 organic click. No audience."
+    },
+    "unit_economics": {
+      "score": 1,
+      "confidence": "med",
+      "note": "No revenue disclosed; AdSense not confirmed (Site Kit host placeholder); the underlying starter-sites auction for ~$10 (Progaiz, Calnzee won at $10)."
+    },
+    "moat_channel": {
+      "score": 1,
+      "confidence": "high",
+      "note": "Zero moat; AI-generated content in the most saturated MMO/website-flipping niche; only 1% of traffic from SEO; competes with Flippa/Empire Flippers/Niche Pursuits."
+    },
+    "growth_market": {
+      "score": 1,
+      "confidence": "med",
+      "note": "Saturated, YMYL-scrutinized niche; the exact topics (AdSense tricks, Ahrefs accuracy) are cannibalized by AI Overviews; thin AI content won't rank."
+    },
+    "tech_ip": {
+      "score": 2,
+      "confidence": "med",
+      "note": "WordPress + a custom listing/auction plugin (the only real code asset, but commodity); content is AI-generated and thin = low IP value; transferable."
+    },
+    "deal_quality": {
+      "score": 2,
+      "confidence": "unknown",
+      "note": "No price stated; comparable starter sites on the site itself clear at ~$10-350, so any meaningful ask is overpriced for a zero-revenue 6-month blog."
+    },
+    "seller_risk": {
+      "score": 1,
+      "confidence": "med",
+      "note": "6-month domain (reg 29 Dec 2025), bot-inflated traffic (Boardman/Prineville/'not set'), AI content, unfinished 'testing' posts, mislisted on r/saasforsale as a 'SaaS', no revenue/price."
+    }
+  },
+  "gates": {
+    "competence": false,
+    "revenue_verifiable": false,
+    "ip_transferable": "unknown",
+    "not_fragile": false
+  },
+  "key_unknowns": [
+    "Asking price (not stated) — but given ~zero revenue and ~zero real traffic, no price makes this a fit for the team; it's rebuildable in days.",
+    "How much of the 291 monthly 'users' are real humans vs bots/self — the datacenter cities (Boardman, Prineville) and 68% Direct suggest most are not organic.",
+    "Whether the custom auction plugin has any standalone value/usage beyond this one site (the only conceivable asset).",
+    "Any actual AdSense/affiliate earnings (the FAQ implies AdSense isn't even approved/transferable)."
+  ],
+  "seller_questions": [
+    "What is the asking price, and what revenue (AdSense/affiliate/sales) has the site actually earned — screen-shared? (deal + revenue; the data suggests ~$0)",
+    "Explain the traffic: 68% Direct, top cities Boardman/Prineville (data centers), and 1 organic click on 1,053 impressions — how much is real human organic? (quality/fragility)",
+    "Is the content 100% AI-generated, and does the auction plugin have any usage or value beyond flipnzee.com itself? (IP)",
+    "Why sell a 6-month-old, zero-revenue site, and why list it on r/saasforsale as a 'SaaS'? (adverse selection)"
+  ],
+  "inputs_provided": [
+    "Listing (r/saasforsale): 'content-driven website dedicated to the digital assets industry' with a custom listing/auction plugin [seller-stated]",
+    "Domain registered 29 Dec 2025, 1-year registration, IONOS [seller-stated / VERIFIED]",
+    "Meta + homepage reveal it is 'Premium AdSense-Ready Starter Websites' — a starter-site flipping storefront [VERIFIED via fetch]",
+    "Seller's 'Google Verified Analytics' for flipnzee.com: 291 users/30d, 541 sessions, 19 visitors/24h, 2 returning, 1,053 impressions, 1 ORGANIC CLICK, 50 keywords ranking #23-100 [VERIFIED via seller dashboard]",
+    "Traffic sources: Direct 68%, Social 23%, AI Assistant 5%, Unassigned 3%, SEO 1%; top cities incl. Boardman/Prineville (datacenter bots) + '(not set)' 35% [VERIFIED]",
+    "Portfolio starter-sites auction for ~$10 winning bids (Progaiz start $50 -> won $10; Calnzee -> $10) [VERIFIED]",
+    "Content explicitly AI-assisted; an unfinished 'testing' post is published [VERIFIED]",
+    "No revenue and no asking price disclosed in the listing [OBSERVED]"
+  ],
+  "sources": [
+    {
+      "title": "Flipnzee.com — homepage (starter-site flipping storefront)",
+      "url": "https://flipnzee.com/"
+    },
+    {
+      "title": "Flipnzee.com — seller's 'Verified Analytics' listing page",
+      "url": "https://flipnzee.com/listings/flipnzee-com/"
+    }
+  ]
+}
