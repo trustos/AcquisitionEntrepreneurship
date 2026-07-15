@@ -160,6 +160,18 @@ Persist every evaluation so it isn't lost and can be compared with other deals. 
 }
 ```
 
+**Also fill the structured, import-ready fields** (the saver validates them and the team's reporting app imports on them — put *numbers* here; keep prose in the dimension notes). Leave any value `null` if unknown:
+
+```
+  "deal": { "asking_price_usd": 4000, "revenue_multiple": null },
+  "metrics": { "mrr_usd": null, "arr_usd": null, "subscriptions": null, "customers": null,
+               "growth_30d_pct": null, "margin_pct": null, "domain_rating": null,
+               "revenue_evidence": "none | seller_claimed | marketplace_attested | buyer_verified | contradicted" },
+  "contact": { "seller_handle": null, "listing_url": "the listing URL", "marketplace": "Reddit | Flippa | TrustMRR | ...", "method": "reddit DM | TrustMRR offer | email" }
+```
+
+The saver auto-adds `id`, `schema_version`, `verdict_detail`, `deal.budget_fit`, `created_at`/`updated_at`, and a default `pipeline.status`, and parses the `asking_price` string into `deal.asking_price_usd` — but fill the numbers you know. The canonical contract is `schema/report.schema.json`.
+
 3. **Run the saver** (ensure openpyxl is available for the .xlsx log — `pip install openpyxl --break-system-packages` if the import is missing):
 
 ```bash
@@ -190,3 +202,6 @@ It writes `deals/<target>_<date>/scorecard.md` and `record.json`, and appends/up
 - `scripts/score.py` — deterministic weighted scorer + gate/verdict logic (v2).
 - `scripts/save_evaluation.py` — saves the scorecard + JSON record (with sources) and upserts the row in `deals/deal-log.xlsx` (+ `.csv`); supports an `analyst` field for team attribution.
 - `scripts/rebuild_log.py` — regenerates the combined `deal-log` from every `record.json` (use on a shared repo instead of hand-merging the binary xlsx: `python scripts/rebuild_log.py --dir deals/`).
+- `scripts/normalize_report.py` — makes every record import-ready (adds `id`, `schema_version`, structured `deal`/`metrics`/`contact`/`pipeline`/`verdict_detail`); also migrates + validates old records (`--dir deals/ [--check]`).
+- `scripts/rebuild_dataset.py` — exports all records to one `deals/deals.json` for the reporting app.
+- `schema/report.schema.json` — the canonical report contract the importing app reads.

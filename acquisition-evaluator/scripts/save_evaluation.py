@@ -35,6 +35,9 @@ try:
 except Exception:
     HAVE_XLSX = False
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import normalize_report  # canonical, import-ready report shape
+
 COLUMNS = ["Date", "Target", "Analyst", "Type", "Verdict", "Score",
            "Completeness %", "Asking price", "One-line reason", "Folder"]
 _WIDTHS = [12, 24, 12, 22, 22, 8, 14, 16, 46, 30]
@@ -152,8 +155,14 @@ def main():
     if args.analyst:
         rec["analyst"] = args.analyst
     base = os.path.abspath(args.dir)
-    deal_dir = os.path.join(base, folder_for(rec))
+    folder = folder_for(rec)
+    deal_dir = os.path.join(base, folder)
     os.makedirs(deal_dir, exist_ok=True)
+
+    rec = normalize_report.to_canonical(rec, folder)   # make the report import-ready
+    issues = normalize_report.validate(rec)
+    if issues:
+        print("  ! report validation: " + "; ".join(issues))
 
     with open(os.path.join(deal_dir, "record.json"), "w") as f:
         json.dump(rec, f, indent=2, ensure_ascii=False)

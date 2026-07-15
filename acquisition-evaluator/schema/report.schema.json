@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://acquisition-evaluator/report.schema.json",
+  "title": "Acquisition Evaluation Report",
+  "description": "Canonical, import-ready shape emitted per evaluation. The importing app can treat this as the contract. Numbers used for sorting/filtering/charting live in structured fields (deal, metrics, verdict_detail); prose stays in notes/one_line_reason. dimensions/gates keys vary by scoring_version and are intentionally open.",
+  "type": "object",
+  "required": ["schema_version", "id", "target", "date", "verdict", "verdict_detail", "score", "scoring_version"],
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": { "type": "string", "const": "acq-eval-report/1.0" },
+    "id": { "type": "string", "description": "Stable unique id (matches the deal folder name): <slug(target)>_<date>[_<slug(analyst)>]. Use for idempotent import." },
+    "scoring_version": { "type": "string", "enum": ["v1", "v2", "unknown"], "description": "Which rubric produced the dimensions/gates keys." },
+    "created_at": { "type": "string", "description": "ISO-8601; when first evaluated." },
+    "updated_at": { "type": "string", "description": "ISO-8601; bump on every save so the app can detect changes." },
+
+    "target": { "type": "string" },
+    "type": { "type": ["string", "null"] },
+    "date": { "type": "string", "description": "YYYY-MM-DD" },
+    "analyst": { "type": ["string", "null"] },
+
+    "verdict": { "type": "string", "description": "Human label, e.g. 'PASS (provisional)'." },
+    "verdict_detail": {
+      "type": "object",
+      "required": ["tier"],
+      "properties": {
+        "tier": { "type": "string", "enum": ["STRONG", "PROMISING", "MARGINAL", "PASS"] },
+        "provisional": { "type": "boolean" },
+        "out_of_budget": { "type": "boolean" },
+        "insufficient_data": { "type": "boolean" }
+      }
+    },
+    "score": { "type": ["number", "null"], "description": "0-100 merit total." },
+    "completeness_pct": { "type": ["number", "null"] },
+    "one_line_reason": { "type": ["string", "null"] },
+
+    "deal": {
+      "type": "object",
+      "properties": {
+        "asking_price_usd": { "type": ["number", "null"] },
+        "currency": { "type": ["string", "null"] },
+        "revenue_multiple": { "type": ["number", "null"] },
+        "budget_ceiling_usd": { "type": ["number", "null"] },
+        "budget_fit": { "type": ["string", "null"], "enum": ["in", "at", "over", "unknown", null] },
+        "financing_possible": { "type": ["boolean", "null"] }
+      }
+    },
+
+    "metrics": {
+      "type": "object",
+      "description": "All nullable numbers so the app can chart them directly.",
+      "properties": {
+        "mrr_usd": { "type": ["number", "null"] },
+        "arr_usd": { "type": ["number", "null"] },
+        "subscriptions": { "type": ["number", "null"] },
+        "customers": { "type": ["number", "null"] },
+        "growth_30d_pct": { "type": ["number", "null"] },
+        "monthly_visitors": { "type": ["number", "null"] },
+        "churn_pct": { "type": ["number", "null"] },
+        "margin_pct": { "type": ["number", "null"] },
+        "domain_rating": { "type": ["number", "null"] },
+        "age_months": { "type": ["number", "null"] },
+        "revenue_evidence": { "type": ["string", "null"], "enum": ["buyer_verified", "marketplace_attested", "seller_claimed", "none", "contradicted", "unknown", null] }
+      }
+    },
+
+    "contact": {
+      "type": "object",
+      "description": "How to reach the seller; the app can edit these.",
+      "properties": {
+        "seller_handle": { "type": ["string", "null"] },
+        "listing_url": { "type": ["string", "null"] },
+        "marketplace": { "type": ["string", "null"] },
+        "method": { "type": ["string", "null"], "description": "e.g. reddit DM, TrustMRR offer, email" },
+        "contacted_on": { "type": ["string", "null"] },
+        "notes": { "type": ["string", "null"] }
+      }
+    },
+
+    "pipeline": {
+      "type": "object",
+      "description": "Human-managed stage; the app owns edits after import.",
+      "properties": {
+        "status": { "type": "string", "enum": ["new", "screening", "contacted", "in_dd", "offer", "won", "passed"] },
+        "owner": { "type": ["string", "null"] },
+        "last_updated": { "type": ["string", "null"] }
+      }
+    },
+
+    "dimensions": { "type": "object", "description": "Per-dimension {score, confidence, note}; keys depend on scoring_version." },
+    "gates": { "type": "object", "description": "Gate values; keys depend on scoring_version." },
+    "key_unknowns": { "type": "array", "items": { "type": "string" } },
+    "seller_questions": { "type": "array", "items": { "type": "string" } },
+    "inputs_provided": { "type": "array", "items": { "type": "string" } },
+    "sources": {
+      "type": "array",
+      "items": { "type": "object", "properties": { "title": { "type": "string" }, "url": { "type": "string" } } }
+    }
+  }
+}

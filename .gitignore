@@ -13,6 +13,12 @@ __pycache__/
 page-*.jpg
 verify-*.jpg
 
-# NOTE: deals/deal-log.xlsx and deals/deal-log.csv are DERIVED artifacts.
-# They are safe to commit, but NEVER hand-merge them. On a conflict, accept
-# either side and regenerate: python acquisition-evaluator/scripts/rebuild_log.py --dir deals/
+# Derived aggregates — regenerate with rebuild_log.py / rebuild_dataset.py.
+# Ignore the binary/large ones so teammates never hit a merge conflict; the
+# per-deal deals/*/record.json files are the source of truth (never collide).
+deals/deal-log.xlsx
+deals/deals.json
+# (deals/deal-log.csv stays tracked as a small human-diffable index — still derived.)
+
+# session-only working docs — not part of the repo
+handoff/

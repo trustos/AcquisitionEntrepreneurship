@@ -88,5 +88,50 @@
       "title": "Synta — product site + pricing",
       "url": "https://synta.io"
     }
-  ]
+  ],
+  "schema_version": "acq-eval-report/1.0",
+  "id": "synta_2026-07-13",
+  "scoring_version": "v1",
+  "created_at": "2026-07-13T00:00:00Z",
+  "updated_at": "2026-07-15T12:02:09+00:00",
+  "verdict_detail": {
+    "tier": "MARGINAL",
+    "provisional": false,
+    "out_of_budget": false,
+    "insufficient_data": false
+  },
+  "deal": {
+    "asking_price_usd": 100000,
+    "currency": "USD",
+    "revenue_multiple": null,
+    "budget_ceiling_usd": null,
+    "budget_fit": "unknown",
+    "financing_possible": null
+  },
+  "metrics": {
+    "mrr_usd": null,
+    "arr_usd": null,
+    "subscriptions": null,
+    "customers": null,
+    "growth_30d_pct": null,
+    "monthly_visitors": null,
+    "churn_pct": null,
+    "margin_pct": null,
+    "domain_rating": null,
+    "age_months": null,
+    "revenue_evidence": "marketplace_attested"
+  },
+  "contact": {
+    "seller_handle": null,
+    "listing_url": "https://trustmrr.com/startup/synta.md",
+    "marketplace": null,
+    "method": null,
+    "contacted_on": null,
+    "notes": null
+  },
+  "pipeline": {
+    "status": "screening",
+    "owner": null,
+    "last_updated": "2026-07-15T12:02:09+00:00"
+  }
 }
