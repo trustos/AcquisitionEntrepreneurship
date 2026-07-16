@@ -24,6 +24,8 @@ import sys
 SCHEMA_VERSION = "acq-eval-report/1.0"
 TIERS = ["STRONG", "PROMISING", "MARGINAL", "PASS"]
 PIPELINE_STATUSES = ["new", "screening", "contacted", "in_dd", "offer", "won", "passed"]
+DEFAULT_BUDGET_CEILING = 3000  # team config; used when a record omits budget_ceiling (S8)
+CURRENCY_SYMBOLS = {"$": "USD", "€": "EUR", "£": "GBP"}
 
 
 def slugify(s):
@@ -32,19 +34,39 @@ def slugify(s):
     return s or "target"
 
 
+def parse_currency(v):
+    """Detect currency from a symbol in the price string; None if none present."""
+    for sym, code in CURRENCY_SYMBOLS.items():
+        if sym in str(v or ""):
+            return code
+    return None
+
+
 def parse_price(v):
-    """'$4,900 BIN (Flippa)' -> 4900 ; '$100k' -> 100000 ; 4000 -> 4000 ; None -> None."""
+    """'$4,900 BIN (Flippa)' -> 4900 ; '$100k' -> 100000 ; 4000 -> 4000 ; None -> None.
+    S10: prefer a currency-anchored amount so '2 payment plans, $5k' -> 5000 (not 2),
+    and reject implausibly small BARE integers (a lone '2' is not a price)."""
     if isinstance(v, bool):
         return None
     if isinstance(v, (int, float)):
         return int(v)
     if not v:
         return None
-    m = re.search(r"\$?\s*([\d,]+(?:\.\d+)?)\s*([kKmM])?", str(v))
-    if not m:
-        return None
-    num = float(m.group(1).replace(",", ""))
-    suf = (m.group(2) or "").lower()
+    s = str(v)
+    # Prefer a currency-anchored amount.
+    m = re.search(r"[$€£]\s*([\d,]+(?:\.\d+)?)\s*([kKmM])?", s)
+    if m:
+        num = float(m.group(1).replace(",", ""))
+        suf = (m.group(2) or "").lower()
+    else:
+        # Fall back to a bare number, but require a k/m suffix or a plausible size.
+        m = re.search(r"([\d,]+(?:\.\d+)?)\s*([kKmM])?", s)
+        if not m:
+            return None
+        num = float(m.group(1).replace(",", ""))
+        suf = (m.group(2) or "").lower()
+        if not suf and num < 50:
+            return None  # reject "2 payment plans" and similar noise
     if suf == "k":
         num *= 1_000
     elif suf == "m":
@@ -94,7 +116,9 @@ def _revenue_evidence(rec):
     if rv is True:
         return "marketplace_attested"
     if rv is False:
-        return "contradicted"
+        # S3: v1 `false` meant "seller can't/won't evidence revenue" = v2 "none",
+        # NOT "contradicted" (a kill-gate-grade "figures don't reconcile" fact).
+        return "none"
     return "unknown"
 
 
@@ -138,8 +162,11 @@ def to_canonical(rec, rec_id=None, now=None):
     ceiling = r.get("budget_ceiling")
     if isinstance(ceiling, str):
         ceiling = parse_price(ceiling)
+    if ceiling is None:
+        ceiling = DEFAULT_BUDGET_CEILING  # S8: team ceiling applies unless overridden
+    currency = parse_currency(r.get("asking_price")) or ("USD" if ask is not None else None)
     deal_defaults = {
-        "asking_price_usd": ask, "currency": "USD" if ask is not None else None,
+        "asking_price_usd": ask, "currency": currency,
         "revenue_multiple": None, "budget_ceiling_usd": ceiling,
         "budget_fit": budget_fit(ask, ceiling),
         "financing_possible": r.get("financing_possible"),
@@ -156,8 +183,17 @@ def to_canonical(rec, rec_id=None, now=None):
                         "method": None, "contacted_on": None, "notes": None}
     r["contact"] = _merge(contact_defaults, r.get("contact"))
 
-    tier = r["verdict_detail"]["tier"]
-    pipeline_defaults = {"status": "passed" if tier == "PASS" else "screening",
+    # S4: an insufficient-data / out-of-budget verdict must NOT be filed as
+    # "passed" (rejected) — it stays in screening (gather data / find financing).
+    # Only a genuine PASS-tier merit maps to the "passed" (we-declined) stage.
+    vd = r["verdict_detail"]
+    if vd["insufficient_data"] or vd["out_of_budget"]:
+        default_status = "screening"
+    elif vd["tier"] == "PASS":
+        default_status = "passed"
+    else:
+        default_status = "screening"
+    pipeline_defaults = {"status": default_status,
                          "owner": r.get("analyst"), "last_updated": now}
     r["pipeline"] = _merge(pipeline_defaults, r.get("pipeline"))
     return r

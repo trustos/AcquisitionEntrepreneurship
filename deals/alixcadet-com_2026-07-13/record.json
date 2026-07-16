@@ -1,65 +1,104 @@
 {
   "target": "AlixCadet.com",
-  "date": "2026-07-13",
   "type": "Affiliate coupon site (AliExpress via Admitad, WordPress)",
-  "asking_price": "$4,900 BIN (Flippa)",
-  "verdict": "PASS",
-  "score": 35.2,
-  "completeness_pct": 65,
-  "one_line_reason": "Cheap and cash-flowing, but a single-program AliExpress affiliate/SEO coupon site (the team's weakness), neglected and likely declining, ~100% revenue-concentrated, in a category under attribution assault (Honey/extension hijacking).",
+  "date": "2026-07-13",
+  "analyst": "trustos",
+  "verdict": "PASS (provisional)",
+  "score": 41.2,
+  "completeness_pct": 54,
+  "one_line_reason": "PASS: a single-program AliExpress affiliate/SEO coupon site whose only growth lever (content + SEO + audience work) is exactly this team's weakness — growth_lever_fits fails; 100% revenue-concentrated in one clawback-prone program, neglected/likely declining, in a category under attribution assault (Honey/extension hijacking). Cheap and cash-flowing but over the $3k budget — Pass on merits, so the budget flag is moot.",
+  "asking_price": 4900,
+  "budget_ceiling": 3000,
+  "financing_possible": false,
   "dimensions": {
-    "build_scale_fit": {
-      "score": 1,
-      "confidence": "high",
-      "note": "Affiliate/SEO/content business; growth = more content + more programs + audience work. Software skills add ~nothing (coupon-import automation is trivial and not the revenue driver)."
+    "operability_upside": {
+      "score": 2,
+      "confidence": "med",
+      "note": "WordPress coupon site is technically runnable by the team, but it's a content/SEO treadmill — the value-add is editorial, not engineering; coupon-import automation is trivial and not the revenue driver, so product/eng upside is low."
     },
     "pmf_retention": {
       "score": 2,
       "confidence": "low",
-      "note": "Transient coupon-seekers, no loyalty; Telegram audience a mild plus; seller admits it's been neglected/likely declining."
+      "note": "Transient coupon-seekers with no loyalty (one-time-purchase stickiness); a 6,000+ Telegram audience is a mild plus but unverified; seller admits neglect/likely decline. Weak/unknown retention."
     },
     "unit_economics": {
       "score": 2,
       "confidence": "low",
-      "note": "~$245/mo net, 100% one affiliate program (AliExpress/Admitad), clawback-prone and seasonal (sale spikes), unverified; low ceiling for this team."
+      "note": "~$245/mo net on ~$300 gross, but 100% from one affiliate program (AliExpress/Admitad), clawback-prone and seasonal (11.11 spikes); unverified (Jetpack-only). Thin/erratic ceiling."
     },
-    "moat_channel": {
+    "moat_defensibility": {
       "score": 1,
       "confidence": "high",
-      "note": "Commodity coupon niche vs RetailMeNot/Honey/extensions; single SEO channel + single affiliate program; last-click attribution being hijacked industry-wide."
+      "note": "Commodity coupon niche vs RetailMeNot/Honey/extensions; single SEO channel + single affiliate program; last-click attribution being hijacked industry-wide (Honey/extension scandal). Nothing durable to defend."
     },
     "growth_market": {
       "score": 2,
       "confidence": "med",
-      "note": "Claimed paths (Temu/SHEIN, display ads, Telegram) are all marketing work; category under structural pressure (Honey scandal, Google 2025 extension policy)."
+      "note": "Claimed growth paths (Temu/SHEIN, display ads, Telegram) are all marketing work; category under structural pressure (Honey/Awin suspension, Google 2025 extension policy). Slowly declining."
     },
     "tech_ip": {
       "score": 3,
       "confidence": "med",
-      "note": "WordPress, simple and transferable; content is coupon listings (low IP). Jetpack-only stats weaken verification."
+      "note": "WordPress, simple and transferable; content is coupon listings (low IP). Affiliate-account/link transfer is uncertain and Jetpack-only stats weaken verification — workable with real dependence."
     },
-    "deal_quality": {
+    "transfer_key_person": {
+      "score": 2,
+      "confidence": "low",
+      "note": "SEO/domain distribution is impersonal and transfers, but 100% of revenue rides an AliExpress/Admitad affiliate account that may not transfer, and Telegram ownership transfer is unconfirmed — much of the realized value could walk."
+    },
+    "deal_terms": {
       "score": 3,
       "confidence": "med",
-      "note": "$4,900 BIN ~= 20x monthly / ~1.7x annual net = below-market/cheapish, but risk-appropriate; all-cash BIN, no seller financing implied."
+      "note": "$4,900 BIN ≈ 20x monthly / ~1.7x annual net = cheapish/below-market, but all-cash with no seller financing, and above the $3k ceiling (fair-ish but rigid and a strain)."
     },
-    "seller_risk": {
-      "score": 1,
+    "seller_adverse_selection": {
+      "score": 2,
       "confidence": "med",
-      "note": "Neglected several months (likely declining), ~100% revenue concentration in one program, seasonal average, Jetpack-only stats, selling on Reddit + Flippa."
+      "note": "Neglected several months (likely cleaned-up decline), ~100% revenue concentration in one program, seasonal 'average', Jetpack-only stats, selling on Reddit + Flippa — thin story with peak-metrics timing."
     }
   },
   "gates": {
-    "competence": false,
-    "revenue_verifiable": "unknown",
+    "operable": true,
+    "growth_lever_fits": false,
     "ip_transferable": "unknown",
-    "not_fragile": false
+    "value_transfers": "unknown",
+    "not_fragile": false,
+    "revenue_evidence": "seller_claimed"
+  },
+  "metrics": {
+    "mrr_usd": 300,
+    "arr_usd": null,
+    "subscriptions": null,
+    "customers": null,
+    "growth_30d_pct": null,
+    "monthly_visitors": 2000,
+    "churn_pct": null,
+    "margin_pct": null,
+    "domain_rating": null,
+    "age_months": null,
+    "revenue_evidence": "seller_claimed"
+  },
+  "deal": {
+    "asking_price_usd": 4900,
+    "currency": "USD",
+    "revenue_multiple": 1.7,
+    "budget_ceiling_usd": 3000,
+    "budget_fit": "over",
+    "financing_possible": false
+  },
+  "contact": {
+    "seller_handle": null,
+    "listing_url": "https://flippa.com/buy/categories/internet/coupons-and-deals",
+    "marketplace": "Flippa",
+    "method": null,
+    "contacted_on": null,
+    "notes": null
   },
   "key_unknowns": [
-    "Real monthly earnings trend (Admitad) vs the '~$300 average' — how much is 11.11/big-sale spikes and what are the last 3 months, given the neglect? Swings unit economics and seller-risk.",
-    "Revenue concentration & transfer: 100% AliExpress/Admitad? Do the affiliate account and existing links transfer or must they be re-issued under a new account (often they don't transfer)?",
+    "Real monthly earnings trend (Admitad) vs the '~$300 average' — how much is 11.11/big-sale spikes and what are the last 3 months given the neglect? Swings unit economics and adverse-selection.",
+    "Revenue concentration & transfer: is it 100% AliExpress/Admitad, and do the affiliate account and existing links transfer, or must they be re-issued under a new account (they often don't transfer)? Gates ip_transferable and value_transfers.",
     "Telegram 6,000+ subs: organic vs bought, engagement, and whether channel ownership can actually transfer — the one potentially real off-Google asset.",
-    "Traffic trend and quality (Search Console): any Google penalty/algo hit; how much US vs low-monetizing geos (Russia).",
+    "Traffic trend and quality (Search Console): any Google penalty/core-update hit; how much is US vs low-monetizing geos (Russia). Verifies fragility.",
     "Exposure to the affiliate-attribution shift (Honey/extension hijacking, Google 2025 extension policy) on AliExpress conversions."
   ],
   "seller_questions": [
@@ -99,49 +138,21 @@
       "url": "https://flippa.com/buy/categories/internet/coupons-and-deals"
     }
   ],
+  "scorecard_markdown": "## Acquisition Scorecard — AlixCadet.com (v2)\n\n**Verdict: PASS — 41/100 merit** (completeness ~54%). Over the $3,000 budget ($4,900 all-cash, no financing), but a Pass on merits so the budget flag is suppressed.\n\nSingle-program AliExpress affiliate/SEO coupon site (WordPress). The only growth lever is content + SEO + audience work — exactly this team's weakness — so **growth_lever_fits fails** and the deal caps at PASS. 100% revenue concentration in one clawback-prone affiliate program, neglected/likely declining, category under attribution assault (Honey/extension hijacking).\n\n### Dimensions\n- Operability & upside: 2/5 (med) — WordPress runnable, but content/SEO treadmill; near-zero engineering upside.\n- PMF & retention: 2/5 (low) — transient coupon-seekers, no loyalty; Telegram a mild plus; neglected/declining.\n- Unit economics: 2/5 (low) — ~$245/mo net, 100% one affiliate program, clawback-prone, seasonal, unverified.\n- Moat & defensibility: 1/5 (high) — commodity niche vs RetailMeNot/Honey; single SEO channel + single program; attribution being hijacked.\n- Growth & market: 2/5 (med) — claimed paths all marketing work; category under structural pressure.\n- Tech & IP: 3/5 (med) — WordPress transferable, low IP; affiliate-account transfer uncertain; Jetpack-only stats.\n- Transfer / key-person: 2/5 (low) — SEO/domain transfers, but 100%-revenue affiliate account and Telegram may not.\n- Deal terms: 3/5 (med) — ~1.7x annual net, cheapish, but all-cash and over budget.\n- Seller / adverse-selection: 2/5 (med) — neglect + concentration + seasonal 'average' + Jetpack-only + Reddit/Flippa sale.\n\n### Gates\n- operable: **true** · growth_lever_fits: **false (kill → PASS)** · ip_transferable: unknown · value_transfers: unknown · not_fragile: **false** (100% single-program concentration = structural SPOF) · revenue_evidence: **seller_claimed**.\n\n### Key unknowns\nEarnings trend/seasonality (Admitad); revenue concentration + affiliate-account/link transferability; Telegram authenticity & transfer; traffic trend/penalty (Search Console); exposure to the affiliate-attribution shift.",
+  "created_at": "2026-07-13T00:00:00Z",
   "schema_version": "acq-eval-report/1.0",
   "id": "alixcadet-com_2026-07-13",
-  "scoring_version": "v1",
-  "created_at": "2026-07-13T00:00:00Z",
-  "updated_at": "2026-07-15T12:02:09+00:00",
+  "scoring_version": "v2",
+  "updated_at": "2026-07-16T10:21:46+00:00",
   "verdict_detail": {
     "tier": "PASS",
-    "provisional": false,
+    "provisional": true,
     "out_of_budget": false,
     "insufficient_data": false
   },
-  "deal": {
-    "asking_price_usd": 4900,
-    "currency": "USD",
-    "revenue_multiple": null,
-    "budget_ceiling_usd": null,
-    "budget_fit": "unknown",
-    "financing_possible": null
-  },
-  "metrics": {
-    "mrr_usd": null,
-    "arr_usd": null,
-    "subscriptions": null,
-    "customers": null,
-    "growth_30d_pct": null,
-    "monthly_visitors": null,
-    "churn_pct": null,
-    "margin_pct": null,
-    "domain_rating": null,
-    "age_months": null,
-    "revenue_evidence": "unknown"
-  },
-  "contact": {
-    "seller_handle": null,
-    "listing_url": "https://flippa.com/buy/categories/internet/coupons-and-deals",
-    "marketplace": null,
-    "method": null,
-    "contacted_on": null,
-    "notes": null
-  },
   "pipeline": {
     "status": "passed",
-    "owner": null,
-    "last_updated": "2026-07-15T12:02:09+00:00"
+    "owner": "trustos",
+    "last_updated": "2026-07-16T10:21:46+00:00"
   }
 }

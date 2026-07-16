@@ -1,74 +1,114 @@
 {
   "target": "Telegram B2B e-commerce SaaS (unnamed, Reddit)",
-  "date": "2026-07-13",
   "type": "B2B micro-SaaS — no-code Telegram storefront builder (Node.js / Vue 3 / Docker)",
+  "date": "2026-07-13",
+  "analyst": "trustos",
+  "verdict": "INSUFFICIENT DATA — PASS on merits (46/100)",
+  "score": 46.2,
+  "completeness_pct": 40,
+  "one_line_reason": "Right type and stack (B2B micro-SaaS, Node/Vue/Docker, a genuinely growing Telegram-commerce market) but near-pre-revenue with essentially nothing verified — no MRR, customer count, retention, price, or URL — so completeness lands below 45% and v2 refuses a confident tier; the seller's own 'it needs marketing/distribution' (the team's weakness) and hard Telegram-platform lock-in are the standing red flags.",
   "asking_price": null,
-  "verdict": "PASS",
-  "score": 41.0,
-  "completeness_pct": 46,
-  "one_line_reason": "The right TYPE (B2B SaaS, your stack, a genuinely growing Telegram-commerce market) — but a near-pre-revenue product whose creator, an engineer like you, couldn't sell it, whose sole stated growth lever is the marketing/distribution your team lacks, and which is locked to the Telegram platform. Buying it means inheriting his exact problem.",
+  "budget_ceiling": 3000,
+  "financing_possible": false,
   "dimensions": {
-    "build_scale_fit": {
-      "score": 2,
+    "operability_upside": {
+      "score": 3,
       "confidence": "med",
-      "note": "You can absolutely OPERATE the stack (Node/Vue/Docker), but the product is 'finished' and the seller states the lever is marketing/distribution — your weakness. B2B adoption in a nascent niche is a BD grind, not an engineering one."
+      "note": "Squarely their stack (Node.js/Vue 3/Docker) — they can run and maintain it; product is 'finished' so upside is modest, and the growth problem lives in the gate, not here."
     },
     "pmf_retention": {
       "score": 2,
       "confidence": "low",
-      "note": "'First revenue' after 18 months = demand not proven; no customer count or retention. Context: fewer than 2,000 of ~55,000 Telegram Mini Apps make >$500/mo, so the paying-merchant TAM is thin."
+      "note": "'First revenue' only after 18 months, no customer count or retention data; weak-to-unknown demand in a thin niche (<2,000 of ~55,000 Telegram Mini Apps make >$500/mo)."
     },
     "unit_economics": {
       "score": 2,
       "confidence": "low",
-      "note": "B2B subscription is a good MODEL (recurring, high-margin), but current revenue is negligible and pricing/LTV/CoCA are unproven."
+      "note": "B2B subscription is a good recurring model, but current revenue is negligible and pricing/LTV/CoCA are entirely unproven."
     },
-    "moat_channel": {
-      "score": 1,
+    "moat_defensibility": {
+      "score": 2,
       "confidence": "med",
-      "note": "No moat; no-code Telegram store builders are emerging competitors; no repeatable acquisition channel exists (that's why it's for sale)."
+      "note": "Weak/no moat: no-code Telegram store builders are emerging competitors, no switching costs or proprietary data, no repeatable channel (which is why it's for sale)."
     },
     "growth_market": {
       "score": 3,
       "confidence": "med",
-      "note": "Real tailwind (Telegram Mini App commerce ~$1B 2025 -> $5B+ 2027, tx volume +150% YoY) but cooled from the 2024-25 hype and ROI inconsistent outside gaming/rewards."
+      "note": "Real tailwind (Telegram Mini App commerce ~$1B 2025 to $5B+ 2027, tx volume +150% YoY) but cooled from 2024-25 hype and ROI inconsistent outside gaming/rewards."
     },
     "tech_ip": {
       "score": 3,
-      "confidence": "med",
-      "note": "Modern, ownable stack in the team's wheelhouse; but 'enterprise-grade, zero maintenance' is sales language to verify — solo-built pre-revenue products are often over-engineered."
+      "confidence": "low",
+      "note": "Modern, ownable stack in-wheelhouse, but code ownership/transferability is unverified and 'enterprise-grade, zero maintenance' is sales language (solo pre-revenue builds are often over-engineered)."
     },
-    "deal_quality": {
+    "transfer_key_person": {
+      "score": 2,
+      "confidence": "low",
+      "note": "Little to transfer on the growth side because there is no distribution engine at all; unknown whether any repeatable/organic acquisition exists to survive handover."
+    },
+    "deal_terms": {
       "score": 2,
       "confidence": "unknown",
-      "note": "No price stated."
+      "note": "No asking price, multiple, or terms disclosed — value-for-money cannot be assessed."
     },
-    "seller_risk": {
+    "seller_adverse_selection": {
       "score": 2,
       "confidence": "med",
-      "note": "18 months solo to only 'first revenue', selling because he can't market it, no metrics/price, Reddit post with 0 upvotes — a product built with no proven demand."
+      "note": "18 months solo to only 'first revenue', selling because he (an engineer) can't market it, no metrics/price, Reddit post with 0 upvotes — thin story with real flags."
     }
   },
   "gates": {
-    "competence": false,
-    "revenue_verifiable": "unknown",
+    "operable": true,
+    "growth_lever_fits": false,
     "ip_transferable": "unknown",
-    "not_fragile": false
+    "value_transfers": "unknown",
+    "not_fragile": false,
+    "revenue_evidence": "none"
+  },
+  "metrics": {
+    "mrr_usd": null,
+    "arr_usd": null,
+    "subscriptions": null,
+    "customers": null,
+    "growth_30d_pct": null,
+    "monthly_visitors": null,
+    "churn_pct": null,
+    "margin_pct": null,
+    "domain_rating": null,
+    "age_months": 18,
+    "revenue_evidence": "none"
+  },
+  "deal": {
+    "asking_price_usd": null,
+    "currency": null,
+    "revenue_multiple": null,
+    "budget_ceiling_usd": 3000,
+    "budget_fit": "unknown",
+    "financing_possible": false
+  },
+  "contact": {
+    "seller_handle": null,
+    "listing_url": null,
+    "marketplace": "Reddit",
+    "method": null,
+    "contacted_on": null,
+    "notes": null
   },
   "key_unknowns": [
-    "Actual MRR and paying-customer count ('first revenue' = how much, from how many?). Decisive: real growing MRR with product-led signups would flip this toward Promising.",
-    "How were the first customers acquired? If any repeatable/organic/product-led channel exists, fit improves; if every sale was manual/founder-led, it confirms the marketing-dependency trap.",
-    "Retention & real usage: of businesses that launched a storefront, how many still transact after 60-90 days, and what GMV flows through?",
-    "Telegram platform dependency: exposure to Telegram Mini App API / Payments / Stars / TON policy and fee changes.",
-    "Code/IP: is 100% owned and transferable, and is the 'enterprise-grade' architecture real or over-engineered for zero load? Asking price and basis."
+    "Actual MRR and paying-customer count ('first revenue' = how much, from how many?). Decisive: real, growing, source-verified MRR with product-led signups would flip this toward Promising.",
+    "How were the first customers acquired? Any repeatable/organic/product-led channel improves fit; if every sale was manual/founder-led it confirms the marketing-dependency trap (growth_lever_fits=false).",
+    "Retention & real usage: of merchants who launched a storefront, how many still transact after 60-90 days, and what GMV flows through?",
+    "Telegram platform dependency: exposure to Telegram Mini App API / Payments / Stars / TON policy and fee changes (structural single point of failure — why not_fragile=false).",
+    "Code/IP: is 100% owned and legally transferable, and is the 'enterprise-grade' architecture real or over-engineered for zero load?",
+    "Asking price and its basis — nothing has been stated, so affordability and deal terms cannot be judged."
   ],
   "seller_questions": [
-    "Exact MRR/ARR today, number of paying businesses, signups, and trial->paid conversion — screen-shared from Stripe + the admin dashboard. ('first revenue' means what, from how many customers?) (PMF + revenue verification — decisive)",
+    "Exact MRR/ARR today, number of paying businesses, signups, and trial->paid conversion, screen-shared from Stripe + the admin dashboard ('first revenue' means what, from how many customers?). (PMF + revenue verification — decisive)",
     "How did each paying customer actually arrive, and what growth channels have you tried over 18 months with what result? (channel — reveals whether any repeatable acquisition exists, i.e. whether we'd be buying your marketing problem)",
     "Retention/usage: of merchants who launched a storefront, how many are still active/transacting after 60-90 days, and what GMV runs through the platform? (retention + real usage)",
     "What's the honest blocker that kept it at 'first revenue' for 18 months — demand, pricing, or distribution? (adverse selection — the crux)",
-    "Telegram dependency: which Telegram APIs / payment rails (Stars, TON, providers) does it rely on, and what breaks if Telegram changes terms or fees? (fragility)",
-    "What transfers (repo with 100% owned code, infra, customer accounts, domain), is any of it AI/agency-built or license-limited, and what's the asking price and its basis? (IP/transfer + deal quality)",
+    "Telegram dependency: which Telegram APIs / payment rails (Stars, TON, providers) does it rely on, and what breaks if Telegram changes terms or fees? (fragility — structural platform lock-in)",
+    "What transfers (repo with 100% owned code, infra, customer accounts, domain), is any of it AI/agency-built or license-limited, and what's the asking price and its basis? (IP/transfer + deal terms)",
     "Which competing no-code Telegram store builders exist, and why do customers choose yours? (moat)"
   ],
   "inputs_provided": [
@@ -94,49 +134,21 @@
       "url": "https://www.blackhatworld.com/seo/are-telegram-mini-apps-losing-momentum-in-2026.1823094/"
     }
   ],
+  "scorecard_markdown": "## Acquisition Scorecard (v2) — Telegram B2B e-commerce SaaS (unnamed, Reddit)\n\n**Verdict: INSUFFICIENT DATA — merit 46/100, completeness 41% (underlying tier capped to PASS by growth_lever_fits=false)**\n\nRight type and stack, but near-pre-revenue with essentially nothing verified (no MRR, customers, retention, price, or URL). Completeness is below 45%, so v2 refuses a confident tier. The seller literally says it \"needs marketing/distribution\" (the team's weakness) and the product is structurally locked to Telegram — both standing red flags. Provisional pending revenue verification (revenue_evidence = none).\n\n### Dimension scores\n- Operability & upside: 3/5 (med) — their stack (Node/Vue/Docker); finished product, modest upside.\n- PMF & retention: 2/5 (low) — 'first revenue' after 18 months; no customers/retention; thin paying-merchant TAM.\n- Unit economics: 2/5 (low) — good recurring model, but revenue negligible and pricing/LTV/CoCA unproven.\n- Moat & defensibility: 2/5 (med) — weak/no moat; emerging no-code competitors; no repeatable channel.\n- Growth & market: 3/5 (med) — real Telegram-commerce tailwind, but cooled from hype.\n- Tech & IP health: 3/5 (low) — modern ownable stack, but ownership/transfer unverified; 'enterprise-grade' is sales language.\n- Transfer / key-person: 2/5 (low) — no distribution engine exists to transfer; unknown if any channel survives handover.\n- Deal terms & value: 2/5 (unknown) — no price/multiple/terms stated.\n- Seller & adverse-selection: 2/5 (med) — 18 months solo to 'first revenue', can't market it, no metrics/price, 0 upvotes.\n\n### Gates\n- operable: TRUE (Node/Vue/Docker is their wheelhouse)\n- growth_lever_fits: FALSE (seller states the lever is marketing/distribution; no product-led channel → PASS cap)\n- ip_transferable: UNKNOWN (provisional)\n- value_transfers: UNKNOWN (provisional)\n- not_fragile: FALSE (structurally locked to Telegram Mini App API / Payments / Stars / TON → MARGINAL cap)\n- revenue_evidence: NONE (vague 'first revenue' claim, no figure, unverified → provisional, blocks STRONG)\n\n### Key unknowns\n- Actual MRR and paying-customer count.\n- How the first customers were acquired (any repeatable/organic channel?).\n- Retention/GMV after 60-90 days.\n- Telegram platform-policy/fee exposure.\n- Code/IP ownership and transferability.\n- Asking price and basis.",
+  "created_at": "2026-07-13T00:00:00Z",
   "schema_version": "acq-eval-report/1.0",
   "id": "telegram-b2b-e-commerce-saas-unnamed-reddit_2026-07-13",
-  "scoring_version": "v1",
-  "created_at": "2026-07-13T00:00:00Z",
-  "updated_at": "2026-07-15T12:02:09+00:00",
+  "scoring_version": "v2",
+  "updated_at": "2026-07-16T10:21:46+00:00",
   "verdict_detail": {
     "tier": "PASS",
     "provisional": false,
     "out_of_budget": false,
-    "insufficient_data": false
-  },
-  "deal": {
-    "asking_price_usd": null,
-    "currency": null,
-    "revenue_multiple": null,
-    "budget_ceiling_usd": null,
-    "budget_fit": "unknown",
-    "financing_possible": null
-  },
-  "metrics": {
-    "mrr_usd": null,
-    "arr_usd": null,
-    "subscriptions": null,
-    "customers": null,
-    "growth_30d_pct": null,
-    "monthly_visitors": null,
-    "churn_pct": null,
-    "margin_pct": null,
-    "domain_rating": null,
-    "age_months": null,
-    "revenue_evidence": "unknown"
-  },
-  "contact": {
-    "seller_handle": null,
-    "listing_url": null,
-    "marketplace": null,
-    "method": null,
-    "contacted_on": null,
-    "notes": null
+    "insufficient_data": true
   },
   "pipeline": {
-    "status": "passed",
-    "owner": null,
-    "last_updated": "2026-07-15T12:02:09+00:00"
+    "status": "screening",
+    "owner": "trustos",
+    "last_updated": "2026-07-16T10:21:46+00:00"
   }
 }

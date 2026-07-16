@@ -1,75 +1,114 @@
 {
   "target": "Synta",
-  "date": "2026-07-13",
   "type": "B2B dev tool — AI copilot + MCP server for building/debugging n8n workflows (Next/TS/Anthropic/GCP); YC-backed",
-  "asking_price": "$100,000 (0.7x revenue; 21 offers) — CORRECTED from a 100x-too-low MCP figure of $1,000",
-  "verdict": "MARGINAL",
-  "score": 56.0,
-  "completeness_pct": 76,
-  "one_line_reason": "A GENUINE business (verified ~$12k MRR, 260 paying subs, ~$113k trailing-year, YC-backed) in your exact domain — but declining ~20%+ from its March peak with an eroding moat (n8n's own AI + free open-source n8n MCP servers), and asking $100,000 (~33x your budget). The right shape, wrong price and wrong trajectory: a turnaround you can't currently afford.",
+  "date": "2026-07-13",
+  "analyst": "trustos",
+  "verdict": "OUT OF BUDGET — MARGINAL on merits (57/100)",
+  "score": 57.0,
+  "completeness_pct": 74,
+  "one_line_reason": "A genuine, revenue-verified business (~$12.2k MRR, 260 paying subs, ~$113k trailing-year, YC-backed) in the team's exact domain — but declining ~20% from its March peak with an eroding moat (n8n's own AI + free open-source n8n MCP servers) and a structural single-platform dependency, priced at $100,000 (~33x the $3k budget) with no financing: OUT OF BUDGET on merits it could otherwise pursue.",
+  "asking_price": 100000,
+  "budget_ceiling": 3000,
+  "financing_possible": false,
   "dimensions": {
-    "build_scale_fit": {
+    "operability_upside": {
       "score": 4,
       "confidence": "med",
-      "note": "Your exact wheelhouse (AI/MCP/n8n on Next/TS/Anthropic/GCP). You could operate and improve it; the turnaround lever (reverse churn, differentiate, extend beyond n8n) leans on product skill."
+      "note": "Squarely the team's wheelhouse (AI copilot + MCP server on Next/TS/Anthropic/GCP); real product upside to unlock in a turnaround (reverse churn, differentiate, extend beyond n8n)."
     },
     "pmf_retention": {
       "score": 3,
       "confidence": "high",
-      "note": "REAL PMF: 260 paying subs, ~$12k MRR (verified). But declining — MRR growth -14% (30d), revenue down from a $16.9k March peak to ~$13k. Proven, but eroding."
+      "note": "Real PMF — 260 paying subs, ~$12.2k MRR (reconciled) — but eroding: -14% 30d MRR, revenue down from a $16.9k March peak to ~$13k."
     },
     "unit_economics": {
       "score": 3,
       "confidence": "high",
-      "note": "$12k MRR, 92% gross margin, $34/$67 plans, ~$47 ARPU. Healthy recurring model; watch Anthropic/GCP cost pass-through and the decline."
+      "note": "Healthy recurring model: 92% gross margin, $34/$67 plans, ~$47 ARPU; watch Anthropic/GCP cost pass-through and whether margin holds at scale amid the decline."
     },
-    "moat_channel": {
+    "moat_defensibility": {
       "score": 2,
       "confidence": "med",
-      "note": "Thin, eroding moat: n8n ships its own AI and free open-source n8n MCP servers exist. YC brand + 16k users + content/SEO (DR 13) give some edge, but the decline shows it's being competed away."
+      "note": "Thin, eroding moat: n8n ships its own AI and free open-source n8n MCP servers exist; YC brand + 16k users + content/DR-13 give some edge but the decline shows it being competed away."
     },
     "growth_market": {
       "score": 2,
       "confidence": "high",
-      "note": "Hot market (AI workflow automation) but this product is on the wrong side of it — declining ~20% from peak as the platform it depends on commoditizes the function."
+      "note": "Hot category (AI workflow automation) but this product is on the wrong side of it — declining ~20% from peak as the platform it depends on commoditizes the function."
     },
     "tech_ip": {
       "score": 3,
       "confidence": "med",
-      "note": "Modern wheelhouse stack, YC-grade eng likely, knowledge-base asset, transferable. Verify IP + user-list transfer."
+      "note": "Modern wheelhouse stack, likely YC-grade eng, 800+ node knowledge-base asset, transferable; IP + user-list transfer still to verify."
     },
-    "deal_quality": {
+    "transfer_key_person": {
+      "score": 4,
+      "confidence": "med",
+      "note": "Growth engine is impersonal (self-serve product/MCP, content/SEO/blog, YC brand, domain) rather than a founder's personal audience — mostly survives exit; user-list transfer specifics unverified."
+    },
+    "deal_terms": {
       "score": 2,
       "confidence": "med",
-      "note": "$100,000 at 0.7x trailing revenue is a fair-to-cheap SaaS multiple in the abstract — but it's ~33x the team's budget (not actionable without capital), the multiple flatters a declining asset (forward multiple is worse), and 21 offers = competition."
+      "note": "0.7x trailing is a cheap SaaS multiple in the abstract, but $100k is ~33x the $3k budget, the multiple flatters a declining asset (forward multiple worse), and 21 offers = competition."
     },
-    "seller_risk": {
+    "seller_adverse_selection": {
       "score": 2,
       "confidence": "med",
-      "note": "Selling as revenue declines ~20% off peak. Reason cited: other opportunities + personal (family bereavement) — sympathetic and plausible, low deception (verified revenue), but the timing is classic adverse selection."
+      "note": "Selling as revenue declines ~20% off peak — classic peak-metrics timing. Reason (other opportunities + family bereavement) is sympathetic and numbers are verified, but the timing is adverse."
     }
   },
   "gates": {
-    "competence": true,
-    "revenue_verifiable": true,
+    "operable": true,
+    "growth_lever_fits": true,
     "ip_transferable": "unknown",
-    "not_fragile": false
+    "value_transfers": true,
+    "not_fragile": false,
+    "revenue_evidence": "marketplace_attested"
+  },
+  "metrics": {
+    "mrr_usd": 12180,
+    "arr_usd": null,
+    "subscriptions": 260,
+    "customers": 260,
+    "growth_30d_pct": -14,
+    "monthly_visitors": null,
+    "churn_pct": null,
+    "margin_pct": 92,
+    "domain_rating": 13,
+    "age_months": 10,
+    "revenue_evidence": "marketplace_attested"
+  },
+  "deal": {
+    "asking_price_usd": 100000,
+    "currency": "USD",
+    "revenue_multiple": 0.7,
+    "budget_ceiling_usd": 3000,
+    "budget_fit": "over",
+    "financing_possible": false
+  },
+  "contact": {
+    "seller_handle": null,
+    "listing_url": "https://trustmrr.com/startup/synta.md",
+    "marketplace": "TrustMRR",
+    "method": null,
+    "contacted_on": null,
+    "notes": null
   },
   "key_unknowns": [
-    "Cause and trajectory of the decline: is churn accelerating, and what's driving it (n8n native AI? a competitor? a pricing change)? Decisive for a turnaround thesis.",
-    "Can the team even fund $100k, or negotiate seller financing / an earnout tied to retention? Without capital this is moot regardless of fit.",
-    "Defensibility vs n8n's own AI + free open-source n8n MCP servers — is there a durable reason to keep paying?",
-    "Real churn + net revenue retention on the 260 paying subs, and cohort trend.",
-    "What transfers: 100% code + the 800+ node knowledge base + the 16k user/email list + domain; API-cost pass-through and true margin at scale."
+    "Cause and trajectory of the ~20% decline off peak — is churn accelerating, and is it n8n's native AI, a competitor, or a pricing change? Decisive for any turnaround thesis.",
+    "Financing path: can the team fund $100k or negotiate seller financing / an earnout tied to retained revenue? Without capital the deal is unreachable regardless of fit.",
+    "Durable defensibility vs n8n's own AI features and free open-source n8n MCP servers — is there a reason customers keep paying?",
+    "Real paying-subscriber monthly churn and net revenue retention on the 260 subs, with cohort trend.",
+    "Exactly what transfers — 100% code, the 800+ node knowledge base, the 16k user/email list, the domain — plus IP ownership and API-cost pass-through at scale."
   ],
   "seller_questions": [
     "Revenue peaked ~$16.9k in March and is down to ~$13k — what's driving the decline, and is churn accelerating? (the turnaround crux)",
-    "Are you open to seller financing or an earnout tied to retained revenue, given the recent trend? (deal structure — the only way $100k works for us)",
+    "Are you open to seller financing or an earnout tied to retained revenue, given the recent trend? (the only structure under which this price is reachable for us)",
     "How do you defend against n8n's own AI features and free open-source n8n MCP servers? (moat)",
     "Paying-subscriber monthly churn and net revenue retention, with cohort trend? (retention)",
-    "What exactly transfers — 100% code, the 800+ node knowledge base, the 16k user/email list, domain — and any license/API-cost pass-through? (IP/transfer)",
-    "Per-active-user Anthropic + GCP cost; is 92% margin durable at scale? (unit economics)",
-    "What are the '2 potential B2B customers ready to onboard' worth, and why sell now beyond the personal reasons? (upside + adverse selection)"
+    "What exactly transfers — 100% code, the 800+ node knowledge base, the 16k user/email list, domain — and any license/API-cost pass-through? (IP / transfer)",
+    "Per-active-user Anthropic + GCP cost — is the 92% margin durable at scale? (unit economics)",
+    "What are the '2 B2B customers ready to onboard' worth, and why sell now beyond the stated personal reasons? (upside + adverse selection)"
   ],
   "inputs_provided": [
     "Synta: AI copilot + MCP server to build/edit/debug n8n workflows, self-healing, 800+ node knowledge base; YC-backed [VERIFIED via authoritative TrustMRR .md + site]",
@@ -89,49 +128,21 @@
       "url": "https://synta.io"
     }
   ],
+  "scorecard_markdown": "## Acquisition Scorecard v2 — Synta\n\n**Verdict: OUT OF BUDGET — MARGINAL on merits (merit 57/100, completeness 74%)**\n$100,000 asking vs a $3,000 ceiling, no financing → unaffordable (~33x budget). A genuine, revenue-verified YC-backed business in the team's exact domain, but declining ~20% off its March peak with an eroding, single-platform-dependent moat.\n\n### Dimensions (score/5, confidence)\n- Operability & product upside — 4 (med): exact wheelhouse (AI copilot + MCP, Next/TS/Anthropic/GCP); real turnaround upside.\n- PMF & retention — 3 (high): real PMF (260 subs, ~$12.2k MRR) but eroding (-14% 30d).\n- Unit economics — 3 (high): 92% margin, ~$47 ARPU, recurring; decline is the risk.\n- Moat & defensibility — 2 (med): thin/eroding vs n8n native AI + free OSS MCP servers.\n- Growth & market — 2 (high): hot category, wrong side of it — declining ~20% from peak.\n- Tech & IP health — 3 (med): modern stack, KB asset, transferable; verify IP/user-list.\n- Transfer / key-person — 4 (med): impersonal growth engine (product/content/SEO/domain) mostly survives exit.\n- Deal terms & value — 2 (med): 0.7x is cheap but $100k is ~33x budget; flatters a declining asset; 21 offers.\n- Seller & adverse-selection — 2 (med): selling off peak = adverse timing; sympathetic reason, verified numbers.\n\n### Gates\n- operable: TRUE · growth_lever_fits: TRUE (self-serve product-led dev tool) · ip_transferable: UNKNOWN (provisional)\n- value_transfers: TRUE · not_fragile: FALSE (structural total dependency on the n8n platform, which is commoditizing the function → MARGINAL cap)\n- revenue_evidence: marketplace_attested (TrustMRR .md, Stripe-attested; blocks STRONG)\n- Affordability: OUT OF BUDGET ($100k > 1.25x $3k, no financing)\n\n### Key unknowns\nDecline cause/trajectory · financing path · defensibility vs n8n native AI + OSS MCP · real churn/NRR · what transfers (code, KB, 16k user list, domain).",
+  "created_at": "2026-07-13T00:00:00Z",
   "schema_version": "acq-eval-report/1.0",
   "id": "synta_2026-07-13",
-  "scoring_version": "v1",
-  "created_at": "2026-07-13T00:00:00Z",
-  "updated_at": "2026-07-15T12:02:09+00:00",
+  "scoring_version": "v2",
+  "updated_at": "2026-07-16T10:21:46+00:00",
   "verdict_detail": {
     "tier": "MARGINAL",
     "provisional": false,
-    "out_of_budget": false,
+    "out_of_budget": true,
     "insufficient_data": false
-  },
-  "deal": {
-    "asking_price_usd": 100000,
-    "currency": "USD",
-    "revenue_multiple": null,
-    "budget_ceiling_usd": null,
-    "budget_fit": "unknown",
-    "financing_possible": null
-  },
-  "metrics": {
-    "mrr_usd": null,
-    "arr_usd": null,
-    "subscriptions": null,
-    "customers": null,
-    "growth_30d_pct": null,
-    "monthly_visitors": null,
-    "churn_pct": null,
-    "margin_pct": null,
-    "domain_rating": null,
-    "age_months": null,
-    "revenue_evidence": "marketplace_attested"
-  },
-  "contact": {
-    "seller_handle": null,
-    "listing_url": "https://trustmrr.com/startup/synta.md",
-    "marketplace": null,
-    "method": null,
-    "contacted_on": null,
-    "notes": null
   },
   "pipeline": {
     "status": "screening",
-    "owner": null,
-    "last_updated": "2026-07-15T12:02:09+00:00"
+    "owner": "trustos",
+    "last_updated": "2026-07-16T10:21:46+00:00"
   }
 }

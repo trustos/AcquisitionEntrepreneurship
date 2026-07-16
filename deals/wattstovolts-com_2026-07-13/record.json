@@ -1,74 +1,113 @@
 {
   "target": "wattstovolts.com",
-  "date": "2026-07-13",
   "type": "Content / calculator site (display-ad / AdSense)",
+  "date": "2026-07-13",
+  "analyst": "trustos",
+  "verdict": "PASS (provisional)",
+  "score": 34.0,
+  "completeness_pct": 56,
+  "one_line_reason": "Well-built and fast-growing, but growth is 100% SEO/content (the team's weakness — the growth-lever gate fails → PASS) in the most AI-Overview-exposed niche, with unproven week-old AdSense revenue and classic build-to-flip timing at the top of a 3-month ramp.",
   "asking_price": null,
-  "verdict": "PASS",
-  "score": 33.6,
-  "completeness_pct": 62,
-  "one_line_reason": "Well-built and fast-growing, but an SEO/content/ad business (the team's weakness) in the most AI-Overview-exposed niche, with unproven week-old AdSense revenue, sold at the peak of a 3-month ramp.",
+  "budget_ceiling": 3000,
+  "financing_possible": false,
   "dimensions": {
-    "build_scale_fit": {
-      "score": 1,
+    "operability_upside": {
+      "score": 2,
       "confidence": "high",
-      "note": "Calculators are ~10 lines of Watt's-law JS; growth is 100% SEO/content — the team's weakness. Software skills add almost nothing."
+      "note": "Trivial to run (calculators are ~10 lines of Watt's-law JS), but near-zero engineering/product upside to unlock — a mature commodity where software skill adds almost nothing; the growth-need lives in the gate, not here."
     },
     "pmf_retention": {
       "score": 2,
       "confidence": "med",
-      "note": "Real search demand but zero user loyalty; pure Google pass-through traffic."
+      "note": "Real underlying search demand, but zero user loyalty — pure Google organic pass-through traffic with no return/branded behavior."
     },
     "unit_economics": {
       "score": 2,
       "confidence": "low",
-      "note": "AdSense ~1 week old = no real revenue history; display-only, international/low-CPC, informational = low RPM."
+      "note": "AdSense approved ~1 week ago with no earnings shared, so no real revenue history; display-only, international/low-CPC, informational queries all imply structurally low RPM."
     },
-    "moat_channel": {
+    "moat_defensibility": {
       "score": 1,
       "confidence": "high",
-      "note": "Single channel (Google organic), zero moat; commodity — Google's own answer box and rapidtables/inchcalculator rank."
+      "note": "Commodity in a crowded field with a single Google-organic channel; Google's own answer box plus rapidtables/inchcalculator already rank — nothing to defend."
     },
     "growth_market": {
-      "score": 2,
-      "confidence": "med",
-      "note": "Growing now but the category is structurally disintermediated by AI Overviews / instant answers."
-    },
-    "tech_ip": {
-      "score": 3,
-      "confidence": "low",
-      "note": "Simple and transferable, but trivially replicable; content provenance (AI-generated? 18 auto-translations?) unknown."
-    },
-    "deal_quality": {
-      "score": 2,
-      "confidence": "unknown",
-      "note": "No asking price provided."
-    },
-    "seller_risk": {
       "score": 1,
       "confidence": "med",
-      "note": "Brand-new site monetized last week, already for sale at the top of the ramp — classic build-to-flip; adverse selection."
+      "note": "Impressions ramping now, but the unit-conversion niche is the most AI-Overview / instant-answer exposed category (0.6% CTR already shows in-SERP disintermediation), so the category is being eaten."
+    },
+    "tech_ip": {
+      "score": 2,
+      "confidence": "low",
+      "note": "Site itself is simple and transfers cleanly, but content provenance is unknown (AI-generated? 18 auto-translations?) and any prior manual penalties/ownership are unverified."
+    },
+    "transfer_key_person": {
+      "score": 2,
+      "confidence": "low",
+      "note": "Growth engine is impersonal SEO/domain that survives founder exit, but AdSense does not transfer (new owner re-applies → day-one monetization gap) and the content-generation process transfer is unproven."
+    },
+    "deal_terms": {
+      "score": 2,
+      "confidence": "unknown",
+      "note": "No asking price or multiple basis provided — cannot assess value-for-money or absolute affordability."
+    },
+    "seller_adverse_selection": {
+      "score": 1,
+      "confidence": "med",
+      "note": "Brand-new site monetized just last week and already listed at the top of a 3-month ramp — classic build-to-flip, strong adverse-selection signal."
     }
   },
   "gates": {
-    "competence": false,
-    "revenue_verifiable": "unknown",
+    "operable": true,
+    "growth_lever_fits": false,
     "ip_transferable": "unknown",
-    "not_fragile": false
+    "value_transfers": true,
+    "not_fragile": false,
+    "revenue_evidence": "none"
+  },
+  "metrics": {
+    "mrr_usd": null,
+    "arr_usd": null,
+    "subscriptions": null,
+    "customers": null,
+    "growth_30d_pct": null,
+    "monthly_visitors": 1750,
+    "churn_pct": null,
+    "margin_pct": null,
+    "domain_rating": null,
+    "age_months": 3,
+    "revenue_evidence": "none"
+  },
+  "deal": {
+    "asking_price_usd": null,
+    "currency": null,
+    "revenue_multiple": null,
+    "budget_ceiling_usd": 3000,
+    "budget_fit": "unknown",
+    "financing_possible": false
+  },
+  "contact": {
+    "seller_handle": null,
+    "listing_url": null,
+    "marketplace": null,
+    "method": null,
+    "contacted_on": null,
+    "notes": null
   },
   "key_unknowns": [
-    "Actual AdSense revenue and RPM since approval (only days old) — swings unit economics; near-zero would confirm 'not a business yet'.",
-    "Asking price and its basis — needed for deal quality, but does not change the PASS given the competence gate.",
-    "Query/page mix and AI Overview presence on top terms — how much of the 459k impressions is being disintermediated; worst case confirms fragility.",
-    "Content provenance and IP ownership (AI-generated? auto-translated?), and any prior Google penalties.",
+    "Actual AdSense earnings and page RPM since approval (only days old) — swings unit economics; near-zero would confirm 'not a business yet'.",
+    "Asking price and its basis — needed for deal terms/affordability, though it does not change the PASS given growth_lever_fits=false.",
+    "Query/page mix and AI-Overview presence on the head 'watts to volts' term vs the blog — how much of the ~264k monthly impressions is being disintermediated in-SERP.",
+    "Content provenance and IP ownership (AI-generated? 18 auto-translations?), and any prior Google manual penalties.",
     "Traffic composition: 100% Google organic vs any branded/direct."
   ],
   "seller_questions": [
     "Screen-share the AdSense dashboard: actual daily earnings and page RPM since approval. (unit economics; also: why sell one week after monetizing?)",
     "Why sell now, one week after monetizing? How many sites have you built and sold? (adverse selection)",
-    "Search Console by query and by page: share of clicks from the 'watts to volts' head term vs the blog; do top queries show an AI Overview? Trend through the last core update? (fragility)",
-    "Asking price and its basis — a multiple of what profit? (deal quality)",
+    "Search Console by query and by page: share of clicks from the 'watts to volts' head term vs the blog; do top queries show an AI Overview? Trend through the last core update? (fragility / growth-market)",
+    "Asking price and its basis — a multiple of what profit? (deal terms)",
     "Is the content and are the 18 language versions AI-generated? Who owns the IP? Any manual penalties? What % of traffic is branded/direct vs Google organic? (IP + fragility)",
-    "What transfers — domain, GA/GSC, social handles, email? Note AdSense does not transfer; the new owner re-applies, so plan a day-one monetization gap. (transferability)"
+    "What transfers — domain, GA/GSC, social handles, email? Note AdSense does not transfer; the new owner re-applies, so plan a day-one monetization gap. (transfer / key-person)"
   ],
   "inputs_provided": [
     "URL wattstovolts.com [VERIFIED — site fetched: electrical conversion calculators + blog, display/AdSense]",
@@ -97,49 +136,21 @@
       "url": "https://seoprofy.com/blog/google-ai-overviews/"
     }
   ],
+  "scorecard_markdown": "## Acquisition Scorecard v2 — wattstovolts.com\n\n**Verdict: PASS — merit 34/100 (completeness ~56%).** Content/calculator site (AdSense/display-ad), ~3 months old, no asking price. Capped at PASS by the `growth_lever_fits=false` kill gate: the #1 acquisition channel is a Google-organic SEO/content treadmill — precisely this team's weakness — in the niche most exposed to AI-Overview disintermediation, with unproven week-old AdSense revenue and build-to-flip timing.\n\n### Dimensions (score/5, confidence)\n- **Operability & product upside:** 2 (high) — trivial to run (~10 lines of JS), near-zero engineering/product upside.\n- **PMF & retention:** 2 (med) — real search demand, zero loyalty, pure Google pass-through.\n- **Unit economics:** 2 (low) — AdSense ~1wk old, no earnings shared; display/international/informational → low RPM.\n- **Moat & defensibility:** 1 (high) — commodity, single organic channel; Google's answer box + rapidtables rank.\n- **Growth & market:** 1 (med) — ramping now but category being eaten by AI Overviews / instant answers (0.6% CTR).\n- **Tech & IP health:** 2 (low) — simple/transferable site, but content provenance and penalty history unknown.\n- **Transfer / key-person:** 2 (low) — SEO/domain is impersonal and transfers, but AdSense re-apply = day-one gap.\n- **Deal terms & value:** 2 (unknown) — no asking price provided.\n- **Seller & adverse-selection:** 1 (med) — monetized last week, already for sale at top of a 3-month ramp; build-to-flip.\n\n### Gates\n- operable: **true** · growth_lever_fits: **FALSE (kill → PASS)** · ip_transferable: **unknown (provisional)** · value_transfers: **true** · not_fragile: **false** (structural: 100% Google-organic access, undefendable + AI-disintermediated) · revenue_evidence: **none** (no verified earnings; provisional).\n- Affordability: asking price null and merit is PASS (<45), so no OUT-OF-BUDGET override — flag suppressed.\n\n### Key unknowns\nActual AdSense RPM/earnings · asking price & basis · AI-Overview exposure of head terms · content provenance/IP ownership & penalties · branded vs 100% organic traffic mix.",
+  "created_at": "2026-07-13T00:00:00Z",
   "schema_version": "acq-eval-report/1.0",
   "id": "wattstovolts-com_2026-07-13",
-  "scoring_version": "v1",
-  "created_at": "2026-07-13T00:00:00Z",
-  "updated_at": "2026-07-15T12:02:09+00:00",
+  "scoring_version": "v2",
+  "updated_at": "2026-07-16T10:21:46+00:00",
   "verdict_detail": {
     "tier": "PASS",
-    "provisional": false,
+    "provisional": true,
     "out_of_budget": false,
     "insufficient_data": false
   },
-  "deal": {
-    "asking_price_usd": null,
-    "currency": null,
-    "revenue_multiple": null,
-    "budget_ceiling_usd": null,
-    "budget_fit": "unknown",
-    "financing_possible": null
-  },
-  "metrics": {
-    "mrr_usd": null,
-    "arr_usd": null,
-    "subscriptions": null,
-    "customers": null,
-    "growth_30d_pct": null,
-    "monthly_visitors": null,
-    "churn_pct": null,
-    "margin_pct": null,
-    "domain_rating": null,
-    "age_months": null,
-    "revenue_evidence": "unknown"
-  },
-  "contact": {
-    "seller_handle": null,
-    "listing_url": null,
-    "marketplace": null,
-    "method": null,
-    "contacted_on": null,
-    "notes": null
-  },
   "pipeline": {
     "status": "passed",
-    "owner": null,
-    "last_updated": "2026-07-15T12:02:09+00:00"
+    "owner": "trustos",
+    "last_updated": "2026-07-16T10:21:46+00:00"
   }
 }

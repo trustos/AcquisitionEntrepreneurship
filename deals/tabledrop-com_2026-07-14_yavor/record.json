@@ -1,35 +1,35 @@
 {
   "target": "TableDrop.com",
-  "date": "2026-07-14",
-  "analyst": "Yavor",
   "type": "B2B hospitality SaaS — QR/app at-table ordering & order management for restaurants/bars (web + iOS/Android), UK",
-  "asking_price": "$4,000 (domain + software; Reddit r/saasforsale)",
-  "budget_ceiling": 3000,
-  "financing_possible": false,
+  "date": "2026-07-14",
+  "analyst": "trustos",
   "verdict": "PASS (provisional)",
   "score": 44.2,
   "completeness_pct": 49,
-  "one_line_reason": "Right shape (a real UK web+mobile hospitality SaaS you could operate) but the growth lever is B2B restaurant/bar sales — your weakness — in a brutally saturated market owned by POS incumbents (Toast/Square/SpotOn) and specialists (Sunday, me&u); it's order-management-only (no payments), shows no disclosed traction, and is just over budget. growth_lever_fits = false → PASS.",
+  "one_line_reason": "Right shape (a real UK web+mobile hospitality SaaS you could operate) but the #1 growth lever is B2B restaurant/bar sales — your weakness — in a saturated market owned by POS incumbents (Toast/Square/SpotOn) and specialists (Sunday, me&u); it's order-management-only (no payments), shows no disclosed traction, and is over budget. growth_lever_fits=false → PASS (provisional, revenue unverified).",
+  "asking_price": 4000,
+  "budget_ceiling": 3000,
+  "financing_possible": false,
   "dimensions": {
     "operability_upside": {
       "score": 3,
       "confidence": "med",
-      "note": "Real web + native mobile SaaS on your stack — you can run/maintain it. But it's a mature commodity: little product you could add would move the needle; the bottleneck is sales, not features."
+      "note": "Real web + native mobile SaaS on your stack — you can run/maintain it. But it's a mature commodity: little product you could add moves the needle; the bottleneck is sales, not features."
     },
     "pmf_retention": {
       "score": 2,
       "confidence": "low",
-      "note": "No customers/revenue disclosed; 'domain + software for $4k' phrasing implies ~zero traction. Restaurant tools also churn hard. Unverified — key unknown."
+      "note": "No customers/revenue disclosed; 'domain + software for $4k' phrasing implies ~zero traction, and restaurant tools churn hard. Unverified — decisive unknown."
     },
     "unit_economics": {
       "score": 2,
       "confidence": "low",
-      "note": "Model is fine ($49.99/mo or $399.99/yr per venue, recurring) — but current revenue is unknown and almost certainly negligible."
+      "note": "Model is fine ($49.99/mo or $399.99/yr per venue, recurring — verified on pricing page) but actual current revenue is unknown and almost certainly negligible."
     },
     "moat_defensibility": {
       "score": 1,
       "confidence": "med",
-      "note": "Near-zero moat. Commodity QR ordering; NO payments (it rides your existing till), so it loses to POS-bundled QR from Toast/Square/SpotOn and to Sunday/me&u. 'A lot of QR menus are just a PDF + sticker.'"
+      "note": "Near-zero moat. Commodity QR ordering with NO payments (rides existing till), so it loses to POS-bundled QR from Toast/Square/SpotOn and to Sunday/me&u."
     },
     "growth_market": {
       "score": 2,
@@ -39,7 +39,7 @@
     "tech_ip": {
       "score": 3,
       "confidence": "med",
-      "note": "Real transferable asset (web + iOS + Android apps + backend + domain, UK Ltd) — more than a content site. But native apps mean ongoing maintenance + App Store/Play account transfer to confirm."
+      "note": "Real transferable asset (web + iOS + Android apps + backend + domain, UK Ltd) — more than a content site. Native apps mean ongoing maintenance + App Store/Play account transfer to confirm."
     },
     "transfer_key_person": {
       "score": 3,
@@ -49,7 +49,7 @@
     "deal_terms": {
       "score": 2,
       "confidence": "med",
-      "note": "$4,000 for a no-revenue commodity codebase a team like yours could rebuild — poor value — and it's over the $3k budget (1.3x)."
+      "note": "$4,000 for a no-revenue commodity codebase a team like yours could rebuild — poor value — and over the $3k budget (1.3x)."
     },
     "seller_adverse_selection": {
       "score": 2,
@@ -60,16 +60,45 @@
   "gates": {
     "operable": true,
     "growth_lever_fits": false,
-    "revenue_evidence": "none",
-    "value_transfers": "unknown",
     "ip_transferable": "unknown",
-    "not_fragile": "unknown"
+    "value_transfers": "unknown",
+    "not_fragile": "unknown",
+    "revenue_evidence": "none"
+  },
+  "metrics": {
+    "mrr_usd": null,
+    "arr_usd": null,
+    "subscriptions": null,
+    "customers": null,
+    "growth_30d_pct": null,
+    "monthly_visitors": null,
+    "churn_pct": null,
+    "margin_pct": null,
+    "domain_rating": null,
+    "age_months": null,
+    "revenue_evidence": "none"
+  },
+  "deal": {
+    "asking_price_usd": 4000,
+    "currency": "USD",
+    "revenue_multiple": null,
+    "budget_ceiling_usd": 3000,
+    "budget_fit": "over",
+    "financing_possible": false
+  },
+  "contact": {
+    "seller_handle": null,
+    "listing_url": null,
+    "marketplace": "Reddit",
+    "method": null,
+    "contacted_on": null,
+    "notes": null
   },
   "key_unknowns": [
-    "Any paying venues / MRR at all? (couldn't read the Reddit body — my fetch tool is blocked from reddit.com). If there's real, growing MRR with a repeatable channel it changes the picture; the phrasing suggests not.",
-    "Why selling, and what's included beyond domain + code (the iOS/Android app-store listings + accounts? the RoomDrop sibling? the TableDrop LTD entity?).",
+    "Any paying venues / MRR at all? The Reddit r/saasforsale post body was never read (reddit.com on the fetch blocklist); the 'domain + software for $4k' phrasing suggests ~zero, but this is the decisive unknown.",
+    "Why selling, and what's included beyond domain + code (iOS/Android app-store listings + developer accounts? the RoomDrop sibling product? the TableDrop LTD entity?).",
     "Is there ANY non-sales acquisition channel (a POS partnership, a directory, inbound) — or is it 100% cold B2B hospitality sales?",
-    "Code/IP ownership + clean transfer of the App Store / Google Play developer accounts.",
+    "Code/IP ownership + clean transfer of the App Store / Google Play developer accounts (native apps).",
     "Ongoing costs (hosting, app-store fees, any third-party APIs)."
   ],
   "seller_questions": [
@@ -105,49 +134,21 @@
       "url": "https://logix360.studio/blog/best-qr-code-menu-platforms-restaurants-2026/"
     }
   ],
+  "scorecard_markdown": "# Acquisition Scorecard — TableDrop.com (v2)\n\n**Verdict:** PASS (provisional) — ~44 merit / completeness 49%  ·  analyst: Yavor  ·  Reddit r/saasforsale, asking $4,000 (over $3k budget)\n\nRight shape (a real UK web+mobile hospitality SaaS you could operate) but the #1 growth lever is B2B restaurant/bar sales — your weakness — in a saturated market owned by POS incumbents (Toast/Square/SpotOn) and specialists (Sunday, me&u); order-management-only (no payments), no disclosed traction, over budget. growth_lever_fits=false → PASS.\n\n## Scores (0-5)\n- operability_upside: 3 (med) — Real web + native mobile SaaS on your stack; bottleneck is sales, not features.\n- pmf_retention: 2 (low) — No customers/revenue disclosed; phrasing implies ~zero traction. Unverified.\n- unit_economics: 2 (low) — $49.99/mo or $399.99/yr per venue (verified) but current revenue unknown/negligible.\n- moat_defensibility: 1 (med) — Commodity QR ordering, NO payments; loses to POS-bundled QR and Sunday/me&u.\n- growth_market: 2 (med) — Growing category but saturated and owned by POS incumbents.\n- tech_ip: 3 (med) — Web + iOS + Android + backend + domain + UK Ltd; app-store transfer to confirm.\n- transfer_key_person: 3 (low) — Assets impersonal and transfer; little growth engine to inherit.\n- deal_terms: 2 (med) — $4k for a no-revenue commodity codebase; poor value, over budget (1.3x).\n- seller_adverse_selection: 2 (med) — Built-but-couldn't-sell in a hard market; not fraud, likely no traction.\n\n## Gates\n- operable: true\n- growth_lever_fits: false → PASS (kill gate: lever is B2B cold sales, this team's weakness)\n- ip_transferable: unknown\n- value_transfers: unknown\n- not_fragile: unknown\n- revenue_evidence: none → provisional\n\n## Key unknowns\n- Any paying venues / MRR? Reddit post body never read — decisive unknown.\n- Why selling; what's included (app-store accounts, RoomDrop sibling, TableDrop LTD)?\n- Any non-sales acquisition channel (POS partnership, directory, inbound)?\n- Clean transfer of App Store / Google Play developer accounts.\n- Ongoing costs (hosting, app-store fees, third-party APIs).",
+  "created_at": "2026-07-14T00:00:00Z",
   "schema_version": "acq-eval-report/1.0",
   "id": "tabledrop-com_2026-07-14_yavor",
   "scoring_version": "v2",
-  "created_at": "2026-07-14T00:00:00Z",
-  "updated_at": "2026-07-15T12:02:09+00:00",
+  "updated_at": "2026-07-16T10:21:46+00:00",
   "verdict_detail": {
     "tier": "PASS",
     "provisional": true,
     "out_of_budget": false,
     "insufficient_data": false
   },
-  "deal": {
-    "asking_price_usd": 4000,
-    "currency": "USD",
-    "revenue_multiple": null,
-    "budget_ceiling_usd": 3000,
-    "budget_fit": "over",
-    "financing_possible": false
-  },
-  "metrics": {
-    "mrr_usd": null,
-    "arr_usd": null,
-    "subscriptions": null,
-    "customers": null,
-    "growth_30d_pct": null,
-    "monthly_visitors": null,
-    "churn_pct": null,
-    "margin_pct": null,
-    "domain_rating": null,
-    "age_months": null,
-    "revenue_evidence": "none"
-  },
-  "contact": {
-    "seller_handle": null,
-    "listing_url": null,
-    "marketplace": null,
-    "method": null,
-    "contacted_on": null,
-    "notes": null
-  },
   "pipeline": {
     "status": "passed",
-    "owner": "Yavor",
-    "last_updated": "2026-07-15T12:02:09+00:00"
+    "owner": "trustos",
+    "last_updated": "2026-07-16T10:21:46+00:00"
   }
 }

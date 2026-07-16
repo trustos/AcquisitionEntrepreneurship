@@ -1,71 +1,110 @@
 {
   "target": "pomocalm.com",
-  "date": "2026-07-13",
   "type": "Productivity web-app / micro-SaaS (Pomodoro-style focus tool)",
-  "asking_price": "$1,500 (Reddit, DM)",
-  "verdict": "MARGINAL",
-  "score": 45.0,
-  "completeness_pct": 54,
-  "one_line_reason": "The first target that's the right shape — a web app your team can own and scale, so the competence gate finally PASSES — but almost certainly abandoned pre-revenue code: zero public footprint, no metrics disclosed, red-ocean category. Only worth it if the seller proves a real, engaged userbase.",
+  "date": "2026-07-13",
+  "analyst": "trustos",
+  "verdict": "INSUFFICIENT DATA — MARGINAL on merits (49/100)",
+  "score": 49.0,
+  "completeness_pct": 38,
+  "one_line_reason": "Right-shaped deal — a web app the team can fully own and scale, so operability scores high — but everything that would make it a business (users, retention, revenue, transferable IP) is undisclosed and unverifiable; completeness ~38% is too low to trust any tier, so v2 returns INSUFFICIENT DATA rather than the confident MARGINAL v1 implied.",
+  "asking_price": 1500,
+  "budget_ceiling": 3000,
+  "financing_possible": false,
   "dimensions": {
-    "build_scale_fit": {
+    "operability_upside": {
       "score": 5,
       "confidence": "high",
-      "note": "A productivity web app is dead-center in the team's wheelhouse — they can own, modernize, add AI, and scale it. Competence gate PASSES (first of the three candidates)."
+      "note": "A Pomodoro/focus web app is dead-center in the team's build-and-scale wheelhouse — they can own it end-to-end, modernize, add AI, and scale. Operability is the one thing genuinely verified here."
     },
     "pmf_retention": {
-      "score": 1,
-      "confidence": "low",
-      "note": "No users/revenue disclosed and zero public footprint; Pomodoro/focus tools are notoriously low-retention. No evidence of PMF."
+      "score": 2,
+      "confidence": "unknown",
+      "note": "No users, MAU, or retention disclosed and zero public footprint — genuine unknown, not evidence of bad PMF; scored neutral. (Focus timers are a notoriously low-retention category, but nothing is verified.)"
     },
     "unit_economics": {
-      "score": 1,
-      "confidence": "low",
-      "note": "$1.5K price + no metrics = almost certainly pre-revenue; monetizing focus timers is hard (low willingness to pay)."
+      "score": 2,
+      "confidence": "unknown",
+      "note": "No revenue/MRR/margins disclosed at a $1.5K price — almost certainly pre-revenue but unverified; scored neutral-unknown rather than assuming zero."
     },
-    "moat_channel": {
-      "score": 1,
-      "confidence": "med",
-      "note": "Red-ocean category (Pomofocus, Forest, Session, Flow, Todoist, Notion); no moat, and no visible acquisition channel."
+    "moat_defensibility": {
+      "score": 2,
+      "confidence": "low",
+      "note": "Red-ocean category (Pomofocus, Forest, Session, Flow, Todoist, Notion) is verified saturation, but this product's specific defensibility is unknown; neutral with low confidence."
     },
     "growth_market": {
       "score": 2,
       "confidence": "med",
-      "note": "Huge but saturated market; an AI 'focus coach' angle is possible but everyone is doing it."
+      "note": "Huge but heavily saturated productivity/focus TAM; an AI 'focus coach' angle exists but is crowded. Market size known, this app's growth path unknown."
     },
     "tech_ip": {
-      "score": 3,
-      "confidence": "low",
-      "note": "It's a web app the team could own — but the site returned an empty shell and the codebase/stack/ownership is unverified (could be a template)."
-    },
-    "deal_quality": {
       "score": 2,
       "confidence": "low",
-      "note": "$1,500 is cheap in absolute terms, but poor value for a team that can build a Pomodoro app in a weekend — unless real users come with it."
+      "note": "It's a web app the team could own, but pomocalm.com returned an empty shell on fetch and the codebase/stack/ownership is unverified (could be a paid template/boilerplate)."
     },
-    "seller_risk": {
+    "transfer_key_person": {
+      "score": 2,
+      "confidence": "low",
+      "note": "No distribution or audience exists to depend on a key person, but equally nothing verified transfers (users, domain reputation). Genuine unknown, neutral."
+    },
+    "deal_terms": {
+      "score": 2,
+      "confidence": "low",
+      "note": "$1,500 is cheap in absolute terms but poor value for a team that can rebuild a Pomodoro app in a weekend unless real engaged users convey; terms/what-conveys unverified."
+    },
+    "seller_adverse_selection": {
       "score": 2,
       "confidence": "med",
-      "note": "'Offloading distracting projects to focus on e-commerce' = abandoned hobby; withholding all metrics strongly implies ~no revenue."
+      "note": "'Offloading distracting projects to focus on e-commerce' reads as an abandoned hobby, and withholding all metrics is an adverse-selection signal — evidence-based caution, scored neutral."
     }
   },
   "gates": {
-    "competence": true,
-    "revenue_verifiable": "unknown",
+    "operable": "unknown",
+    "growth_lever_fits": "unknown",
     "ip_transferable": "unknown",
-    "not_fragile": "unknown"
+    "value_transfers": "unknown",
+    "not_fragile": "unknown",
+    "revenue_evidence": "unknown"
+  },
+  "metrics": {
+    "mrr_usd": null,
+    "arr_usd": null,
+    "subscriptions": null,
+    "customers": null,
+    "growth_30d_pct": null,
+    "monthly_visitors": null,
+    "churn_pct": null,
+    "margin_pct": null,
+    "domain_rating": null,
+    "age_months": null,
+    "revenue_evidence": "unknown"
+  },
+  "deal": {
+    "asking_price_usd": 1500,
+    "currency": "USD",
+    "revenue_multiple": null,
+    "budget_ceiling_usd": 3000,
+    "budget_fit": "in",
+    "financing_possible": false
+  },
+  "contact": {
+    "seller_handle": null,
+    "listing_url": null,
+    "marketplace": "Reddit (DM)",
+    "method": null,
+    "contacted_on": null,
+    "notes": null
   },
   "key_unknowns": [
-    "Are there ANY real, engaged users / any revenue? This is the whole deal — with none, you're buying rebuildable code. Swings from Pass to Promising.",
-    "Retention: do users come back after a few weeks? Pomodoro tools churn hard; decisive for whether there's a business.",
-    "Is there a functioning app at all (fetch returned an empty shell) and is 100% of the code owned + transferable (not a paid template/boilerplate)?",
-    "Any acquisition channel with traction? Zero public footprint suggests none.",
-    "Ongoing costs/liabilities (hosting, APIs) and whether any paying user transfers."
+    "Are there ANY real, engaged users or any revenue? This is the whole deal — with none you're buying rebuildable code. Swings the verdict from Pass to Promising.",
+    "Retention: do users return after a few weeks? Pomodoro/focus tools churn hard; decisive for whether a business exists.",
+    "Is there a functioning app at all (fetch returned an empty shell) and is 100% of the code owned + transferable (not a license-limited template/boilerplate)?",
+    "Any acquisition channel with traction, and is the #1 growth lever product-led/organic vs paid/SEO/founder-audience? Zero public footprint suggests no distribution exists.",
+    "Ongoing costs/liabilities (hosting, APIs, auth, payments) and whether any paying user or the domain reputation actually transfers."
   ],
   "seller_questions": [
     "The decisive one: current registered users, MAU/WAU, and any revenue/MRR — screen-shared from analytics + Stripe/billing. (PMF + unit economics + revenue verification)",
     "Retention: of users who sign up, what share are still active at 4 weeks? (retention)",
-    "Where do users come from and how many visits/month — organic, Product Hunt, ads, none? (channel; there's no public footprint, so this reveals whether any distribution exists)",
+    "Where do users come from and how many visits/month — organic, Product Hunt, ads, or none? (growth lever + channel; there's no public footprint, so this reveals whether any distribution exists)",
     "Exactly what transfers: repo/codebase, domain, and the user database — and is 100% of the code owned by you (no license-limited template/boilerplate)? What's the stack/hosting? (tech + IP transferability)",
     "How long has it been live, is there any monetization today, and why sell at $1,500? (adverse selection)",
     "Monthly running costs and any third-party dependencies (auth, payments, APIs)? (economics)"
@@ -93,49 +132,21 @@
       "url": "https://zapier.com/blog/best-productivity-apps/"
     }
   ],
+  "scorecard_markdown": "## Acquisition Scorecard (v2) — pomocalm.com\n\n**Verdict:** INSUFFICIENT DATA — merit reads MARGINAL (49/100) but completeness ~38% is too low to trust. Gather metrics, then re-score. Asking $1,500 (Reddit DM), no financing.\n\nRight-shaped but nearly unverifiable. Operability is the only thing genuinely known; every business-defining dimension (users, retention, revenue, transferable IP) is undisclosed, so v2 refuses a confident tier.\n\n### Dimensions\n- operability_upside 5/5 (high) — Pomodoro/focus web app is dead-center in the team's wheelhouse; ownable and scalable.\n- pmf_retention 2/5 (unknown) — no users/retention disclosed, zero footprint; neutral-unknown, not evidence of bad PMF.\n- unit_economics 2/5 (unknown) — no revenue/margins at a $1.5K price; likely pre-revenue but unverified.\n- moat_defensibility 2/5 (low) — red-ocean category is verified, this app's defensibility is not.\n- growth_market 2/5 (med) — large but saturated TAM; crowded AI-focus-coach angle.\n- tech_ip 2/5 (low) — site returned an empty shell; codebase/stack/ownership unverified (possible template).\n- transfer_key_person 2/5 (low) — no audience to depend on, but nothing verified conveys either.\n- deal_terms 2/5 (low) — $1,500 cheap absolute, poor value vs a weekend rebuild unless real users convey.\n- seller_adverse_selection 2/5 (med) — 'offloading to focus on e-commerce' + withheld metrics = abandonment/adverse-selection signal.\n\n### Gates\n- operable: unknown (fetch returned an empty shell)\n- growth_lever_fits: unknown (no channel identified)\n- ip_transferable: unknown (could be a template)\n- value_transfers: unknown (no distribution to survive exit)\n- not_fragile: unknown\n- revenue_evidence: unknown (all metrics withheld)\n\n### Key unknowns\nAny real engaged users/revenue; 4-week retention; whether a functioning, fully-owned app exists; any traction channel; running costs and what actually transfers.",
+  "created_at": "2026-07-13T00:00:00Z",
   "schema_version": "acq-eval-report/1.0",
   "id": "pomocalm-com_2026-07-13",
-  "scoring_version": "v1",
-  "created_at": "2026-07-13T00:00:00Z",
-  "updated_at": "2026-07-15T12:02:09+00:00",
+  "scoring_version": "v2",
+  "updated_at": "2026-07-16T10:21:46+00:00",
   "verdict_detail": {
     "tier": "MARGINAL",
     "provisional": false,
     "out_of_budget": false,
-    "insufficient_data": false
-  },
-  "deal": {
-    "asking_price_usd": 1500,
-    "currency": "USD",
-    "revenue_multiple": null,
-    "budget_ceiling_usd": null,
-    "budget_fit": "unknown",
-    "financing_possible": null
-  },
-  "metrics": {
-    "mrr_usd": null,
-    "arr_usd": null,
-    "subscriptions": null,
-    "customers": null,
-    "growth_30d_pct": null,
-    "monthly_visitors": null,
-    "churn_pct": null,
-    "margin_pct": null,
-    "domain_rating": null,
-    "age_months": null,
-    "revenue_evidence": "unknown"
-  },
-  "contact": {
-    "seller_handle": null,
-    "listing_url": null,
-    "marketplace": null,
-    "method": null,
-    "contacted_on": null,
-    "notes": null
+    "insufficient_data": true
   },
   "pipeline": {
     "status": "screening",
-    "owner": null,
-    "last_updated": "2026-07-15T12:02:09+00:00"
+    "owner": "trustos",
+    "last_updated": "2026-07-16T10:21:46+00:00"
   }
 }

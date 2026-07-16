@@ -1,31 +1,25 @@
-# Acquisition Scorecard — Flipnzee.com
+## Flipnzee.com — v2 Scorecard
 
-**Verdict:** PASS — 23.6/100 (completeness 75%)
+**Verdict: PASS — merit ~30/100 (completeness ~68%).** The clearest junk in the set. Kill gate `growth_lever_fits=false` (growth is 100% SEO/content = the team's weakness) caps it at PASS, and merit lands below 45 independently. No revenue, no real audience.
 
-The clearest pass of all, proven by the seller's own 'verified analytics': a ~6-month-old AI-generated content blog with 1 organic click on 1,053 impressions (1% of traffic is SEO), the rest mostly direct/datacenter-bot; no revenue; it's the storefront for a starter-site operation whose sites auction for ~$10. Content/SEO = the team's weakness, and there is no real business here.
+### Dimensions (score/5, confidence)
+- Operability & upside: 1 (high) — WordPress content/starter-site flipping storefront; only code is a commodity auction plugin. Content treadmill, no eng upside.
+- PMF & retention: 1 (high) — Seller's verified dashboard: ~291 users/30d (68% Direct + bots), 2 returning, 1 organic click on 1,053 impressions.
+- Unit economics: 1 (med) — No revenue; AdSense unconfirmed/likely non-transferable; comparable starter-sites auction for ~$10.
+- Moat & defensibility: 1 (high) — Zero moat; thin AI content in the most saturated flipping niche; 1% of traffic is SEO.
+- Growth & market: 1 (med) — Saturated YMYL niche cannibalized by AI Overviews; thin AI content won't rank.
+- Tech & IP health: 2 (med) — WP + custom auction plugin is the only conceivable asset (commodity); AI content = low IP value; transferable.
+- Transfer / key-person: 3 (low) — Impersonal AI content/SEO, no founder audience to lose; what little exists transfers. Plugin's standalone value unknown.
+- Deal terms & value: 3 (unknown) — No price stated; comparable sites clear at ~$10-350, so any meaningful ask is overpriced.
+- Seller & adverse-selection: 1 (med) — 6-mo domain, bot-inflated traffic, AI content, unfinished 'testing' post, mislisted as a 'SaaS', no revenue/price.
 
-## Scores
-- build_scale_fit: 1/5 (high) Content/SEO/AdSense-flipping business; growth is 100% content + SEO = the team's weakness. The only code is a commodity WordPress auction plugin.
-- pmf_retention: 1/5 (high) Verified from the seller's dashboard: 291 users/30d (mostly Direct 68% + datacenter bots), 2 returning visitors, 1 organic click. No audience.
-- unit_economics: 1/5 (med) No revenue disclosed; AdSense not confirmed (Site Kit host placeholder); the underlying starter-sites auction for ~$10 (Progaiz, Calnzee won at $10).
-- moat_channel: 1/5 (high) Zero moat; AI-generated content in the most saturated MMO/website-flipping niche; only 1% of traffic from SEO; competes with Flippa/Empire Flippers/Niche Pursuits.
-- growth_market: 1/5 (med) Saturated, YMYL-scrutinized niche; the exact topics (AdSense tricks, Ahrefs accuracy) are cannibalized by AI Overviews; thin AI content won't rank.
-- tech_ip: 2/5 (med) WordPress + a custom listing/auction plugin (the only real code asset, but commodity); content is AI-generated and thin = low IP value; transferable.
-- deal_quality: 2/5 (unknown) No price stated; comparable starter sites on the site itself clear at ~$10-350, so any meaningful ask is overpriced for a zero-revenue 6-month blog.
-- seller_risk: 1/5 (med) 6-month domain (reg 29 Dec 2025), bot-inflated traffic (Boardman/Prineville/'not set'), AI content, unfinished 'testing' posts, mislisted on r/saasforsale as a 'SaaS', no revenue/price.
+### Gates
+- operable: **true** (they can run WordPress)
+- growth_lever_fits: **false** → KILL GATE, caps at PASS (growth = SEO/content, the team's weakness)
+- ip_transferable: true
+- value_transfers: true (impersonal, no founder dependency)
+- not_fragile: true (no structural single point of failure — ordinary thinness graded in Moat/Transfer)
+- revenue_evidence: **none** (no revenue disclosed; nothing to contradict)
 
-## Key unknowns
-- Asking price (not stated) — but given ~zero revenue and ~zero real traffic, no price makes this a fit for the team; it's rebuildable in days.
-- How much of the 291 monthly 'users' are real humans vs bots/self — the datacenter cities (Boardman, Prineville) and 68% Direct suggest most are not organic.
-- Whether the custom auction plugin has any standalone value/usage beyond this one site (the only conceivable asset).
-- Any actual AdSense/affiliate earnings (the FAQ implies AdSense isn't even approved/transferable).
-
-## Seller questions
-1. What is the asking price, and what revenue (AdSense/affiliate/sales) has the site actually earned — screen-shared? (deal + revenue; the data suggests ~$0)
-2. Explain the traffic: 68% Direct, top cities Boardman/Prineville (data centers), and 1 organic click on 1,053 impressions — how much is real human organic? (quality/fragility)
-3. Is the content 100% AI-generated, and does the auction plugin have any usage or value beyond flipnzee.com itself? (IP)
-4. Why sell a 6-month-old, zero-revenue site, and why list it on r/saasforsale as a 'SaaS'? (adverse selection)
-
-## Sources
-- [Flipnzee.com — homepage (starter-site flipping storefront)](https://flipnzee.com/)
-- [Flipnzee.com — seller's 'Verified Analytics' listing page](https://flipnzee.com/listings/flipnzee-com/)
+### Key unknowns
+- Asking price (unstated); share of ~291 'users' that are real humans; standalone value of the auction plugin; any actual AdSense/affiliate earnings.

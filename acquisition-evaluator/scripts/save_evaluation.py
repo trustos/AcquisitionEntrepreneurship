@@ -37,6 +37,31 @@ except Exception:
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import normalize_report  # canonical, import-ready report shape
+import score as scorer   # deterministic re-check (S5)
+
+
+def verify_against_scorer(rec):
+    """S5: re-derive the score from the record's OWN dimensions+gates and return
+    a list of mismatches — so a hand-edited or mis-transcribed score/verdict can't
+    be saved silently. Only meaningful for v2 records (score.py is the v2 scorer)."""
+    if rec.get("scoring_version") != "v2":
+        return []
+    deal = rec.get("deal", {}) or {}
+    computed = scorer.evaluate({
+        "target": rec.get("target"),
+        "budget_ceiling": deal.get("budget_ceiling_usd"),
+        "asking_price": deal.get("asking_price_usd"),
+        "financing_possible": deal.get("financing_possible"),
+        "dimensions": rec.get("dimensions", {}) or {},
+        "gates": rec.get("gates", {}) or {},
+    })
+    out = []
+    if rec.get("score") is not None and abs(float(rec["score"]) - computed["total"]) > 0.5:
+        out.append(f"score {rec['score']} != recomputed {computed['total']}")
+    rec_tier = (rec.get("verdict_detail") or {}).get("tier")
+    if rec_tier and rec_tier != computed["tier"]:
+        out.append(f"verdict tier {rec_tier} != recomputed {computed['tier']}")
+    return out
 
 COLUMNS = ["Date", "Target", "Analyst", "Type", "Verdict", "Score",
            "Completeness %", "Asking price", "One-line reason", "Folder"]
@@ -140,6 +165,7 @@ def main():
     ap.add_argument("--record", "-r", help="Path to record JSON (default: stdin)")
     ap.add_argument("--dir", "-d", default="deals", help="Deals base folder (default: ./deals)")
     ap.add_argument("--analyst", help="Who ran this evaluation (attribution); overrides record.analyst")
+    ap.add_argument("--force", action="store_true", help="Save even if the stored score/verdict disagree with the scorer (S5)")
     args = ap.parse_args()
 
     if args.record:
@@ -163,6 +189,16 @@ def main():
     issues = normalize_report.validate(rec)
     if issues:
         print("  ! report validation: " + "; ".join(issues))
+
+    mismatches = verify_against_scorer(rec)   # S5
+    if mismatches and not args.force:
+        print("\n  ✗ REFUSING TO SAVE — the record disagrees with the scorer:")
+        for m in mismatches:
+            print(f"      - {m}")
+        print("    Re-run score.py on these dimensions/gates and fix the record, or pass --force.\n")
+        sys.exit(2)
+    if mismatches:
+        print("  ! saved WITH --force despite scorer mismatch: " + "; ".join(mismatches))
 
     with open(os.path.join(deal_dir, "record.json"), "w") as f:
         json.dump(rec, f, indent=2, ensure_ascii=False)

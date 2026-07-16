@@ -1,74 +1,113 @@
 {
   "target": "DentFlow",
-  "date": "2026-07-13",
   "type": "Vertical B2B/prosumer micro-SaaS — financial + CPD dashboard for UK associate dentists",
-  "asking_price": "$350 (TrustMRR; 1.6x revenue; 8 offers) — corrected: the earlier $169 was the all-time revenue, misread as the price",
-  "verdict": "PASS",
-  "score": 43.6,
+  "date": "2026-07-13",
+  "analyst": "trustos",
+  "verdict": "MARGINAL (provisional)",
+  "score": 49.2,
   "completeness_pct": 66,
-  "one_line_reason": "The first verified-revenue, trivially-priced ($169) target and the closest to interesting — but as a solo asset-buy it's a near-zero-traction UK dental-finance niche where the value levers are dental domain expertise and B2B distribution you lack. It becomes a cheap Investigate-worthy punt ONLY if the dentist-founder commits to partnering.",
+  "one_line_reason": "Cheap ($350, 1.6x) and Stripe-verified, with a real founder-partnership path — but as a solo asset-buy the value transfers away with the dentist (domain expertise + dental-community distribution), so value_transfers=false caps it at MARGINAL (provisional); worth pursuing only if the founder commits to partnering.",
+  "asking_price": 350,
+  "budget_ceiling": 3000,
+  "financing_possible": false,
   "dimensions": {
-    "build_scale_fit": {
-      "score": 2,
+    "operability_upside": {
+      "score": 3,
       "confidence": "med",
-      "note": "The app itself is trivial for the team to own/run. But the value levers are UK dental-domain knowledge (CPD rules, tax, associate pay) + niche B2B distribution into dentistry — both team gaps. The bottleneck isn't code."
+      "note": "Simple web app + Stripe, squarely in the team's stack — trivially runnable with modest product upside. (The distribution/domain gap now lives in the growth-lever gate + Transfer, not double-counted here.)"
     },
     "pmf_retention": {
       "score": 1,
       "confidence": "high",
-      "note": "Stripe-verified but tiny: $30 MRR, 2 subs after 6 months. 'Positive feedback, no real marketing.' PMF essentially unproven."
+      "note": "Stripe-verified but tiny: $30 MRR, 2 subs after ~6 months, 'positive feedback, no real marketing.' PMF essentially unproven."
     },
     "unit_economics": {
       "score": 2,
       "confidence": "med",
-      "note": "Good MODEL (B2B recurring, GBP14/mo, professionals who pay for tax/time savings) but negligible current revenue; LTV/CoCA unproven."
+      "note": "Good MODEL (B2B recurring, GBP14/mo, professionals who pay for tax/time savings) but negligible current revenue; LTV:CoCA unproven."
     },
-    "moat_channel": {
+    "moat_defensibility": {
       "score": 2,
       "confidence": "med",
-      "note": "DR 0, LinkedIn only, no moat yet. A defined vertical niche is a targeting plus; potential moat (dental-community trust + workflow depth) is exactly what the team can't build without the founder."
+      "note": "DR 0, LinkedIn-only, no moat yet. A potential moat (dental-community trust + workflow depth) exists in principle but is entirely unbuilt."
     },
     "growth_market": {
-      "score": 2,
+      "score": 3,
       "confidence": "med",
-      "note": "Real but small single-country vertical (UK associate dentists). Expansion (other countries/professions) each needs fresh domain work."
+      "note": "Real, stable single-country vertical (UK associate dentists); category isn't dying, but each expansion (other countries/professions) needs fresh domain work."
     },
     "tech_ip": {
       "score": 3,
       "confidence": "med",
-      "note": "Simple web app + Stripe, UK GDPR compliant, transferable. Holding dentists' financial data carries a compliance/security burden."
+      "note": "Simple web app + Stripe, UK GDPR compliant, presumably transferable; full ownership unconfirmed. Holding dentists' financial data adds a compliance/security burden."
     },
-    "deal_quality": {
+    "transfer_key_person": {
+      "score": 2,
+      "confidence": "med",
+      "note": "Much of the demand rides the dentist-founder's domain expertise and dental-community relationships — value_transfers=false. A committed partnership is the only thing that would carry it across."
+    },
+    "deal_terms": {
       "score": 4,
       "confidence": "med",
-      "note": "$169 is essentially free and low-risk on money; founder offers onboarding/support + 'consider partnership' (favorable terms). Only ding: cheap because there's ~nothing there yet; 8 competing offers."
+      "note": "$350 (1.6x revenue) is essentially free and low-risk on cash; founder offers onboarding + 'consider partnership' (buyer-friendly). Only ding: cheap because there's ~nothing there yet, and 8 competing offers."
     },
-    "seller_risk": {
+    "seller_adverse_selection": {
       "score": 3,
       "confidence": "med",
-      "note": "Transparent, identifiable (a real UK dentist), Stripe-verified, honest about tiny traction. Low deception risk; mild adverse selection (nice idea that didn't take off)."
+      "note": "Transparent, identifiable real UK dentist, Stripe-verified, honest about tiny traction. Low deception risk; mild adverse selection — a nice idea that didn't take off."
     }
   },
   "gates": {
-    "competence": "unknown",
-    "revenue_verifiable": true,
+    "operable": true,
+    "growth_lever_fits": "unknown",
     "ip_transferable": "unknown",
-    "not_fragile": false
+    "value_transfers": false,
+    "not_fragile": true,
+    "revenue_evidence": "buyer_verified"
+  },
+  "metrics": {
+    "mrr_usd": 30,
+    "arr_usd": null,
+    "subscriptions": 2,
+    "customers": null,
+    "growth_30d_pct": null,
+    "monthly_visitors": null,
+    "churn_pct": null,
+    "margin_pct": null,
+    "domain_rating": 0,
+    "age_months": 6,
+    "revenue_evidence": "buyer_verified"
+  },
+  "deal": {
+    "asking_price_usd": 350,
+    "currency": "USD",
+    "revenue_multiple": 1.6,
+    "budget_ceiling_usd": 3000,
+    "budget_fit": "in",
+    "financing_possible": false
+  },
+  "contact": {
+    "seller_handle": null,
+    "listing_url": "https://trustmrr.com/startup/dentflow",
+    "marketplace": "TrustMRR",
+    "method": null,
+    "contacted_on": null,
+    "notes": null
   },
   "key_unknowns": [
-    "Will the dentist-founder actually partner (domain + dental-community distribution) — the single factor that flips competence from fail to viable. Without him you're software devs guessing at UK dental finance with no channel.",
-    "Real usage beyond 2 paid: free/active users, trial->paid, and what the 'positive feedback' concretely asked for.",
-    "Is there any repeatable channel into UK associate dentists (BDA, CPD providers, dental forums), or was it all the founder's personal network?",
+    "Will the dentist-founder actually partner (domain + dental-community distribution) — the single factor that flips the growth lever from a team weakness to viable. Without him you're engineers guessing at UK dental finance with no channel.",
+    "Real usage beyond the 2 paid subs: free/active users, trial->paid conversion, and what the 'positive feedback' concretely asked for.",
+    "Is there any repeatable channel into UK associate dentists (BDA, CPD providers, dental forums), or was it all the founder's personal network? (drives growth_lever_fits)",
     "How much UK-specific domain logic is baked in (CPD hours, HMRC/tax, associate pay), and the compliance load of holding dentists' financial data.",
-    "Full IP/data ownership and transferability; stack/hosting."
+    "Full IP/data ownership and transferability; stack/hosting (drives ip_transferable)."
   ],
   "seller_questions": [
-    "Would you stay on as a domain + distribution PARTNER (rev-share/equity) — we're strong engineers but not dentists or UK dental marketers? On what terms? (decisive: competence hinges on this)",
+    "Would you stay on as a domain + distribution PARTNER (rev-share/equity) — we're strong engineers but not dentists or UK dental marketers? On what terms? (decisive: value_transfers and growth_lever hinge on this)",
     "Beyond the 2 paying subs: how many free/active users, what's trial->paid, and what specifically did the 'positive feedback' ask you to build? (PMF)",
-    "How did the first users find DentFlow, and what channels realistically reach UK associate dentists (associations, CPD providers, dental forums/FB)? (channel)",
+    "How did the first users find DentFlow, and what channels realistically reach UK associate dentists (associations, CPD providers, dental forums/FB)? (growth lever)",
     "What UK-specific logic is built in (CPD rules, tax/HMRC, associate pay structures), and what compliance obligations come with holding dentists' financial data (GDPR/data processing)? (domain + tech)",
     "Is 100% of code, domain, and user data owned by you and transferable? Any contractors? What's the stack and hosting? (IP/transfer)",
-    "Why sell at $169 after 6 months, and what are the 8 offers/other interested buyers? (adverse selection + competition)"
+    "Why sell at $350 after ~6 months, and what are the 8 offers/other interested buyers? (adverse selection + competition)"
   ],
   "inputs_provided": [
     "DentFlow: financial dashboard / income + CPD tracker for UK associate dentists (earnings across practices, expenses, CPD hours, practice performance) [VERIFIED via listing]",
@@ -90,49 +129,21 @@
       "url": "http://www.dentflow.io"
     }
   ],
+  "scorecard_markdown": "## Acquisition Scorecard (v2) — DentFlow\n\n**Verdict: MARGINAL (provisional) — merit 48/100, completeness 66%**\n\nCheap ($350, 1.6x revenue) and Stripe-verified, with a genuine founder-partnership path — but the value walks away with the dentist-founder (domain expertise + dental-community distribution), so `value_transfers=false` caps it at MARGINAL. Provisional because the growth lever and IP transfer are still unknown. Affordable ($350 well under the $3,000 ceiling); revenue is buyer-verified (Stripe via TrustMRR).\n\n### Dimensions (score/5, confidence)\n- Operability & upside: 3 (med) — simple web app + Stripe, in-stack, trivially runnable; modest product upside.\n- PMF & retention: 1 (high) — $30 MRR, 2 subs after ~6 months; PMF essentially unproven.\n- Unit economics: 2 (med) — good recurring model (GBP14/mo), but negligible revenue; LTV:CoCA unproven.\n- Moat & defensibility: 2 (med) — DR 0, LinkedIn-only, no moat yet; potential dental-community moat is unbuilt.\n- Growth & market: 3 (med) — real, stable UK dental vertical; expansion needs fresh domain work each time.\n- Tech & IP health: 3 (med) — simple, GDPR-compliant, presumably transferable; ownership unconfirmed; data-compliance burden.\n- Transfer / key-person: 2 (med) — demand rides the founder's domain + relationships; value_transfers=false.\n- Deal terms & value: 4 (med) — $350 (1.6x) essentially free, buyer-friendly, partnership on offer; 8 competing offers.\n- Seller & adverse-selection: 3 (med) — transparent real UK dentist, Stripe-verified, honest; mild adverse selection.\n\n### Gates\n- operable: TRUE\n- growth_lever_fits: UNKNOWN (no established channel; \"no real marketing done yet\") -> provisional\n- ip_transferable: UNKNOWN -> provisional\n- value_transfers: FALSE -> caps at MARGINAL (dentist domain/community walks with founder)\n- not_fragile: TRUE (no structural single point of failure; early thinness graded in Moat/Transfer)\n- revenue_evidence: BUYER_VERIFIED (Stripe)\n\n### Key unknowns\n- Founder partnership commitment (decisive for growth lever + value transfer).\n- Real usage beyond 2 paid subs; trial->paid.\n- Repeatable channel into UK associate dentists vs. founder's personal network.\n- Depth of UK-specific domain logic + data-compliance load.\n- Full IP/data ownership and transferability.",
+  "created_at": "2026-07-13T00:00:00Z",
   "schema_version": "acq-eval-report/1.0",
   "id": "dentflow_2026-07-13",
-  "scoring_version": "v1",
-  "created_at": "2026-07-13T00:00:00Z",
-  "updated_at": "2026-07-15T12:02:09+00:00",
+  "scoring_version": "v2",
+  "updated_at": "2026-07-16T10:21:46+00:00",
   "verdict_detail": {
-    "tier": "PASS",
-    "provisional": false,
+    "tier": "MARGINAL",
+    "provisional": true,
     "out_of_budget": false,
     "insufficient_data": false
   },
-  "deal": {
-    "asking_price_usd": 350,
-    "currency": "USD",
-    "revenue_multiple": null,
-    "budget_ceiling_usd": null,
-    "budget_fit": "unknown",
-    "financing_possible": null
-  },
-  "metrics": {
-    "mrr_usd": null,
-    "arr_usd": null,
-    "subscriptions": null,
-    "customers": null,
-    "growth_30d_pct": null,
-    "monthly_visitors": null,
-    "churn_pct": null,
-    "margin_pct": null,
-    "domain_rating": null,
-    "age_months": null,
-    "revenue_evidence": "marketplace_attested"
-  },
-  "contact": {
-    "seller_handle": null,
-    "listing_url": "https://trustmrr.com/startup/dentflow",
-    "marketplace": null,
-    "method": null,
-    "contacted_on": null,
-    "notes": null
-  },
   "pipeline": {
-    "status": "passed",
-    "owner": null,
-    "last_updated": "2026-07-15T12:02:09+00:00"
+    "status": "screening",
+    "owner": "trustos",
+    "last_updated": "2026-07-16T10:21:46+00:00"
   }
 }

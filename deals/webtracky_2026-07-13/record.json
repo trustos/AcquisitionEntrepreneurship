@@ -1,74 +1,113 @@
 {
   "target": "WebTracky",
-  "date": "2026-07-13",
   "type": "Web/product analytics SaaS ('revenue-first' analytics + funnels + AI suggestions), Next/TS",
-  "asking_price": "$3,000 (6.3x revenue; listed Feb 2026; NO offers in ~5 months) — figures from authoritative .md, not the buggy MCP",
-  "verdict": "PASS",
-  "score": 36.4,
-  "completeness_pct": 72,
-  "one_line_reason": "Right shape (analytics SaaS in your wheelhouse, verified revenue, in budget) but hobby-tier and flat — ~$40 MRR from 5 subs after 7 months — in one of software's most saturated commodity markets (GA/Plausible/Fathom/PostHog/Umami), zero moat, priced at an expensive 6.3x, with no market interest (no offers in 5 months). Its only real distribution is the founder's YouTube, which doesn't transfer.",
+  "date": "2026-07-13",
+  "analyst": "trustos",
+  "verdict": "PASS (provisional)",
+  "score": 37.2,
+  "completeness_pct": 71,
+  "one_line_reason": "Right shape (analytics SaaS in the team's wheelhouse, Stripe-verified revenue, in budget) but hobby-tier and flat — ~$40 MRR from 5 subs after ~7 months — in one of software's most saturated commodity markets with zero moat, priced at an expensive 6.3x, and its only real distribution is the founder's YouTube, which doesn't transfer; the growth lever (commodity + key-person channel) fails the team's fit gate → PASS.",
+  "asking_price": 3000,
+  "budget_ceiling": 3000,
+  "financing_possible": false,
   "dimensions": {
-    "build_scale_fit": {
+    "operability_upside": {
       "score": 3,
       "confidence": "med",
-      "note": "Analytics on Next/TS is squarely buildable/ownable by you — but that cuts both ways: it's a commodity you could rebuild in weeks, and the path to value is distribution/differentiation in a red ocean, not engineering."
+      "note": "Web/product analytics on Next/React/TS is squarely in the team's wheelhouse and fully operable — but that cuts both ways: a commodity you could rebuild in weeks, so upside is distribution/differentiation (a red ocean), not engineering."
     },
     "pmf_retention": {
       "score": 1,
       "confidence": "high",
-      "note": "5 paying subs, ~$40 MRR, flat/erratic over 7 months (one $1,020 launch spike in Sep 2025 that fizzled). No proven PMF."
+      "note": "5 paying subs, ~$40 MRR, flat/erratic over ~7 months with one $1,020 Sep-2025 launch spike that fizzled — no proven PMF (evidence it's weak, not merely unknown)."
     },
     "unit_economics": {
       "score": 1,
       "confidence": "med",
-      "note": "$40 MRR at 95% margin but negligible and flat; analytics is storage/query-heavy, so margin may compress as event volume grows."
+      "note": "$40 MRR at ~95% margin but negligible and flat; analytics is storage/query-heavy so margin may compress as event volume scales — economics are real but immaterial."
     },
-    "moat_channel": {
+    "moat_defensibility": {
       "score": 1,
       "confidence": "high",
-      "note": "Zero moat in a hyper-saturated market with free incumbents (GA, Plausible, Fathom, PostHog, Umami, Vercel/Cloudflare analytics). DR 0; the only channel is the founder's YouTube (TubeGuruji), which stays with him."
+      "note": "Zero moat in a hyper-saturated market with free incumbents (GA, Plausible, Fathom, PostHog, Umami, Vercel/Cloudflare); DR 0, no switching costs, no data network effect at 5 subs."
     },
     "growth_market": {
       "score": 1,
       "confidence": "med",
-      "note": "Huge but brutally commoditized market; a DR-0 entrant with 5 subs has no wedge. Revenue flat."
+      "note": "Huge but brutally commoditized market; a DR-0 entrant with 5 subs has no wedge and revenue is flat — no organic/product-led growth path evident."
     },
     "tech_ip": {
       "score": 3,
       "confidence": "med",
-      "note": "Clean modern stack (Next/React/TS/Tailwind), transferable — but trivially rebuildable, so low IP value."
+      "note": "Clean modern stack (Next/React/TS/Tailwind + Stripe) that transfers cleanly — but trivially rebuildable, so IP value is low."
     },
-    "deal_quality": {
+    "transfer_key_person": {
       "score": 2,
       "confidence": "med",
-      "note": "$3,000 at 6.3x revenue for flat $40 MRR is expensive-for-the-traction; the market agrees — no offers in ~5 months. In budget, poor value."
+      "note": "Code/domain transfer, but the only real distribution is the founder's YouTube (TubeGuruji); the customer-acquisition channel walks away with him at exit — the crux risk."
     },
-    "seller_risk": {
+    "deal_terms": {
+      "score": 2,
+      "confidence": "med",
+      "note": "$3,000 at 6.3x revenue for flat ~$40 MRR is expensive-for-traction; the market agrees — no offers in ~5 months listed. In budget, poor value."
+    },
+    "seller_adverse_selection": {
       "score": 3,
       "confidence": "med",
-      "note": "Founder is an identifiable coding YouTuber (TubeGuruji); verified revenue = low deception. The risk is 'nothing there' (a fizzled side-project launched to his audience), not fraud."
+      "note": "Founder is an identifiable coding YouTuber with Stripe-verified revenue, so deception risk is low; the real risk is 'nothing there' — a fizzled side-project launched to his audience — not fraud."
     }
   },
   "gates": {
-    "competence": false,
-    "revenue_verifiable": true,
-    "ip_transferable": "unknown",
-    "not_fragile": false
+    "operable": true,
+    "growth_lever_fits": false,
+    "ip_transferable": true,
+    "value_transfers": false,
+    "not_fragile": true,
+    "revenue_evidence": "marketplace_attested"
+  },
+  "metrics": {
+    "mrr_usd": 39.97,
+    "arr_usd": 480,
+    "subscriptions": 5,
+    "customers": 5,
+    "growth_30d_pct": 14.2,
+    "monthly_visitors": null,
+    "churn_pct": null,
+    "margin_pct": 95,
+    "domain_rating": 0,
+    "age_months": 7,
+    "revenue_evidence": "marketplace_attested"
+  },
+  "deal": {
+    "asking_price_usd": 3000,
+    "currency": "USD",
+    "revenue_multiple": 6.3,
+    "budget_ceiling_usd": 3000,
+    "budget_fit": "in",
+    "financing_possible": false
+  },
+  "contact": {
+    "seller_handle": null,
+    "listing_url": "https://trustmrr.com/startup/webtracky.md",
+    "marketplace": "TrustMRR",
+    "method": null,
+    "contacted_on": null,
+    "notes": null
   },
   "key_unknowns": [
-    "Did the 5 customers come from the founder's YouTube, and does ANY of that distribution transfer — or does the only real asset walk away with him? (the crux)",
-    "Why flat at ~$40 MRR for 7 months, and what was the Sep-2025 $1,020 spike (launch/lifetime deals)?",
-    "Any differentiation vs free/cheap incumbents that would make someone pay for WebTracky specifically?",
-    "Does 100% of code + the 5 accounts + domain transfer, and is the tracking script/infra self-contained?",
+    "Did the 5 customers come from the founder's YouTube (TubeGuruji), and does ANY of that distribution transfer — or does the only real asset walk away with him? (the crux)",
+    "Why flat at ~$40 MRR for ~7 months, and what exactly was the Sep-2025 $1,020 spike (launch batch / lifetime deals)?",
+    "Any differentiation vs free/cheap incumbents (GA/Plausible/Fathom/PostHog/Umami) that would make someone pay for WebTracky specifically?",
+    "Does 100% of code + the 5 customer accounts + domain transfer, and is the tracking script/infra self-contained?",
     "True margin as event volume scales (analytics = storage/query heavy)."
   ],
   "seller_questions": [
-    "Of the 5 subscriptions: plan mix, churn, and why has revenue been flat ~$40/mo for 7 months (with the one $1,020 spike in Sep 2025)? (PMF/revenue)",
-    "Where did the paying customers come from — your YouTube (TubeGuruji)? Does any of that audience/distribution transfer, or stay with you? (channel — likely the only real, and non-transferable, asset)",
+    "Of the 5 subscriptions: plan mix, churn, and why has revenue been flat ~$40/mo for ~7 months (with the one $1,020 spike in Sep 2025)? (PMF/revenue)",
+    "Where did the paying customers come from — your YouTube (TubeGuruji)? Does any of that audience/distribution transfer, or stay with you? (the likely only real, non-transferable asset)",
     "What's the differentiation vs PostHog/Plausible/Fathom/GA/Umami, and why pay for WebTracky over free incumbents? (moat)",
-    "Why price at 6.3x revenue ($3,000 for ~$480/yr), and why no offers in ~5 months listed? (deal quality/adverse selection)",
+    "Why price at 6.3x revenue ($3,000 for ~$480/yr), and why no offers in ~5 months listed? (deal terms / adverse selection)",
     "What transfers: 100% code ownership, domain, the 5 customer accounts, docs — and is the tracking script/infra self-contained? (IP/transfer)",
-    "Event-volume infra costs — is 95% margin durable as data scales? (unit economics)"
+    "Event-volume infra costs — is the ~95% margin durable as data scales? (unit economics)"
   ],
   "inputs_provided": [
     "WebTracky: 'revenue-first' web/product analytics — connects analytics, funnels, and revenue with AI suggestions [VERIFIED via .md]",
@@ -89,49 +128,21 @@
       "url": "https://www.webtracky.com/"
     }
   ],
+  "scorecard_markdown": "## Acquisition Scorecard — WebTracky (v2)\n\n**Verdict: PASS** — merit ~37 / completeness ~71%. Kill gate `growth_lever_fits=false` (commodity analytics + founder's YouTube = a channel this team can't operate) caps the verdict at PASS. In budget ($3,000 = ceiling), so no OUT OF BUDGET flag.\n\nRight shape but hobby-tier and flat: ~$40 MRR from 5 subs after ~7 months in a hyper-saturated commodity market with free incumbents, zero moat, priced at an expensive 6.3x with no market interest (no offers in ~5 months). Its only real distribution is the founder's YouTube, which doesn't transfer.\n\n### Dimensions (0-5)\n- operability_upside: 3 (med) — analytics on Next/TS is in-wheelhouse and operable, but a commodity you'd rebuild in weeks; upside is distribution, not engineering.\n- pmf_retention: 1 (high) — 5 subs, ~$40 MRR, flat over ~7 months; one fizzled $1,020 launch spike. No PMF.\n- unit_economics: 1 (med) — ~95% margin but negligible and flat; storage/query costs may compress margin at scale.\n- moat_defensibility: 1 (high) — zero moat, DR 0, free incumbents (GA/Plausible/Fathom/PostHog/Umami).\n- growth_market: 1 (med) — huge but commoditized; DR-0 entrant with 5 subs has no wedge.\n- tech_ip: 3 (med) — clean modern stack, transfers cleanly, but trivially rebuildable = low IP value.\n- transfer_key_person: 2 (med) — code/domain transfer, but the acquisition channel (founder's YouTube) walks away.\n- deal_terms: 2 (med) — 6.3x for flat $40 MRR is expensive-for-traction; no offers in ~5 months. In budget, poor value.\n- seller_adverse_selection: 3 (med) — identifiable YouTuber + Stripe-verified revenue = low fraud risk; risk is 'nothing there'.\n\n### Gates\n- operable: true\n- growth_lever_fits: **false** (commodity + key-person YouTube channel) → caps at PASS\n- ip_transferable: true (clean, self-contained stack)\n- value_transfers: **false** (founder's audience is the real distribution and doesn't survive exit)\n- not_fragile: true (no structural single-point-of-failure)\n- revenue_evidence: marketplace_attested (TrustMRR, Stripe-verified profile)\n\n### Key unknowns\n- Whether any of the founder's-YouTube distribution transfers (the crux).\n- Why revenue is flat ~$40/mo for ~7 months and what the Sep-2025 $1,020 spike was.\n- Any differentiation vs free incumbents.\n- Whether 100% of code + 5 accounts + domain + self-contained infra transfer.\n- Durability of ~95% margin as event volume scales.",
+  "created_at": "2026-07-13T00:00:00Z",
   "schema_version": "acq-eval-report/1.0",
   "id": "webtracky_2026-07-13",
-  "scoring_version": "v1",
-  "created_at": "2026-07-13T00:00:00Z",
-  "updated_at": "2026-07-15T12:02:09+00:00",
+  "scoring_version": "v2",
+  "updated_at": "2026-07-16T10:21:46+00:00",
   "verdict_detail": {
     "tier": "PASS",
-    "provisional": false,
+    "provisional": true,
     "out_of_budget": false,
     "insufficient_data": false
   },
-  "deal": {
-    "asking_price_usd": 3000,
-    "currency": "USD",
-    "revenue_multiple": null,
-    "budget_ceiling_usd": null,
-    "budget_fit": "unknown",
-    "financing_possible": null
-  },
-  "metrics": {
-    "mrr_usd": null,
-    "arr_usd": null,
-    "subscriptions": null,
-    "customers": null,
-    "growth_30d_pct": null,
-    "monthly_visitors": null,
-    "churn_pct": null,
-    "margin_pct": null,
-    "domain_rating": null,
-    "age_months": null,
-    "revenue_evidence": "marketplace_attested"
-  },
-  "contact": {
-    "seller_handle": null,
-    "listing_url": "https://trustmrr.com/startup/webtracky.md",
-    "marketplace": null,
-    "method": null,
-    "contacted_on": null,
-    "notes": null
-  },
   "pipeline": {
     "status": "passed",
-    "owner": null,
-    "last_updated": "2026-07-15T12:02:09+00:00"
+    "owner": "trustos",
+    "last_updated": "2026-07-16T10:21:46+00:00"
   }
 }

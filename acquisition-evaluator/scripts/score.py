@@ -177,7 +177,14 @@ def evaluate(data):
         if g.get(k) == "unknown" or k not in g:
             prov.append(k)
     rev = g.get("revenue_evidence", "none")
-    if rev in ("marketplace_attested", "seller_claimed", "none", "unknown"):
+    # S2: buyer_verified is the ONLY value that clears the revenue gate. Any other
+    # value — including an unrecognised typo — must mark the verdict provisional
+    # (a dead vocabulary constant previously let typos slip through as if clean).
+    if rev not in REVENUE_EVIDENCE:
+        warnings.append(
+            f"revenue_evidence '{rev}' is not one of {REVENUE_EVIDENCE} — treated as NOT buyer-verified"
+        )
+    if rev != "buyer_verified":
         prov.append(f"revenue={rev} (not buyer-verified from source)")
     if affordable == "unknown":
         prov.append("affordability (price/budget unknown)")
