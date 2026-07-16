@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Validate any staged evaluation records before they can be committed.
+# Enable once per clone:  git config core.hooksPath .githooks
+set -euo pipefail
+
+staged=$(git diff --cached --name-only --diff-filter=ACM | grep -E '^deals/.*/record\.json$' || true)
+[ -z "$staged" ] && exit 0
+
+echo "[pre-commit] validating staged records…"
+python3 acquisition-evaluator/scripts/validate_reports.py --files $staged
