@@ -1,0 +1,175 @@
+{
+  "target": "AI Pitch Deck Reviewer — Acquire 9mhboh63w4 (unidentified)",
+  "date": "2026-07-17",
+  "analyst": "trustos",
+  "type": "micro-SaaS — AI wrapper (pitch-deck review, pay-per-credit), solo founder Nepal, founded Dec 2025",
+  "asking_price": 17000,
+  "budget_ceiling": 3000,
+  "financing_possible": false,
+  "verdict": "PASS (provisional)",
+  "score": 43.2,
+  "completeness_pct": 52,
+  "one_line_reason": "A zero-moat AI wrapper in a category where the seller's own named competitors (Slidebean, SeedBlink) give the product away free as lead-gen; $17k prices a 7-month launch spike at 17x last-month revenue, the credit flow is anti-retention by design, and the undisclosed acquisition channel plus a marketing-led growth plan sit squarely on this team's declared weakness.",
+  "dimensions": {
+    "operability_upside": {
+      "score": 4,
+      "confidence": "med",
+      "note": "MERN/Supabase/OpenAI — trivially operable; upside capped by category, not engineering."
+    },
+    "pmf_retention": {
+      "score": 2,
+      "confidence": "low",
+      "note": "51-100 lifetime customers, ~$70-140 avg spend, one-and-done by construction (no accounts)."
+    },
+    "unit_economics": {
+      "score": 2,
+      "confidence": "low",
+      "note": "~53% wrapper margin; thin falling WTP vs free comps; CAC unknown (channel undisclosed)."
+    },
+    "moat_defensibility": {
+      "score": 1,
+      "confidence": "high",
+      "note": "Prompt + PDF parser; free incumbents (Slidebean/SeedBlink/OpenVC); no switching cost or data asset."
+    },
+    "growth_market": {
+      "score": 2,
+      "confidence": "med",
+      "note": "Real founder-fundraising demand, but niche economics accrue to free-funnel platforms."
+    },
+    "tech_ip": {
+      "score": 3,
+      "confidence": "low",
+      "note": "Stack fits team perfectly; nothing proprietary; code unseen."
+    },
+    "transfer_key_person": {
+      "score": 2,
+      "confidence": "unknown",
+      "note": "Acquisition channel undisclosed — may be founder's personal/FI network (dies at transfer)."
+    },
+    "deal_terms": {
+      "score": 1,
+      "confidence": "high",
+      "note": "$17k = 17x last-month rev; verified ultra-micro AI comps clear at $50-500 or 1-5x annualized."
+    },
+    "seller_adverse_selection": {
+      "score": 2,
+      "confidence": "med",
+      "note": "Selling at month 7, 'lack of time', soft validation claims, peak-month framing."
+    }
+  },
+  "gates": {
+    "operable": true,
+    "growth_lever_fits": "unknown",
+    "ip_transferable": "unknown",
+    "value_transfers": "unknown",
+    "not_fragile": "unknown",
+    "revenue_evidence": "seller_claimed"
+  },
+  "key_unknowns": [
+    "Acquisition channel (decisive): where do the 51-100 customers actually come from? If founder network/FI mentors → value_transfers=false → MARGINAL cap and effectively dead for this team.",
+    "Monthly revenue curve for all 7 months — is $980 a peak (fundraising seasonality peaks Mar/Oct/Nov; a one-month spike would collapse the multiple).",
+    "Repeat-purchase rate — the difference between a product and a launch; credits with no accounts imply near-zero.",
+    "Revenue verification — P&L is seller-authored; needs Stripe read-only. 40%+ of small deals carry inflated figures.",
+    "The 'B2B subscription' claim vs pay-per-credit description — any actual recurring contracts (accelerators/universities)?",
+    "What 'validation from mentors associated with Stanford and Founder Institute' concretely is.",
+    "Entity/Stripe transfer logistics from Nepal; IP cleanliness (Lovable/Bolt-style boilerplate licensing).",
+    "OpenAI cost per report and margin durability at scale."
+  ],
+  "seller_questions": [
+    "Where do your customers come from, channel by channel, with attribution for the last 3 months? (transfer_key_person / growth_lever_fits — deal-breaker: if it's your personal network or FI cohorts, the revenue doesn't transfer)",
+    "Will you grant read-only Stripe access to verify the $7k lifetime and $980 last-month figures? (revenue_evidence — required before any offer)",
+    "Month-by-month revenue since launch (all 7 months). (seasonality / is $980 a spike)",
+    "What % of customers have purchased credits more than once? (pmf_retention — the credit model's real retention)",
+    "The listing says B2B subscription but describes pay-per-credit — do any customers (accelerators, universities, consultants) pay recurring? Contracts? (unit_economics)",
+    "What exactly is the Stanford / Founder Institute mentor validation — names, program, written feedback? (seller_adverse_selection)",
+    "OpenAI API cost per review and monthly total — what's the true gross margin? (unit_economics)",
+    "What transfers: code, domain, brand, email list, Stripe account, any mobile app (React Native is listed)? From a Nepali entity or personal account? (ip_transferable / value_transfers)",
+    "Why sell a 45%-growth business at month 7 rather than run it — and would you accept an earnout tied to 6-month revenue retention? (seller_adverse_selection / deal structure)"
+  ],
+  "inputs_provided": [
+    "Acquire.com listing paste from user [SELLER_CLAIMED]: $17k ask, $7k TTM(lifetime) rev, $4k profit, $980/$520 last month, 51-100 customers, ARR $12k, churn 1-3%, founded Dec 2025, Nepal, solo, MERN/Supabase/OpenAI/Stripe/Cloudflare/Resend/React Native, competitors Seedblink+Slidebean, growth opps = social/content/digital marketing, reason = lack of time",
+    "Figure reconciliation [VERIFIED-INTERNAL]: 17/7=2.4x, 17/4=4.3x, 980x12=11.76k~ARR claim; stated 2.4x uses lifetime base (run-rate multiple 1.42x)",
+    "Category research [VERIFIED]: Slidebean + SeedBlink + OpenVC offer free AI deck review; cheapest paid comp $2.49/deck; ultra-micro AI comps clear $50-500 absolute or 1-5x annualized; Acquire closed-deal median 3.9x profit",
+    "Identification [UNKNOWN]: 16 candidates adversarially refuted; listing is noindex; identity requires Acquire buyer access"
+  ],
+  "sources": [
+    {
+      "title": "Acquire.com listing (anonymized, user-provided URL)",
+      "url": "https://app.acquire.com/startup/FQrfJOwL1tYnsBz0mfjix4biI9f2/zzNRlwYqsYYv9MTtMTKi"
+    },
+    {
+      "title": "Acquire.com public sitemap slug 9mhboh63w4 (listing live, noindex)",
+      "url": "https://app.acquire.com/startup/9mhboh63w4-ai-powered-pitch-deck-reviews-with-instant-investor-grade-feedback-and-actionable-fixes"
+    },
+    {
+      "title": "Slidebean — free AI pitch deck reviewer (named competitor, free)",
+      "url": "https://slidebean.com/pitch-deck-reviewer"
+    },
+    {
+      "title": "SeedBlink — free pitch deck review AI (named competitor, free)",
+      "url": "https://seedblink.com/pitch-deck-review"
+    },
+    {
+      "title": "OpenVC — pitch deck reviews now free for everyone",
+      "url": "https://www.openvc.app/blog/pitch-deck-reviews-now-free-for-everyone"
+    },
+    {
+      "title": "Acquire.com Biannual Multiples Report Jan 2026 (median 3.9x profit)",
+      "url": "https://blog.acquire.com/acquire-com-biannual-acquisition-multiples-report-jan-2026/"
+    },
+    {
+      "title": "BigIdeasDB — SaaS/micro-SaaS multiples 2026 (AI-tool discount, 2.5-4x SDE)",
+      "url": "https://bigideasdb.com/saas-valuation-multiples-2026"
+    },
+    {
+      "title": "Tunguz — fundraising seasonality (Dec worst; Mar/Oct/Nov peaks)",
+      "url": "https://tomtunguz.com/what-time-of-year-to-raise/"
+    }
+  ],
+  "scorecard_markdown": "## Acquisition Scorecard v2 — AI Pitch Deck Reviewer (Acquire 9mhboh63w4, unidentified)\n\n**Verdict: PASS (provisional) — 43/100, completeness 52%. Asking $17,000 ≈ 6× the $3k ceiling (no financing), but the deal fails on merits before budget.**\n\nA 7-month-old, solo-built (Nepal) AI pitch-deck-review credit service asking $17k on $7k lifetime revenue / $4k profit. Internally consistent numbers, but the category is structurally hostile: **the seller's own two named competitors (Slidebean, SeedBlink) give AI deck review away free as lead-gen**, OpenVC made it free for everyone, and the cheapest paid comp is $2.49/deck. The no-account credit flow is anti-retention by design — every month starts at zero.\n\n### Dimensions (score/5 · confidence)\n- Operability & product upside — 4 (med): MERN/Supabase/OpenAI wrapper, trivially operable for this team; upside capped by the category, not by engineering.\n- PMF & retention — 2 (low): 51–100 lifetime customers ≈ $70–140 avg spend, one-and-done by construction (no accounts); \"1–3% churn\" is not meaningful for pay-per-credit.\n- Unit economics — 2 (low): ~53% margin is typical thin-wrapper; WTP ceiling thin and falling vs free substitutes; CAC unknown because the channel is undisclosed.\n- Moat & defensibility — 1 (high): prompt + PDF parser; zero switching costs, no data asset; free incumbents. Verified-bad, not unknown.\n- Growth & market — 2 (med): founder-fundraising demand is real and structural, but the economics of THIS niche accrue to free-funnel platforms with attached monetization.\n- Tech & IP — 3 (low): stack fits the team perfectly; nothing proprietary; code unseen.\n- Transfer / key-person — 2 (unknown): acquisition channel undisclosed — if it's the founder's network/FI mentors, value doesn't transfer.\n- Deal terms — 1 (high): $17k ≈ 17× last-month revenue; verified ultra-micro AI comps clear at $50–$500 absolute or 1–5× annualized; the ask prices a launch spike as durable.\n- Seller & adverse-selection — 2 (med): selling at month 7 for \"lack of time\", soft \"Stanford/Founder Institute mentors\" validation, peak-month framing.\n\n### Gates\n- operable: TRUE · growth_lever_fits: UNKNOWN (channel undisclosed; seller's own growth plan = social/content/digital marketing — the team's declared weakness)\n- ip_transferable / value_transfers / not_fragile: UNKNOWN · revenue_evidence: seller_claimed (P&L doc exists but unverified)\n- Affordability: FALSE ($17,000 vs $3,000 ceiling, no financing)\n\n### Figure reconciliation (Phase 2.5)\nNumbers are internally consistent: 17/7 ≈ 2.4× \"TTM\", 17/4 ≈ 4.3× profit, 980×12 ≈ the claimed $12k \"ARR\". But: founded Dec 2025 → \"TTM\" = lifetime; \"ARR\" = run-rate annualization of one month; \"45% annual growth\" is unverifiable for a 7-month-old. The stated 2.4× uses the smaller lifetime base; against claimed run-rate it is 1.42×. The \"B2B subscription\" model claim contradicts the pay-per-credit description.\n\n### Identification\nTarget NOT identified despite an adversarial 16-candidate sweep (product-space, Nepal-founder, cross-listing). Distinctive traits (Nepal, Stanford/FI phrasing, exact seven criteria) surfaced nowhere public; the listing is sitemap-visible as `9mhboh63w4` but noindex. Identity requires Acquire buyer access. Notable: Seedblink AND Slidebean both operate their own free deck-review tools — which is why the seller names them.\n",
+  "schema_version": "acq-eval-report/1.0",
+  "id": "ai-pitch-deck-reviewer-acquire-9mhboh63w4-unidentified_2026-07-17_trustos",
+  "scoring_version": "v2",
+  "created_at": "2026-07-17T00:00:00Z",
+  "updated_at": "2026-07-17T17:08:38+00:00",
+  "verdict_detail": {
+    "tier": "PASS",
+    "provisional": true,
+    "out_of_budget": false,
+    "insufficient_data": false
+  },
+  "deal": {
+    "asking_price_usd": 17000,
+    "currency": "USD",
+    "revenue_multiple": null,
+    "budget_ceiling_usd": 3000,
+    "budget_fit": "over",
+    "financing_possible": false
+  },
+  "metrics": {
+    "mrr_usd": null,
+    "arr_usd": null,
+    "subscriptions": null,
+    "customers": null,
+    "growth_30d_pct": null,
+    "monthly_visitors": null,
+    "churn_pct": null,
+    "margin_pct": null,
+    "domain_rating": null,
+    "age_months": null,
+    "revenue_evidence": "seller_claimed"
+  },
+  "contact": {
+    "seller_handle": null,
+    "listing_url": "https://app.acquire.com/startup/FQrfJOwL1tYnsBz0mfjix4biI9f2/zzNRlwYqsYYv9MTtMTKi",
+    "marketplace": null,
+    "method": null,
+    "contacted_on": null,
+    "notes": null
+  },
+  "pipeline": {
+    "status": "passed",
+    "owner": "trustos",
+    "last_updated": "2026-07-17T17:08:38+00:00"
+  }
+}
