@@ -1,0 +1,170 @@
+{
+  "target": "AgentIdeaHub.com",
+  "date": "2026-07-17",
+  "analyst": "trustos",
+  "type": "content/directory micro-site — paid ($49 LTD) database of AI-agent ideas (Next.js 15/Supabase/Stripe/Cloudflare)",
+  "asking_price": "$2,000 (TrustMRR; '0.1x' = last-30d spike annualized — honest: ~0.82x all-time / ~2.1x true ARR)",
+  "budget_ceiling": 3000,
+  "financing_possible": false,
+  "verdict": "PASS (provisional)",
+  "score": 28.8,
+  "completeness_pct": 80,
+  "one_line_reason": "First in-budget deal ($2k vs $3k) but a verified spike-and-flip: a 3-week-old domain sold as a 14-month business (whois 2026-06-27 vs claimed May-2025 founding), the $1,422 'spike month' is ~29 x $49 lifetime deals with $0 in the last 7 days, the '$78 MRR / 19 subs' cannot come from the site's own no-subscription pricing, the live site is fronted by a DIFFERENT person (@iamfra5er) than the seller (@mattmerrick16), and the only acquisition channel is the seller's personal X audience - which does not convey.",
+  "deal": {
+    "asking_price_usd": 2000,
+    "currency": "USD",
+    "revenue_multiple": 2.1,
+    "budget_ceiling_usd": 3000,
+    "budget_fit": "in",
+    "financing_possible": false
+  },
+  "metrics": {
+    "mrr_usd": 78,
+    "arr_usd": 936,
+    "subscriptions": 19,
+    "customers": null,
+    "growth_30d_pct": -45.1,
+    "monthly_visitors": null,
+    "churn_pct": null,
+    "margin_pct": 95,
+    "domain_rating": 0,
+    "age_months": 1,
+    "revenue_evidence": "contradicted"
+  },
+  "contact": {
+    "seller_handle": "x.com/mattmerrick16",
+    "listing_url": "https://trustmrr.com/startup/agent-idea-hub",
+    "marketplace": "TrustMRR",
+    "method": "TrustMRR offer",
+    "contacted_on": null,
+    "notes": null
+  },
+  "dimensions": {
+    "operability_upside": {
+      "score": 3,
+      "confidence": "med",
+      "note": "Next.js 15/Supabase/Stripe one-pager - trivially operable; but it's a content template, not a product: upside requires audience-building, not engineering."
+    },
+    "pmf_retention": {
+      "score": 1,
+      "confidence": "high",
+      "note": "No recurring product exists: site sells a $49 one-time lifetime deal ('No subscriptions'); the spike month (~29 LTD sales) came from an audience blast, $0 in last 7d; the '19 subs/$78 MRR' cannot come from this pricing page (provenance unknown, MRR -45%/30d)."
+    },
+    "unit_economics": {
+      "score": 1,
+      "confidence": "med",
+      "note": "LTD-only economics: revenue already collected by seller, buyer inherits lifetime-access + future-update obligations to ~29-50 customers with $0 attached; 95% margin is meaningless with no recurring engine."
+    },
+    "moat_defensibility": {
+      "score": 1,
+      "confidence": "high",
+      "note": "3-week-old template site, DR 0, 1 page indexed, gated unverifiable (plausibly AI-generated) content; free substitutes everywhere (GitHub lists, IdeaBrowser at scale, ChatGPT)."
+    },
+    "growth_market": {
+      "score": 2,
+      "confidence": "med",
+      "note": "AI-agent interest is a genuine tailwind, but this slice (paid idea lists) is brand/audience-attached; without a distribution engine there is no market access."
+    },
+    "tech_ip": {
+      "score": 3,
+      "confidence": "low",
+      "note": "Modern minimal stack transfers easily; content provenance unverified; the live site's operator-of-record ambiguity (@iamfra5er) clouds what IP is actually conveyed."
+    },
+    "transfer_key_person": {
+      "score": 1,
+      "confidence": "high",
+      "note": "The only channel is the seller's (or Fraser's) personal X audience; zero SEO, no email capture, no organic loop - the growth engine walks away at closing. Site literally tells customers to contact a different person than the seller."
+    },
+    "deal_terms": {
+      "score": 1,
+      "confidence": "high",
+      "note": "$2,000 = ~2.1x a declining true ARR ($936) or ~1.4x a one-time spike month; category comps for sub-$100-MRR directories clear at $50-500; the 0.1x headline is spike-annualization. Plus inherited LTD obligations."
+    },
+    "seller_adverse_selection": {
+      "score": 0,
+      "confidence": "high",
+      "note": "Verified worst-case: serial flipper (runs under2k.net, a flip marketplace; 10 near-$0 projects; 2 simultaneous listings) flipping days after an LTD spike, 'need the funds fast', fake scarcity countdown, domain 3 weeks old sold as 14 months, seller is not the site's public operator."
+    }
+  },
+  "gates": {
+    "operable": true,
+    "growth_lever_fits": false,
+    "ip_transferable": "unknown",
+    "value_transfers": false,
+    "not_fragile": false,
+    "revenue_evidence": "contradicted"
+  },
+  "key_unknowns": [
+    "Who actually owns/operates the site today - the footer says @iamfra5er (Fraser), the seller is @mattmerrick16, and whois updated the day after listing; if already sold/encumbered the listing is stale (deal-breaker).",
+    "Provenance of the '$78 MRR / 19 subscriptions' - the site sells no subscription; if from another product on the same Stripe account, the listed metrics misattribute revenue (confirms 'contradicted').",
+    "What the claimed May-2025 founding refers to, given the domain was registered 2026-06-27 - is any of the $2,431 all-time revenue attributable to THIS asset?",
+    "Content provenance: are the '257 curated ideas / 25+ guides' original work or AI-generated filler (affects the only real asset being sold).",
+    "Whether the ~29 LTD buyers' lifetime obligations (access + 'all future updates') transfer contractually to the buyer."
+  ],
+  "seller_questions": [
+    "[deal-breaker | transfer] The live site's contact is @iamfra5er, not you - who owns and operates agentideahub.com today, and what exactly transfers (domain, code, Stripe customers, content)? Why did whois update on July 9?",
+    "[deal-breaker | revenue] The domain was registered 2026-06-27 but the listing claims founded May 2025 with $2,431 all-time - walk me through which revenue was earned by THIS product on THIS domain, with Stripe product-level export.",
+    "[deal-breaker | revenue] The site sells only a $49 lifetime deal ('No subscriptions') - what are the '19 active subscriptions / $78 MRR' on the listing? Which product do they belong to and do they transfer?",
+    "[pmf] Channel attribution for the ~29 spike-month sales: what % came from your X audience / Fraser's audience vs any organic source? Any analytics access?",
+    "[unit econ] What obligations do the lifetime buyers hold ('all future updates')? Provide the exact terms shown at purchase.",
+    "[deal terms] Given $0 revenue in the last 7 days and -45% MRR, what does the $2,000 price buy beyond the template and <=50 emails?"
+  ],
+  "inputs_provided": [
+    "TrustMRR .md profile figures (MRR $78, 19 subs, all-time $2,431, last-30d $1,422, last-7d $0, -45.1% 30d, margin 95%, ask $2,000, 11 offers, listed 2026-07-08, founded 2025-05-01, DR 0) - marketplace_attested, cross-checked vs live page (VERIFIED consistent) and MCP API (100x cents-rendering bug, ratios identical)",
+    "agentideahub.com live fetch (2026-07-17): $49 lifetime-only pricing, 'No subscriptions', '7 spots left' static scarcity, footer contact @iamfra5er, Next.js 15/Supabase/Cloudflare, GA G-3VPN6WKVF5 - VERIFIED",
+    "whois: domain created 2026-06-27, updated 2026-07-09; zero Wayback captures; 1 page in Google index - VERIFIED",
+    "Spike arithmetic: 29 x $49 = $1,421 = last-30d $1,422 - ASSUMED (exact-fit inference)",
+    "Seller profile: 10 TrustMRR projects near-$0, runs under2k.net flip marketplace, second live listing (AI Brand Kits), Niche Tools marked sold - VERIFIED"
+  ],
+  "sources": [
+    {
+      "title": "TrustMRR listing - Agent Idea Hub",
+      "url": "https://trustmrr.com/startup/agent-idea-hub"
+    },
+    {
+      "title": "Agent Idea Hub live site ($49 LTD, @iamfra5er footer)",
+      "url": "https://agentideahub.com"
+    },
+    {
+      "title": "Whois - agentideahub.com created 2026-06-27",
+      "url": "https://www.namecheap.com/domains/whois/result?domain=agentideahub.com"
+    },
+    {
+      "title": "Wayback CDX - zero captures",
+      "url": "http://web.archive.org/cdx/search/cdx?url=agentideahub.com"
+    },
+    {
+      "title": "Matt Merrick Indie Page (portfolio; Nichetools sold)",
+      "url": "https://indiepa.ge/mattmerrick16"
+    },
+    {
+      "title": "Under2k - seller's own flip marketplace",
+      "url": "https://under2k.substack.com/p/under2k-week-1"
+    },
+    {
+      "title": "Medium - 'I built and sold a project in 8 hours' (seller)",
+      "url": "https://medium.com/@Mattmerrick/i-built-and-sold-a-project-in-8-hours-0c331bbf5b44"
+    },
+    {
+      "title": "Fraser (@iamfra5er) X profile (site's stated contact)",
+      "url": "https://x.com/iamfra5er"
+    }
+  ],
+  "scorecard_markdown": "",
+  "schema_version": "acq-eval-report/1.0",
+  "id": "agentideahub-com_2026-07-17_trustos",
+  "scoring_version": "v2",
+  "created_at": "2026-07-17T00:00:00Z",
+  "updated_at": "2026-07-17T20:33:52+00:00",
+  "verdict_detail": {
+    "tier": "PASS",
+    "provisional": true,
+    "out_of_budget": false,
+    "insufficient_data": false
+  },
+  "pipeline": {
+    "status": "passed",
+    "owner": "trustos",
+    "last_updated": "2026-07-17T20:33:52+00:00"
+  }
+}
