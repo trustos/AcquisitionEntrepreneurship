@@ -1,0 +1,167 @@
+{
+  "target": "tryhuntly.com",
+  "date": "2026-07-18",
+  "analyst": "trustos",
+  "type": "micro-SaaS / B2B tool (local-business lead finder for web freelancers, Spanish-language markets)",
+  "asking_price": "$7,500 (TrustMRR; 2.5x stated ≈ 2.3x on MRR-ARR — the highest multiple in the TrustMRR batch, on a 3-month-old product)",
+  "budget_ceiling": 3000,
+  "financing_possible": false,
+  "verdict": "PASS (provisional) — OUT OF BUDGET",
+  "score": 40.2,
+  "completeness_pct": 66,
+  "one_line_reason": "A 3-month-old Google-Maps lead scraper for Spanish-speaking web freelancers asking 2.5x annualized on $272 MRR (2.5x the budget) — commodity category with entrenched incumbents, distribution is the founder's Instagram, ARPU ($9.71) sits below the listing's own cheapest tier because the live site's pricing doesn't match the listing, and the long-term pain it monetizes ('businesses without websites') is being shrunk by AI site builders.",
+  "dimensions": {
+    "operability_upside": {
+      "score": 3,
+      "confidence": "med",
+      "note": "Trivial stack (Next.js + Stripe; data pipe unspecified). Team could rebuild it in weeks — which is the problem. Roadmap exists (enrichment, outreach, more geos) but the product is Spanish-first for Spain/LatAm markets: content, support, and WhatsApp outreach templates in Spanish are outside the team's comfort."
+    },
+    "pmf_retention": {
+      "score": 2,
+      "confidence": "med",
+      "note": "28 subs in ~3 months, but ARPU $9.71 means most sit on the live site's $9 Go tier, not the listing's $19/$49 tiers. Freelancer lead-gen is episodic (hunt clients → get work → cancel), and no retention history exists."
+    },
+    "unit_economics": {
+      "score": 2,
+      "confidence": "med",
+      "note": "90% margin claimed, but the data pipe is Google Maps — either Places API (expensive at scale, margin shrinks) or scraping (free until it breaks). ~$10 ARPU leaves little room for real data costs."
+    },
+    "moat_defensibility": {
+      "score": 1,
+      "confidence": "high",
+      "note": "Commodity category with entrenched, better-SEO'd incumbents: D7 Lead Finder, Outscraper, LeadSwift, WebLeads, Lead Scrape, Scrap.io — plus generic AI agents that can produce the same lists. DR 0.0, no brand, no proprietary data (it resells Google's)."
+    },
+    "growth_market": {
+      "score": 2,
+      "confidence": "med",
+      "note": "Double squeeze: the lead-finder category is saturated, and the underlying pain ('local businesses without websites') shrinks as AI website builders make sites near-free. The Spanish/LatAm angle is underserved but is a marketing beachhead, not a tech one."
+    },
+    "tech_ip": {
+      "score": 3,
+      "confidence": "low",
+      "note": "Data-source method unspecified ('public data from Google Maps') — Places API contract/cost or ToS-violating scraping; either way the pipe is Google-controlled and its transferability unverified. Backend listed as just 'Stripe' suggests a thin scraper."
+    },
+    "transfer_key_person": {
+      "score": 2,
+      "confidence": "med",
+      "note": "The sole stated marketing channel is the founder's Instagram (@humberbuilds — Spanish-language build-in-public audience). The audience does not transfer; DR 0 means nothing else pulls."
+    },
+    "deal_terms": {
+      "score": 1,
+      "confidence": "high",
+      "note": "Clearly overpriced: 2.5x annualized on a 3-month-old $272 MRR product — 5x the multiple of Linkeddit (0.53x), which has 10x the assets. Asking $7,500 = 2.5x the $3,000 ceiling, no financing, 10 offers claimed. Worst value-for-money in the TrustMRR batch."
+    },
+    "seller_adverse_selection": {
+      "score": 2,
+      "confidence": "med",
+      "note": "3-month flip at peak growth with an aggressive multiple and no stated reason for sale. Integrity flag: the listing's pricing tiers ($19/$49) don't match the live site ($9/$19) — either repriced down after listing (demand weakness) or the listing inflates pricing power."
+    }
+  },
+  "gates": {
+    "operable": true,
+    "growth_lever_fits": false,
+    "revenue_evidence": "marketplace_attested",
+    "value_transfers": "unknown",
+    "ip_transferable": "unknown",
+    "not_fragile": "unknown",
+    "affordable": false
+  },
+  "key_unknowns": [
+    "The Google Maps data pipe — Places API (what monthly cost? does the account/contract transfer?) or scraping (ToS-violating, breaks without notice)? This is the not_fragile/ip question and the margin question at once.",
+    "Why the live site's tiers ($9 Go / $19 Pro) differ from the listing's ($19 Starter / $49 Agency) — repricing after listing, geo-localized pricing, or listing inflation; determines both revenue quality and seller credibility.",
+    "Subscription mix and churn: how many of the 28 subs are on $9 vs $19, how many from the first month are still active, and how many are annual/discounted.",
+    "How much of signup flow comes from the founder's Instagram vs anywhere else — DR 0 suggests IG is everything; the audience doesn't transfer.",
+    "Whether Stripe verification actually backs the listing figures (badge not visible in the .md extract).",
+    "Why sell a 3-month-old product growing +36%/month — no reason stated; at 2.5x the insider is selling the multiple, not the business."
+  ],
+  "seller_questions": [
+    "How exactly does Huntly source Google Maps data — official Places API (under whose account, at what monthly cost, does it transfer?) or scraping? What happens to the product if Google blocks the current method? — resolves: not_fragile / ip_transferable / unit_economics; why: the entire product is a filter over Google's data.",
+    "Your listing shows tiers at $19/$49 but tryhuntly.com sells $9 Go and $19 Pro — which is real, when did pricing change, and why? Break down the 28 subs by plan and billing period, with read-only Stripe access. — resolves: revenue_evidence → buyer_verified / unit_economics / seller credibility; why: ARPU $9.71 contradicts the listed tiers.",
+    "Cohort retention: of April/May subscribers, how many are still active? Freelancer tools churn when the user lands work — show the curve. — resolves: pmf_retention.",
+    "What share of signups come from your Instagram (@humberbuilds) vs other sources? What happened to signups in any week you didn't post? — resolves: growth_lever_fits / value_transfers; why: IG is the only stated channel and it leaves with you.",
+    "The product, content, and outreach templates are Spanish-first for Spain/LatAm — what would break for a non-Spanish-speaking owner (support volume, content cadence, WhatsApp outreach)? — resolves: operability.",
+    "Why sell now, 3 months in, while growing +36%/month? And why 2.5x when comparable TrustMRR listings with more history ask 0.5-1.3x? — resolves: seller_adverse_selection / deal_terms.",
+    "Are any of the 10 offers near asking? The buyer's ceiling is $3,000 — is there any price or earnout structure (e.g., tied to 6-month MRR retention) you'd consider at that level? — resolves: deal_terms / affordability."
+  ],
+  "inputs_provided": [
+    "Listing URL trustmrr.com/startup/huntly (user) — VERIFIED as existing",
+    "TrustMRR .md profile: $560 all-time (= last 3 months), $254 last-30d (+36.2%), $272 MRR (+19.8%), 28 subs, 90% margin, DR 0.0, $7,500 asking, 2.5x, 651 viewers, 10 offers, founded 2026-04-26, Spain, founder Humber (@humberbuilds), tiers Free/$19 Starter/$49 Agency, channel Instagram — MARKETPLACE_ATTESTED (no explicit Stripe-verified badge seen in extract)",
+    "Live site tryhuntly.com: Free (3 searches) / Go $9 / Pro $19 — CONTRADICTS listing tiers; Spanish-speaking markets (Spain, Mexico, Argentina, Colombia, Peru, Chile); data 'from Google Maps', method unspecified; WhatsApp outreach templates, demo-page generation, opportunity scoring — VERIFIED (live site)",
+    "ARPU flag: $272 / 28 = $9.71 < listing's cheapest paid tier ($19), consistent with live $9 tier — VERIFIED arithmetic",
+    "Multiple: 7500/(272×12) = 2.30x ≈ stated 2.5x — highest in TrustMRR batch — VERIFIED arithmetic",
+    "Competitive set: D7 Lead Finder, Outscraper, LeadSwift, WebLeads, Lead Scrape, Scrap.io, GBP Leads — VERIFIED (public sources)",
+    "Budget ceiling $3,000 / no financing — reused from session convention"
+  ],
+  "sources": [
+    {
+      "title": "TrustMRR listing (.md profile) — Huntly",
+      "url": "https://trustmrr.com/startup/huntly.md"
+    },
+    {
+      "title": "Huntly product site (live pricing: Free / Go $9 / Pro $19)",
+      "url": "https://tryhuntly.com"
+    },
+    {
+      "title": "WebLeads — 7 D7 Lead Finder Alternatives Compared (2026)",
+      "url": "https://www.webleads.site/blog/d7-lead-finder-alternative"
+    },
+    {
+      "title": "WebLeads — 7 Outscraper Alternatives for Google Maps Lead Generation (2026)",
+      "url": "https://www.webleads.site/blog/outscraper-alternative"
+    },
+    {
+      "title": "Saleshandy — 10 Best D7 Lead Finder Alternatives 2026",
+      "url": "https://www.saleshandy.com/blog/d7-lead-finder-alternatives/"
+    },
+    {
+      "title": "Lead Scrape — D7 Lead Finder comparison",
+      "url": "https://www.leadscrape.com/lead-finder-vs-lead-scrape.html"
+    }
+  ],
+  "deal": {
+    "asking_price_usd": 7500,
+    "currency": "USD",
+    "revenue_multiple": 2.5,
+    "budget_ceiling_usd": 3000,
+    "budget_fit": "over",
+    "financing_possible": false
+  },
+  "metrics": {
+    "mrr_usd": 272,
+    "arr_usd": null,
+    "subscriptions": 28,
+    "customers": 28,
+    "growth_30d_pct": 36.2,
+    "monthly_visitors": null,
+    "churn_pct": null,
+    "margin_pct": 90.0,
+    "domain_rating": 0.0,
+    "age_months": null,
+    "revenue_evidence": "marketplace_attested"
+  },
+  "contact": {
+    "seller_handle": "Humber (@humberbuilds)",
+    "listing_url": "https://trustmrr.com/startup/huntly",
+    "marketplace": "TrustMRR",
+    "method": "TrustMRR offer",
+    "contacted_on": null,
+    "notes": null
+  },
+  "scorecard_markdown": "# Acquisition Scorecard (v2) — Huntly (tryhuntly.com)\n\n**Type:** micro-SaaS / B2B tool (local-business lead finder for web freelancers, Spanish-language markets)  ·  **Asking:** $7,500 (2.5x annualized MRR — highest multiple in the TrustMRR batch)  ·  **Budget:** $3,000  ·  **Date:** 2026-07-18\n**Figures reconciled?** verify_figures ✓ arithmetic — but **pricing-tier contradiction:** listing sells $19/$49 tiers, live site sells $9/$19 (ARPU $9.71 confirms the live pricing) · revenue evidence: marketplace_attested\n**Sources reviewed:** TrustMRR .md profile, tryhuntly.com (live pricing + product), competitor field (D7, Outscraper, LeadSwift, WebLeads, Lead Scrape)\n\n## Verdict\n\n> **PASS (provisional) — 40/100, OUT OF BUDGET** (completeness 66%)\n> The worst value-for-money in the TrustMRR batch: **2.5x annualized revenue for a 3-month-old product** with $272 MRR — while Linkeddit, with 2 years of history, DR 16 and 10k users, asks 0.53x. Verified kill gate: **growth_lever_fits=false** — the only stated channel is the founder's Spanish-language Instagram (@humberbuilds), DR is 0.0, and the audience leaves with him. The product itself is a thin filter over Google Maps data (API-or-scraping unknown — the single structural dependency) in a commodity category owned by D7 Lead Finder, Outscraper, LeadSwift and friends, sold to Spanish-speaking freelancers the team can't support in Spanish, monetizing a pain (businesses without websites) that AI site builders are steadily shrinking. Integrity flag: the listing's pricing tiers don't match the live site's — ARPU $9.71 proves most subs are on the $9 plan the listing doesn't mention. **$7,500 is 2.5x the ceiling.** Biggest swing factor: none — even perfect diligence answers leave the channel gate, the price, and the category standing.\n\n## Scorecard (nine dimensions)\n\n| # | Dimension | Wt | Score /5 | Conf | Weighted | Notes |\n|---|---|---|---|---|---|---|\n| 1 | Operability & product upside | 15 | 3 | med | 9.0 | Trivial stack, rebuildable in weeks; Spanish-first product/support outside team comfort. |\n| 2 | PMF & retention | 15 | 2 | med | 6.0 | 28 subs in 3 months, mostly at $9; episodic freelancer need; no retention history. |\n| 3 | Unit economics & upside | 12 | 2 | med | 4.8 | ~$10 ARPU vs Google data costs (API $ or scraping risk); 90% margin claim untested at scale. |\n| 4 | Moat & defensibility | 12 | 1 | high | 2.4 | Resells Google's data in a field of entrenched incumbents; DR 0; no asset to defend. |\n| 5 | Growth & market | 8 | 2 | med | 3.2 | Saturated category + AI site builders shrink the underlying pain. |\n| 6 | Tech & IP health | 8 | 3 | low | 4.8 | Data-pipe method unknown = the whole technical question; 'backend: Stripe' says thin scraper. |\n| 7 | Transfer / key-person | 10 | 2 | med | 4.0 | IG audience is the only channel and it doesn't transfer. |\n| 8 | Deal terms & value | 10 | 1 | high | 2.0 | 2.5x on 3 months of history at 2.5x the budget — clearly overpriced on every axis. |\n| 9 | Seller & adverse-selection | 10 | 2 | med | 4.0 | 3-month flip, aggressive multiple, no reason given, listing/site pricing mismatch. |\n| | **Merit total** | **100** | | | **40.2** | |\n\n**Gates:** operable ✓ · growth-lever-fits ✗ (caps → PASS) · revenue-evidence marketplace_attested (provisional) · value-transfers ? · IP-transferable ? · not-fragile ? (Google data pipe — verify) · **affordable** NO ($7,500 vs $3,000 → OUT OF BUDGET)\n\n## Fit-to-build read (the team's lens)\n\nNothing here needs the team's engineering strength — a Next.js front end over a Google Maps query is a weekend build, and that's reflected in the price of entry for the dozen incumbents already doing it with better data and better SEO. Everything the business needs is what the team lacks: Spanish-language Instagram content, freelancer-community marketing, and ongoing Spanish-speaking support. It is the purest 'buying your weakness' case in the batch, at the batch's highest multiple.\n\n## Does the value transfer? (key-person check)\n\nWhat transfers: a thin codebase, a DR-0 domain, and ~28 mostly-$9 subscriptions of unknown remaining lifetime. What doesn't: the founder's Instagram audience — the only stated acquisition channel — and whatever Google data access arrangement exists, which is unverified. The honest answer is that almost nothing durable changes hands.\n\n## What we know vs. what we're assuming\n\n- **Verified (buyer-reconciled):** the pricing-tier contradiction (listing $19/$49 vs live $9/$19, confirmed by ARPU $9.71); the 2.3-2.5x multiple math; the commodity competitive field; Spanish-market focus; DR 0; Google Maps as the data source.\n- **Assumed / marketplace-attested:** all dollar figures (no explicit Stripe badge seen in the .md extract — even the attestation level needs confirming); 28 subs; 90% margin; 10 offers.\n- **Unknown (and how it swings):** data-pipe method (scraping = product can die overnight; API = margin shrinks); sub mix and churn; IG dependence share; why the price tiers changed. No plausible set of answers clears the channel gate, the category, or the 2.5x-budget price.\n\n## Seller questions to send (prioritized)\n\n1. How is Google Maps data sourced — Places API (cost? account transfer?) or scraping? What breaks if Google blocks it? — *resolves: not_fragile / ip / margins.*\n2. Listing tiers ($19/$49) vs live site ($9/$19): which is real, when did it change, why? Sub breakdown by plan + read-only Stripe. — *resolves: revenue → buyer_verified / credibility.*\n3. Cohort retention of April/May subs. — *resolves: pmf.*\n4. Share of signups from your Instagram; signups in weeks you didn't post. — *resolves: growth_lever / value_transfers.*\n5. What breaks for a non-Spanish-speaking owner? — *resolves: operability.*\n6. Why sell at 3 months while growing +36%/mo, and why 2.5x when peers list at 0.5-1.3x? — *resolves: adverse-selection / deal_terms.*\n7. Any structure at a $3,000 level (earnout on 6-month MRR retention)? — *resolves: affordability.*\n\n## Recommended next step\n\n**Pass — don't engage.** Unlike Getbeel (worth one email) or Linkeddit (worth an autopsy), Huntly offers no scenario worth pursuing: the price is 2.5x both the budget and any defensible multiple, the only channel is a Spanish-language personal audience, the data pipe belongs to Google, and the category's incumbents are unbeatable on the team's skills. The 10 claimed offers can have it.",
+  "schema_version": "acq-eval-report/1.0",
+  "id": "tryhuntly-com_2026-07-18_trustos",
+  "scoring_version": "v2",
+  "created_at": "2026-07-18T00:00:00Z",
+  "updated_at": "2026-07-18T06:57:49+00:00",
+  "verdict_detail": {
+    "tier": "PASS",
+    "provisional": true,
+    "out_of_budget": true,
+    "insufficient_data": false
+  },
+  "pipeline": {
+    "status": "screening",
+    "owner": "trustos",
+    "last_updated": "2026-07-18T06:57:49+00:00"
+  }
+}
