@@ -1,0 +1,42 @@
+# Push-notify the AES app so deal reports import instantly (the app's hourly
+# cron remains the safety net). Equivalent to a classic GitHub webhook, but
+# versioned here in the repo.
+#
+# Requires the Actions secret AES_WEBHOOK_SECRET — same value as the Consul key
+# `aes/github-webhook-secret` (the endpoint verifies X-Hub-Signature-256 HMAC).
+#
+# The payload's commit file-list is only a short-circuit HINT for the endpoint;
+# the import itself always does an authoritative git-tree scan. So we send a
+# minimal synthetic hint rather than reconstructing the real changed-file list.
+name: Notify AES
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'deals/**'
+  workflow_dispatch: {}
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Signed webhook POST
+        env:
+          SECRET: ${{ secrets.AES_WEBHOOK_SECRET }}
+        run: |
+          if [ -z "$SECRET" ]; then
+            echo "AES_WEBHOOK_SECRET not configured — skipping (cron will pick the change up)."
+            exit 0
+          fi
+          body='{"ref":"refs/heads/main","commits":[{"added":[],"modified":["deals/ci-trigger/record.json"],"removed":[]}]}'
+          sig="sha256=$(printf '%s' "$body" | openssl dgst -sha256 -hmac "$SECRET" | awk '{print $NF}')"
+          resp=$(curl -sS --max-time 180 -w '\n%{http_code}' \
+            -X POST "https://aes.fivemindslab.com/api/acq/github-webhook" \
+            -H "Content-Type: application/json" \
+            -H "X-GitHub-Event: push" \
+            -H "X-Hub-Signature-256: $sig" \
+            -d "$body")
+          code=$(echo "$resp" | tail -1)
+          echo "response ($code): $(echo "$resp" | sed '$d')"
+          [ "$code" = "200" ]
