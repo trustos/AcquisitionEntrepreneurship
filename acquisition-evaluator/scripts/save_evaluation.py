@@ -74,6 +74,33 @@ def slugify(s):
     return s or "target"
 
 
+def git_identity(deals_dir):
+    """Best-effort identity of whoever is running this, from the git config of
+    the repo containing the deals dir. Prefers a GitHub-login-looking value:
+    the email local-part (noreply emails yield the login), else user.name."""
+    import subprocess
+    where = os.path.abspath(deals_dir)
+    if not os.path.isdir(where):
+        where = os.getcwd()  # dir not created yet → fall back to cwd's repo/global config
+    for key in ("user.email", "user.name"):
+        try:
+            v = subprocess.run(["git", "-C", where, "config", key],
+                               capture_output=True, text=True, timeout=5).stdout.strip()
+        except Exception:
+            v = ""
+        if not v:
+            continue
+        if key == "user.email":
+            local = v.split("@")[0]
+            # 1878059+simo73@users.noreply.github.com → simo73
+            local = local.split("+", 1)[1] if "+" in local else local
+            if local:
+                return slugify(local)
+        else:
+            return slugify(v)
+    return ""
+
+
 def folder_for(rec):
     f = f"{slugify(rec.get('target'))}_{rec.get('date')}"
     if rec.get("analyst"):
@@ -180,6 +207,19 @@ def main():
     rec.setdefault("date", datetime.date.today().isoformat())
     if args.analyst:
         rec["analyst"] = args.analyst
+
+    # Attribution guard: the analyst must be whoever is ACTUALLY running this,
+    # not a value copied from existing records (that is how 6 deals ended up
+    # credited to the wrong teammate). Default from git identity when unset,
+    # and warn loudly on a mismatch.
+    git_user = git_identity(args.dir)
+    if not rec.get("analyst"):
+        if git_user:
+            rec["analyst"] = git_user
+            print(f"  · analyst not provided — using git identity: {git_user}")
+    elif git_user and slugify(rec["analyst"]) != slugify(git_user):
+        print(f"  ! WARNING: analyst '{rec['analyst']}' != this repo's git identity '{git_user}'.")
+        print("    If you are not saving on someone else's behalf, re-run with the correct --analyst.")
     base = os.path.abspath(args.dir)
     folder = folder_for(rec)
     deal_dir = os.path.join(base, folder)

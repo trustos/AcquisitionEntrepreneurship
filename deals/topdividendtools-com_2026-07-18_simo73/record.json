@@ -1,0 +1,149 @@
+{
+  "target": "topdividendtools.com",
+  "date": "2026-07-18",
+  "analyst": "simo73",
+  "type": "content/directory site (dividend-investing tools directory; affiliate + sponsorship monetization)",
+  "asking_price": "$5,000 (TrustMRR; '0.1x' = one-time-heavy 30d revenue annualized (~$73.7k implied ARR) \u2014 honest recurring multiple: 2.35x on $177 MRR; verify_figures flagged the 24x gap)",
+  "budget_ceiling": 3000,
+  "financing_possible": false,
+  "verdict": "PASS (provisional) \u2014 OUT OF BUDGET",
+  "score": 36.6,
+  "completeness_pct": 66,
+  "one_line_reason": "A dividend-tools directory whose $21k headline revenue is ~97% one-time sponsorship/listing sales driven by the founder's 'Top Dividend ETFs' X audience \u2014 a content-and-ad-sales media business (the team's declared weakness category), with $177 of actual recurring MRR, selling for less than one month's peak revenue, which is itself the tell.",
+  "dimensions": {
+    "operability_upside": {
+      "score": 1,
+      "confidence": "high",
+      "note": "There is no meaningful software: a directory page with Stripe. Operating it means curating listings daily, selling sponsorships to fintech advertisers, and feeding a finance content audience \u2014 a content treadmill plus ad-sales job. The one dimension where the team's engineering strength buys nothing."
+    },
+    "pmf_retention": {
+      "score": 2,
+      "confidence": "med",
+      "note": "Advertiser demand was real ($21,364 in 7 months) but spiky and one-time: $4,164 of the last 30d's $6,138 landed in one week; 30d revenue growth is already negative (-1.2%). Recurring base: 14 subs, $177 MRR. No evidence sponsors renew."
+    },
+    "unit_economics": {
+      "score": 2,
+      "confidence": "med",
+      "note": "97% margin \u2014 directories are pure margin. But the economics are one-time listing sales; LTV = one purchase per advertiser until proven otherwise. The recurring layer ($12.64 ARPU \u00d7 14) is a rounding error."
+    },
+    "moat_defensibility": {
+      "score": 2,
+      "confidence": "med",
+      "note": "DR 22 (best in TrustMRR batch), a niche brand, first-mover claim. But a directory is a weekend replica, and the real moat \u2014 the Top Dividend ETFs X audience \u2014 may not even be part of the sale. AI answers ('best dividend tracker?') are eating the directory format."
+    },
+    "growth_market": {
+      "score": 2,
+      "confidence": "med",
+      "note": "Retail dividend-investing interest is evergreen and growing, but directory/affiliate sites as a format are in structural decline as LLMs answer recommendation queries directly."
+    },
+    "tech_ip": {
+      "score": 3,
+      "confidence": "med",
+      "note": "Trivial, transferable site (domain + content + Stripe). Nothing to break; also nothing proprietary. The IP question is the X account and advertiser relationships, not code."
+    },
+    "transfer_key_person": {
+      "score": 2,
+      "confidence": "med",
+      "note": "The founder IS the media property \u2014 listed on TrustMRR as 'Top Dividend ETFs (9,602 X followers)', with the site's contact at Business@topdividendETFs.com. Traffic and advertiser demand flow from that persona. DR-22 SEO transfers; the audience and DM-based ad pipeline likely don't."
+    },
+    "deal_terms": {
+      "score": 2,
+      "confidence": "med",
+      "note": "$5,000 is 0.23x all-time / 2.35x recurring \u2014 and less than ONE month of claimed peak revenue. If $6k/mo with 'HUGE advertiser demand' were durable, no rational seller takes $5k. The price prices the truth: the spike doesn't repeat. Also 1.67x the budget, 15 competing offers."
+    },
+    "seller_adverse_selection": {
+      "score": 1,
+      "confidence": "med",
+      "note": "Classic lemon dressing: hype message ('HUGE advertiser demand!'), a 0.1x badge built on annualizing one-time sales, sale price below one month's headline revenue, revenue growth already negative, and the audience-owner exiting while keeping (presumably) the X account that generates the demand. The insider's price contradicts the insider's pitch."
+    }
+  },
+  "gates": {
+    "operable": true,
+    "growth_lever_fits": false,
+    "revenue_evidence": "marketplace_attested",
+    "value_transfers": "unknown",
+    "ip_transferable": "unknown",
+    "not_fragile": "unknown"
+  },
+  "key_unknowns": [
+    "Revenue composition \u2014 exactly how much of the $21,364 is one-time listing/sponsorship sales vs anything recurring; Stripe export would show it in minutes. The 0.1x-vs-2.35x gap says ~97% one-time.",
+    "Whether the 'Top Dividend ETFs' X account (9,602 followers) is included in the sale \u2014 it is the traffic and advertiser-demand engine; without it the buyer gets a directory with DR 22 and no megaphone.",
+    "Traffic breakdown: X referrals vs organic search vs direct \u2014 determines what survives the founder's exit.",
+    "Advertiser repeat behavior: have ANY sponsors bought twice? A renewal history would be the one genuinely bullish fact.",
+    "What the 14 subscriptions ($177 MRR) actually are \u2014 premium listings? A newsletter? \u2014 and their churn.",
+    "Whether the -1.2% 30d revenue growth marks the start of the decline the seller is front-running."
+  ],
+  "seller_questions": [
+    "Share a read-only Stripe export split by product: one-time listing/sponsorship sales vs recurring subscriptions, by month since December. \u2014 resolves: revenue_evidence \u2192 buyer_verified / pmf; why: $177 MRR vs $6,138 last-30d says ~97% of revenue is one-time \u2014 we need the exact split and trend.",
+    "Is the 'Top Dividend ETFs' X account (9,602 followers) included in the sale? If not, what % of site traffic and advertiser inquiries come from it? Share analytics (source breakdown, last 90 days). \u2014 resolves: value_transfers / not_fragile; why: the audience appears to be the entire demand engine.",
+    "List every advertiser/sponsor to date with what they bought and whether any has purchased more than once. Any active contracts or committed renewals that transfer? \u2014 resolves: pmf_retention / unit_economics; why: one-time sales are a spent asset; renewals are a business.",
+    "What are the 14 active subscriptions ($177 MRR) \u2014 premium listings, newsletter, something else \u2014 and their cancellation history? \u2014 resolves: unit_economics.",
+    "Why sell for $5,000 \u2014 less than one month of your claimed revenue \u2014 if advertiser demand is 'HUGE'? What changed in the last 30 days (revenue growth is -1.2%)? \u2014 resolves: seller_adverse_selection; why: the price contradicts the pitch, and the honest answer is the deal.",
+    "Who writes/updates the directory ('Updated Daily') and how many hours weekly does curation + sponsor sales take? \u2014 resolves: operability; why: the buyer needs to know the size of the content-and-sales job they'd inherit.",
+    "Given the buyer's $3,000 ceiling: any price flexibility or an earnout tied to sponsor revenue over the next 6 months? \u2014 resolves: deal_terms / affordability; why: an earnout would also test the seller's confidence in the 'huge demand' claim."
+  ],
+  "inputs_provided": [
+    "Listing URL trustmrr.com/startup/topdividendtools (user) \u2014 VERIFIED as existing",
+    "TrustMRR .md profile: $21,364 all-time (7 months), $6,138 last-30d (-1.2%), $4,164 last-7d, $12.95 last-24h, $177 MRR (+17.1%), 14 subs, 97% margin, ~1,000 users, DR 22.0, $5,000 asking, '0.1x', 1,275 interested, 15 offers, founded 2025-12-11, US, founder 'Top Dividend ETFs (9,602 X followers)', pricing '100% FREE', Stripe-verified badge, seller message 'HUGE advertiser demand!' \u2014 MARKETPLACE_ATTESTED",
+    "Live site topdividendtools.com: directory with filterable categories, affiliate links (disclosed), sponsored banner (ETF provider), paid 'submit tool' option, contact Business@topdividendETFs.com, 'Seen by thousands monthly' \u2014 VERIFIED (live site)",
+    "Multiple reconciliation: stated 0.1x = 30d revenue annualized (~$73.7k); recurring multiple = 2.35x on $177 MRR; verify_figures flagged 24x gap \u2014 VERIFIED arithmetic; gap = revenue composition, not data error",
+    "Business type: content/directory/media \u2014 flagged per skill Phase 1 as sitting against the team's weakness regardless of other merits",
+    "Budget ceiling $3,000 / no financing \u2014 reused from session convention"
+  ],
+  "sources": [
+    {
+      "title": "TrustMRR listing (.md profile) \u2014 TopDividendTools",
+      "url": "https://trustmrr.com/startup/topdividendtools.md"
+    },
+    {
+      "title": "TopDividendTools live site (monetization: affiliate + sponsored banners + paid submissions)",
+      "url": "https://topdividendtools.com"
+    }
+  ],
+  "deal": {
+    "asking_price_usd": 5000,
+    "currency": "USD",
+    "revenue_multiple": 2.35,
+    "budget_ceiling_usd": 3000,
+    "budget_fit": "over",
+    "financing_possible": false
+  },
+  "metrics": {
+    "mrr_usd": 177,
+    "arr_usd": null,
+    "subscriptions": 14,
+    "customers": 14,
+    "growth_30d_pct": -1.2,
+    "monthly_visitors": null,
+    "churn_pct": null,
+    "margin_pct": 97.0,
+    "domain_rating": 22.0,
+    "age_months": null,
+    "revenue_evidence": "marketplace_attested"
+  },
+  "contact": {
+    "seller_handle": "Top Dividend ETFs (X, 9,602 followers; Business@topdividendETFs.com)",
+    "listing_url": "https://trustmrr.com/startup/topdividendtools",
+    "marketplace": "TrustMRR",
+    "method": "TrustMRR offer",
+    "contacted_on": null,
+    "notes": null
+  },
+  "scorecard_markdown": "# Acquisition Scorecard (v2) \u2014 TopDividendTools (topdividendtools.com)\n\n**Type:** content/directory site (dividend-investing tools; affiliate + sponsorship monetization)  \u00b7  **Asking:** $5,000 ('0.1x' badge = one-time-heavy 30d revenue annualized; honest recurring multiple 2.35x)  \u00b7  **Budget:** $3,000  \u00b7  **Date:** 2026-07-18\n**Figures reconciled?** verify_figures \u26a0 flagged a **24x gap** between stated (0.1x) and recurring (2.35x) multiples \u2192 reconciled: ~97% of headline revenue is one-time sponsorship/listing sales; $177 MRR is the recurring truth \u00b7 revenue evidence: marketplace_attested (Stripe badge)\n**Sources reviewed:** TrustMRR .md profile, topdividendtools.com (monetization model)\n\n## Verdict\n\n> **PASS (provisional) \u2014 37/100, OUT OF BUDGET** (completeness 66%)\n> This is not a software business \u2014 it's a **media property**: a directory monetized by one-time sponsorship and listing sales, powered by the founder's 'Top Dividend ETFs' X audience (9,602 followers), which may not even be part of the sale. The skill's Phase-1 rule fires on classification alone: content/directory sites are marketing-and-channel businesses that sit against the team's declared weakness regardless of other merits. The numbers confirm it: of $21,364 all-time, only $177/mo recurs; $4,164 of the last month landed in one week; 30-day growth is already negative. And the adverse-selection logic is airtight \u2014 **nobody sells a '$6k/month, HUGE demand' asset for $5,000, less than one month's revenue,** unless they know the spike is spent. Verified kill gate: growth_lever_fits=false (the business IS content + audience + ad sales). $5,000 is 1.67x the ceiling, 15 offers in. Biggest swing factor: none that helps \u2014 a Stripe export showing sponsor renewals would raise merit a few points but can't change what the business is.\n\n## Scorecard (nine dimensions)\n\n| # | Dimension | Wt | Score /5 | Conf | Weighted | Notes |\n|---|---|---|---|---|---|---|\n| 1 | Operability & product upside | 15 | 1 | high | 3.0 | No software to improve; operating it = daily curation + sponsor sales + finance content. A content treadmill, verbatim from the team's avoid-list. |\n| 2 | PMF & retention | 15 | 2 | med | 6.0 | Real advertiser demand happened once; no renewal evidence; -1.2% 30d growth; $177 MRR recurring. |\n| 3 | Unit economics & upside | 12 | 2 | med | 4.8 | 97% margin on one-time sales; LTV = one purchase until proven otherwise. |\n| 4 | Moat & defensibility | 12 | 2 | med | 4.8 | DR 22 (batch best) + niche brand; but directories are weekend replicas and LLMs are eating the format. |\n| 5 | Growth & market | 8 | 2 | med | 3.2 | Dividend niche evergreen; directory/affiliate format structurally declining. |\n| 6 | Tech & IP health | 8 | 3 | med | 4.8 | Trivial transferable site; the real IP (X account, advertiser relationships) is the open question. |\n| 7 | Transfer / key-person | 10 | 2 | med | 4.0 | The founder IS the media property; DR-22 SEO transfers, the audience and DM ad-pipeline likely don't. |\n| 8 | Deal terms & value | 10 | 2 | med | 4.0 | $5k = less than one month's claimed revenue \u2014 the price confesses what the pitch denies. 1.67x budget. |\n| 9 | Seller & adverse-selection | 10 | 1 | med | 2.0 | Hype message + spike-built badge + below-one-month price + negative growth + audience likely retained = lemon dressing. |\n| | **Merit total** | **100** | | | **36.6** | |\n\n**Gates:** operable \u2713 \u00b7 growth-lever-fits \u2717 (caps \u2192 PASS) \u00b7 revenue-evidence marketplace_attested (provisional) \u00b7 value-transfers ? \u00b7 IP-transferable ? \u00b7 not-fragile ? \u00b7 **affordable** NO ($5,000 vs $3,000 \u2192 OUT OF BUDGET)\n\n## Fit-to-build read (the team's lens)\n\nThere is nothing to build. The 'product' is a filterable table; the business is publishing cadence, audience growth on X, and selling banner spots to fintech marketers. Every hour an owner puts in is a content-and-sales hour. This is the single worst fit-to-build in the entire deal corpus \u2014 worse than the SaaS PASSes, because those at least contained software.\n\n## Does the value transfer? (key-person check)\n\nThe demand engine is a named X persona ('Top Dividend ETFs') whose email domain even hosts the site's business contact. If the account conveys, the buyer inherits a content treadmill they can't feed; if it doesn't, they buy a DR-22 domain and a table of links. Either branch fails the team.\n\n## What we know vs. what we're assuming\n\n- **Verified (buyer-reconciled):** the 24x gap between badge multiple and recurring multiple; the one-week $4,164 revenue burst; negative 30d growth; the monetization model (affiliate + sponsorships + paid submissions); the X-brand linkage; business-type classification (content/media).\n- **Assumed / marketplace-attested:** all dollar figures (Stripe badge); 14 subs; ~1,000 users; DR 22.\n- **Unknown (and how it swings):** revenue composition by product (Stripe export \u2014 expected ~97% one-time); X account inclusion; traffic sources; sponsor renewals (the only possible upside surprise); what the 14 subs are. None of it flips the classification gate.\n\n## Seller questions to send (prioritized)\n\n1. Read-only Stripe export split one-time vs recurring, by month. \u2014 *resolves: revenue \u2192 buyer_verified; the 0.1x-vs-2.35x gap says it all \u2014 show the split.*\n2. Is the Top Dividend ETFs X account included? What % of traffic/advertiser inquiries come from it? Analytics for 90 days. \u2014 *resolves: value_transfers / not_fragile.*\n3. Every sponsor to date: what they bought, and has anyone bought twice? Any contracts that transfer? \u2014 *resolves: pmf / unit_economics.*\n4. What are the 14 subscriptions and their churn? \u2014 *resolves: unit_economics.*\n5. Why $5,000 \u2014 under one month's claimed revenue \u2014 if demand is 'HUGE'? What changed in the last 30 days? \u2014 *resolves: adverse-selection.*\n6. Who does the daily curation and sponsor sales, and how many hours weekly? \u2014 *resolves: operability.*\n7. Price flexibility to $3,000, or an earnout on 6-month sponsor revenue? \u2014 *resolves: affordability; also tests the seller's own confidence.*\n\n## Recommended next step\n\n**Pass \u2014 wrong business type, full stop.** Even if every number verifies, this is a media/ad-sales operation the team has explicitly chosen not to be. The corpus now has its cleanest illustration of the marketplace pattern: headline revenue built from one-time spikes, a badge multiple that annualizes them, and a seller price that quietly tells the truth the pitch won't.",
+  "schema_version": "acq-eval-report/1.0",
+  "id": "topdividendtools-com_2026-07-18_simo73",
+  "scoring_version": "v2",
+  "created_at": "2026-07-18T00:00:00Z",
+  "updated_at": "2026-07-18T08:38:02+00:00",
+  "verdict_detail": {
+    "tier": "PASS",
+    "provisional": true,
+    "out_of_budget": true,
+    "insufficient_data": false
+  },
+  "pipeline": {
+    "status": "screening",
+    "owner": "trustos",
+    "last_updated": "2026-07-18T08:38:02+00:00"
+  }
+}
