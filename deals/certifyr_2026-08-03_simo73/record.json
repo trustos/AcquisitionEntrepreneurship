@@ -1,0 +1,169 @@
+{
+  "target": "certifyr",
+  "date": "2026-08-03",
+  "analyst": "simo73",
+  "type": "micro-SaaS",
+  "asking_price": 449,
+  "budget_ceiling": 10000,
+  "financing_possible": true,
+  "verdict": "MARGINAL (provisional)",
+  "score": 50,
+  "completeness_pct": 76,
+  "one_line_reason": "Pre-revenue MVP in a real but crowded market — 10,000 free users, $8.99 all-time revenue, 0 paid subscribers, and a misleading '4.2x' multiple that is arithmetically false; a turnaround call option at $449, not a cash-flow acquisition.",
+  "dimensions": {
+    "operability_upside": {
+      "score": 4,
+      "confidence": "med",
+      "note": "React + Dodo Payments stack is in-wheelhouse; real engineering upside (API, LMS integrations, better AI, conversion funnel)"
+    },
+    "pmf_retention": {
+      "score": 1,
+      "confidence": "high",
+      "note": "VERIFIED POOR: 0 active subscriptions, $8.99 all-time, 0% paid conversion on ~10,000 free users in 15 months"
+    },
+    "unit_economics": {
+      "score": 1,
+      "confidence": "high",
+      "note": "No paying customers; SaaS model would have strong economics if it converted, but verified non-functional"
+    },
+    "moat_defensibility": {
+      "score": 2,
+      "confidence": "med",
+      "note": "Crowded field: Certifier.io, Accredible, Sertifier, CertifyMe, Credly all established; AI features are table stakes; QR verification not unique"
+    },
+    "growth_market": {
+      "score": 3,
+      "confidence": "med",
+      "note": "Digital credential market real and growing; AI tailwind; but Certifyr has captured none of it"
+    },
+    "tech_ip": {
+      "score": 3,
+      "confidence": "low",
+      "note": "628 GitHub commits; 0 in last 30 days; React stack; no repo access; IP ownership unconfirmed — neutral pending verification"
+    },
+    "transfer_key_person": {
+      "score": 4,
+      "confidence": "med",
+      "note": "Founder has 4 X followers; growth is product-led/freemium; distribution is impersonal and transfers with asset"
+    },
+    "deal_terms": {
+      "score": 3,
+      "confidence": "high",
+      "note": "Extremely affordable ($449 / $10k budget); but '4.2x multiple' is false ($449/$8.99 = ~50x all-time); buying code + users, not cash flow; open to offers"
+    },
+    "seller_adverse_selection": {
+      "score": 2,
+      "confidence": "high",
+      "note": "Red flags: false multiple claim; listed day after only transaction; '0 bugs' oversell; abandoned development (0 commits/30d); thin exit story on $8.99 business"
+    }
+  },
+  "gates": {
+    "operable": true,
+    "growth_lever_fits": true,
+    "revenue_evidence": "marketplace_attested",
+    "value_transfers": true,
+    "ip_transferable": "unknown",
+    "not_fragile": true
+  },
+  "key_unknowns": [
+    "Why 10,000 free users produced zero paid conversions — fixable funnel vs. market rejection (PMF/unit-economics; if fixable, score +5–8 pts; if market rejection, move toward PASS)",
+    "IP/code ownership — is 100% owned and freely transferable by the seller? (IP gate; if false, caps at MARGINAL regardless)",
+    "Free user quality — real active signups or bots/one-time visitors? (PMF/moat; if mostly bots, asset value near zero)",
+    "Full asset transfer scope — which accounts/handles/repos actually convey? (transfer/key-person gate)",
+    "Actual monthly operating costs (hosting, AI API calls, email) — could make operations unviable even at $449 entry"
+  ],
+  "seller_questions": [
+    "Why have 10,000 free users produced zero paying customers? What conversion tactics did you try and what were the results? [D2/D3 — this is the central unknown]",
+    "Is 100% of the code and all assets owned by you and freely transferable (no contractor IP, no expiring licenses)? [IP gate]",
+    "What is the quality of the 10,000 estimated users? Signups by month, DAU/MAU, feature usage breakdown? [D2/D4]",
+    "Can you share 30-90 day active user data from your analytics tool? [D2]",
+    "What accounts/assets are included: domain, hosting, GitHub repo(s), Dodo Payments account, social handles, email list, analytics accounts? [D7/IP gate]",
+    "What are the true monthly operating costs (hosting, AI/API, email, other)? [D3]",
+    "What would you do to grow this if you kept it? Where is the biggest conversion opportunity? [D9]"
+  ],
+  "inputs_provided": [
+    "TrustMRR listing URL: https://trustmrr.com/startup/certifyr — VERIFIED (listing .md, last updated 2026-08-02 per DodoPay API)",
+    "Budget ceiling: $10,000 — VERIFIED (user-provided)",
+    "Financing possible: yes — VERIFIED (user-provided)",
+    "All-time revenue $8.99 (single transaction 2026-07-12) — MARKETPLACE_ATTESTED (DodoPay API key)",
+    "MRR: $0.00, Active subscriptions: 0 — MARKETPLACE_ATTESTED",
+    "Asking price: $449 — VERIFIED (listing .md)",
+    "Stated multiple '4.2x' — CONTRADICTED by arithmetic ($449/$8.99 ≈ 50x all-time; no ARR to anchor a multiple)",
+    "~10,000 estimated users (all free) — SELLER_CLAIMED",
+    "Founded May 2025, listed July 13, 2026 — VERIFIED (listing)",
+    "Tech stack: React + Dodo Payments — ASSUMED (from listing description; no repo access)",
+    "GitHub contributions: 628/year, 0/last 30 days — VERIFIED (GitHub contribution graph via TrustMRR)"
+  ],
+  "sources": [
+    {
+      "title": "Certifyr TrustMRR listing (.md)",
+      "url": "https://trustmrr.com/startup/certifyr.md"
+    },
+    {
+      "title": "Certifyr TrustMRR live page",
+      "url": "https://trustmrr.com/startup/certifyr"
+    },
+    {
+      "title": "Certifier.io — main competitor",
+      "url": "https://certifier.io"
+    },
+    {
+      "title": "Sertifier — competitor + alternatives roundup",
+      "url": "https://sertifier.com"
+    },
+    {
+      "title": "Wauld — top digital certificate platforms 2026",
+      "url": "https://wauld.com/blog/digital-certificate-platforms-for-certificate-management"
+    },
+    {
+      "title": "Dodo Payments platform",
+      "url": "https://dodopayments.com"
+    }
+  ],
+  "deal": {
+    "asking_price_usd": 449,
+    "currency": "USD",
+    "revenue_multiple": null,
+    "budget_ceiling_usd": 10000,
+    "budget_fit": "in",
+    "financing_possible": true
+  },
+  "metrics": {
+    "mrr_usd": 0,
+    "arr_usd": 0,
+    "subscriptions": 0,
+    "customers": 0,
+    "growth_30d_pct": 0,
+    "monthly_visitors": null,
+    "churn_pct": null,
+    "margin_pct": 100,
+    "domain_rating": null,
+    "age_months": null,
+    "revenue_evidence": "marketplace_attested"
+  },
+  "contact": {
+    "seller_handle": null,
+    "listing_url": "https://trustmrr.com/startup/certifyr",
+    "marketplace": "TrustMRR",
+    "method": "TrustMRR offer",
+    "contacted_on": null,
+    "notes": null
+  },
+  "scorecard_markdown": "See scorecard.md in this folder",
+  "schema_version": "acq-eval-report/1.0",
+  "id": "certifyr_2026-08-03_simo73",
+  "scoring_version": "v2",
+  "created_at": "2026-08-03T00:00:00Z",
+  "updated_at": "2026-08-02T21:20:10+00:00",
+  "verdict_detail": {
+    "tier": "MARGINAL",
+    "provisional": true,
+    "out_of_budget": false,
+    "insufficient_data": false
+  },
+  "pipeline": {
+    "status": "screening",
+    "owner": "simo73",
+    "last_updated": "2026-08-02T21:20:10+00:00"
+  }
+}
