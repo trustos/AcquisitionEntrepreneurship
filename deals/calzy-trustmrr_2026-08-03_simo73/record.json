@@ -1,0 +1,152 @@
+{
+  "target": "Calzy (TrustMRR)",
+  "date": "2026-08-03",
+  "analyst": "simo73",
+  "type": "consumer mobile app (AI photo-based calorie/nutrition tracker, iOS-only)",
+  "asking_price": 19999,
+  "budget_ceiling": 10000,
+  "financing_possible": true,
+  "verdict": "PASS (provisional)",
+  "score": 42,
+  "completeness_pct": 64,
+  "one_line_reason": "Growth relies on a content/social-virality treadmill (ASO, blog, SEO, TikTok, Instagram) outside the team's competence, the business is single-platform-fragile (App Store only), and revenue has fallen >50% from its June peak right around the listing date.",
+  "dimensions": {
+    "operability_upside": {
+      "score": 4,
+      "confidence": "high",
+      "note": "Swift/SwiftUI + Supabase + RevenueCat + AI photo recognition -- squarely full-stack/AI wheelhouse; real upside (Android, better AI accuracy, wearable integrations) in a fast-commoditizing category."
+    },
+    "pmf_retention": {
+      "score": 2,
+      "confidence": "med",
+      "note": "147 subs, 4.8/5 (54 ratings) reads well, but MRR fell from $1,282 (Jun) to $558 (now), 0% 30d growth -- trajectory itself is evidence of weakening retention/reactivation."
+    },
+    "unit_economics": {
+      "score": 3,
+      "confidence": "med",
+      "note": "90% reported margin, but ARPU only ~$3.80/mo across 147 subs; no CAC/LTV disclosed so LTV:CoCA unverifiable."
+    },
+    "moat_defensibility": {
+      "score": 1,
+      "confidence": "high",
+      "note": "Photo-AI calorie tracking is now commodity (Cal AI, MyFitnessPal, Lose It!, Noom, Foodvisor, SnapCalorie, many GPT-vision clones). No proprietary data, network effect, or switching cost beyond habit/streak."
+    },
+    "growth_market": {
+      "score": 2,
+      "confidence": "med",
+      "note": "Category (AI nutrition tracking) has a tailwind, but this specific product's own revenue is declining >50% off peak -- contradicts the category story."
+    },
+    "tech_ip": {
+      "score": 2,
+      "confidence": "unknown",
+      "note": "Standard stack, but ownership/clean-transfer of Apple Developer account, Supabase project, RevenueCat project, and the AI/vision API dependency (provider undisclosed) are all unconfirmed."
+    },
+    "transfer_key_person": {
+      "score": 2,
+      "confidence": "unknown",
+      "note": "No founder identity beyond 'Mitologic sp. z o.o.'; no TikTok/Instagram/blog handles disclosed, so whether the content/social assets driving distribution transfer with the sale is unverified."
+    },
+    "deal_terms": {
+      "score": 1,
+      "confidence": "high",
+      "note": "$19,999 is 2x the $10k budget. On live MRR ($558x12=$6,696 ARR) the true current-run-rate multiple is ~3.0x, not the marketplace-displayed 1.7x (computed off trailing-30-day revenue, not current MRR)."
+    },
+    "seller_adverse_selection": {
+      "score": 1,
+      "confidence": "med",
+      "note": "No reason for sale given. First listed 2026-06-16 -- the same month revenue peaked -- and revenue has since fallen >50%. Classic list-at-peak, decline-during-diligence pattern."
+    }
+  },
+  "gates": {
+    "operable": true,
+    "growth_lever_fits": false,
+    "revenue_evidence": "marketplace_attested",
+    "value_transfers": "unknown",
+    "ip_transferable": "unknown",
+    "not_fragile": false
+  },
+  "key_unknowns": [
+    "Reason for sale -- none disclosed; swings seller-adverse-selection significantly",
+    "Real churn/cohort retention data -- currently only inferred from the MRR trend (May $263 -> Jun $1,282 -> Jul $1,248 -> now $558 MRR)",
+    "CAC and paid-vs-organic split of TikTok/Instagram/SEO channels -- determines whether growth_lever_fits could ever flip to true",
+    "IP/account transferability -- Apple Developer account, Supabase project, RevenueCat project, and identity of the AI/vision API vendor",
+    "Whether the June revenue spike had an identifiable one-off cause (viral post, App Store feature, promo) that explains the subsequent fade"
+  ],
+  "seller_questions": [
+    "Why are you selling, and why now?",
+    "What caused the spike to $1,282 MRR in June, and the drop to $558 since? Can you show a monthly cohort/churn breakdown?",
+    "Where do new customers come from today -- % split across ASO, SEO/blog, TikTok, Instagram, paid? Do you have CAC data?",
+    "Can you export the last 12 months of revenue directly from App Store Connect / RevenueCat (not the TrustMRR summary) so we can reconcile MRR and multiple ourselves?",
+    "Is 100% of the code, Supabase project, RevenueCat project, and Apple Developer account owned solely by you, with no contractor-owned IP or unrelicensable dependencies (including the AI/vision API)?",
+    "Do any TikTok/Instagram/blog accounts or influencer relationships that drove growth transfer with the sale, and would you stay on briefly for handoff?",
+    "Are you open to seller financing, a retention-linked earnout, or an escrow holdback given the recent revenue decline?"
+  ],
+  "inputs_provided": [
+    "TrustMRR listing URL (VERIFIED page + .md fetched)",
+    "MRR $558, active subs 147, 30d revenue $995, all-time revenue $2,884, monthly trend May-Aug (ASSUMED -- marketplace_attested via RevenueCat sync, not buyer-reconciled)",
+    "Asking $19,999, stated multiple 1.7x (ASSUMED -- reconciliation shows this uses trailing-30-day revenue annualized, not current MRR; true current-MRR multiple is ~2.99x)",
+    "App Store metadata: 4.8/5 rating, 54 ratings, release date 2026-01-25, bundle ID com.mitologic.Calzy, seller Mitologic sp. z o.o. (VERIFIED via iTunes lookup API)",
+    "Tech stack: Swift, SwiftUI, Supabase, RevenueCat (VERIFIED from listing)",
+    "Distribution channels: ASO, blog, content marketing, SEO, TikTok, Instagram (VERIFIED from listing -- drives growth_lever_fits=false)"
+  ],
+  "sources": [
+    {
+      "title": "TrustMRR listing -- Calzy",
+      "url": "https://trustmrr.com/startup/calzy"
+    },
+    {
+      "title": "TrustMRR listing markdown -- Calzy",
+      "url": "https://trustmrr.com/startup/calzy.md"
+    },
+    {
+      "title": "iTunes Lookup API -- com.mitologic.Calzy",
+      "url": "https://itunes.apple.com/lookup?bundleId=com.mitologic.Calzy"
+    }
+  ],
+  "scorecard_markdown": "# Acquisition Scorecard (v2) — Calzy (TrustMRR)\n\n**Type:** Consumer mobile app (iOS-only) — AI photo-based calorie/nutrition tracker · **Asking:** $19,999 (marketplace-stated 1.7x) · **Budget:** $10,000 · **Date:** 2026-08-03\n**Figures reconciled?** two-source ✓ (listing page + listing .md) · verify_figures ✓ (flagged a mismatch — see below) · revenue evidence: **marketplace_attested** (RevenueCat sync via TrustMRR, not buyer-reconciled from source)\n**Sources reviewed:** trustmrr.com/startup/calzy (page + .md), Apple iTunes lookup API (App Store metadata), app description/pricing\n\n## Verdict\n\n> **PASS (provisional) — 42/100** (completeness 64%)\n> Two verified-negative gates cap this deal: the primary growth channels (ASO, blog, content marketing, SEO, TikTok, Instagram) are exactly the team's stated weakness — a content/social-virality treadmill, not product-led/organic growth — and the business is structurally fragile as a single-platform (Apple App Store only, no Android) iOS app with 100% of revenue running through Apple's IAP. On top of the gates, the merit score itself is weak: revenue has fallen >50% from its June peak ($1,282/mo) to the current $558 MRR, the category (AI photo calorie-counting) is now commodity-crowded, and at $19,999 the price is ~2x the $10k budget and ~3.0x *current* run-rate (not the marketplace's advertised 1.7x — see reconciliation). The single biggest swing factor is the revenue decline: if the seller can show this was a one-off dip with recovery already underway, PMF/retention and seller-adverse-selection scores would improve — but as observed, this reads as a peak-and-fade pattern timed suspiciously close to the listing date.\n\n## Scorecard (nine dimensions)\n\n| # | Dimension | Wt | Score /5 | Conf | Weighted | Notes |\n|---|---|---|---|---|---|---|\n| 1 | Operability & product upside | 15 | 4 | high | 12.0 | Swift/SwiftUI + Supabase + RevenueCat + AI photo recognition — squarely full-stack/AI wheelhouse; real upside (Android, better AI accuracy, wearable integrations) in a fast-commoditizing category. |\n| 2 | PMF & retention | 15 | 2 | med | 6.0 | 147 subs, 4.8/5 (54 ratings) reads well, but MRR fell from $1,282 (Jun) to $558 (now), 0% 30d growth — trajectory itself is evidence of weakening retention/reactivation. |\n| 3 | Unit economics & upside | 12 | 3 | med | 7.2 | 90% reported margin, but ARPU only ~$3.80/mo across 147 subs; no CAC/LTV disclosed so LTV:CoCA unverifiable. |\n| 4 | Moat & defensibility | 12 | 1 | high | 2.4 | Photo-AI calorie tracking is now commodity (Cal AI, MyFitnessPal, Lose It!, Noom, Foodvisor, SnapCalorie, many GPT-vision clones). No proprietary data, network effect, or switching cost beyond habit/streak. |\n| 5 | Growth & market | 8 | 2 | med | 3.2 | Category (AI nutrition tracking) has a tailwind, but this specific product's own revenue is declining >50% off peak — contradicts the category story. |\n| 6 | Tech & IP health | 8 | 2 | unknown | 3.2 | Standard stack, but ownership/clean-transfer of Apple Developer account, Supabase project, RevenueCat project, and the AI/vision API dependency (provider undisclosed) are all unconfirmed. |\n| 7 | Transfer / key-person | 10 | 2 | unknown | 4.0 | No founder identity beyond \"Mitologic sp. z o.o.\"; no TikTok/Instagram/blog handles disclosed, so whether the content/social assets driving distribution transfer with the sale is unverified. X followers: 0 suggests minimal owned social presence. |\n| 8 | Deal terms & value | 10 | 1 | high | 2.0 | $19,999 is 2x the $10k budget. On live MRR ($558×12=$6,696 ARR) the true current-run-rate multiple is ~3.0x, not the marketplace-displayed 1.7x (computed off trailing-30-day revenue, not current MRR). Poor value for a declining, commodity, single-platform app. |\n| 9 | Seller & adverse-selection | 10 | 1 | med | 2.0 | No reason for sale given. First listed 2026-06-16 — the same month revenue peaked — and revenue has since fallen >50%. Classic list-at-peak, decline-during-diligence pattern. |\n| | **Merit total** | **100** | | | **42.0** | |\n\n**Gates:** operable [true] · growth-lever-fits **[false]** · revenue-evidence [marketplace_attested] · value-transfers [unknown] · IP-transferable [unknown] · not-fragile **[false]** · **affordable** [yes, if financed — asking exceeds cash budget alone]\n\n## Fit-to-build read (the team's lens)\n\nThe tech itself is squarely operable by this team (Swift/SwiftUI mobile, Supabase, AI/ML integration) — this is not a \"we can't run the stack\" problem. But the path to *growing* it is a marketing/content problem, not an engineering one: the listing's own stated distribution channels are App Store optimization, blog, content marketing, SEO, TikTok, and Instagram. That's a social-virality/content treadmill, and the revenue history (a sharp spike in June followed by a steep fade) looks exactly like what happens when a single piece of viral content or influencer push drives a temporary subscriber surge that the team then can't replicate. Buying this would mean buying a team's inability to reproduce its own best month — precisely the weakness this buyer is trying to avoid.\n\n## Does the value transfer? (key-person check)\n\nUnclear. No founder or creator identity is disclosed (only the corporate entity \"Mitologic sp. z o.o.\"), and there are no public TikTok/Instagram/blog handles to verify whether the content assets that drove the June revenue spike would actually convey in a sale, or whether they belong to an agency/influencer relationship that ends when the current owner exits. Zero X/Twitter followers suggests limited owned-audience distribution to begin with, which is a mild positive for transfer risk (less to lose) but doesn't resolve the TikTok/Instagram question.\n\n## What we know vs. what we're assuming\n\n- **Verified (buyer-reconciled):** App Store metadata (name, rating 4.8/5 from 54 ratings, release date 2026-01-25, bundle ID, tech stack, pricing tiers) via iTunes lookup API; subs × ARPU ≈ MRR arithmetic checks out ($147 × $3.80 ≈ $558).\n- **Assumed / marketplace-attested:** MRR ($558), 30-day revenue ($995), all-time revenue ($2,884), and the monthly revenue trend (May–Aug) — these come from TrustMRR's RevenueCat sync, which is a real payment-provider connection but has not been independently reconciled by us against Stripe/App Store Connect financial reports. The listing's \"1.7x\" multiple appears to be computed off annualized trailing-30-day revenue ($995×12=$11,940 → 1.67x), not off current MRR ($558×12=$6,696 → 2.99x) — a materially different (and worse) number for the buyer once you use the metric that matters going forward.\n- **Unknown (and how it swings the score):** Reason for sale (could flip seller-adverse-selection up or down significantly); churn/retention cohort data (currently inferred only from the MRR trend — real churn numbers could be better or worse); CAC and paid-vs-organic split of the TikTok/Instagram/SEO channels (determines how repeatable growth really is and could shift growth-lever-fits); IP/account transferability (App Store Connect, Supabase, RevenueCat, and the AI vision API vendor); whether the June revenue spike had an identifiable one-off cause (a viral post, a feature launch, App Store featuring) that could be understood and potentially re-triggered.\n\n## Seller questions to send (prioritized)\n\n1. Why are you selling, and why now? *— resolves: seller-adverse-selection; the listing gives no reason, and the timing (listed the same month revenue peaked, then fell >50%) needs a credible explanation.*\n2. What caused the spike to $1,282 MRR in June, and what caused the subsequent drop to $558? Can you show a monthly cohort/churn breakdown for that period? *— resolves: PMF & retention, growth & market; this is the single biggest swing factor in the score.*\n3. Where do new customers actually come from today — rough % split across ASO, SEO/blog, TikTok, Instagram, and any paid spend? Do you have CAC data? *— resolves: growth-lever-fits gate; determines whether growth is truly organic/product-led or a content/social treadmill this team can't run.*\n4. Can you export the last 12 months of revenue directly from App Store Connect / RevenueCat dashboard (not the TrustMRR summary) so we can reconcile the MRR and multiple ourselves? *— resolves: revenue-evidence gate (upgrade from marketplace_attested to buyer_verified).*\n5. Is 100% of the code, Supabase project, RevenueCat project, and Apple Developer account owned solely by you/the entity, with no contractor-owned IP or unrelicensable dependencies (including whichever AI/vision API powers food recognition)? *— resolves: IP-transferable gate.*\n6. Do any TikTok/Instagram/blog accounts, content assets, or influencer relationships that drove growth transfer with the sale, and would you stay on briefly to hand off the marketing playbook? *— resolves: transfer/key-person dimension.*\n7. Are you open to seller financing, a retention-linked earnout, or an escrow holdback given the recent revenue decline? *— resolves: deal terms; shifts risk back onto the better-informed party and tests confidence in the numbers.*\n\n## Recommended next step\n\nPass, provisionally. The two kill-gate issues (content/social-driven growth channel outside the team's competence, and single-platform App Store fragility) aren't resolved by better data — they're structural to this business. Only reconsider if the seller's answer to \"why sell / what caused the drop\" reveals a clearly one-off, non-recurring explanation (e.g., a temporary App Store policy issue now resolved) **and** the price comes down substantially toward or below the $10k budget without financing. Otherwise, this fits the profile of a business whose best month the team can't reproduce and whose channel isn't ownable by this team.\n",
+  "deal": {
+    "asking_price_usd": 19999,
+    "currency": "USD",
+    "revenue_multiple": 1.7,
+    "budget_ceiling_usd": 10000,
+    "budget_fit": "over",
+    "financing_possible": true
+  },
+  "metrics": {
+    "mrr_usd": 558,
+    "arr_usd": 6696,
+    "subscriptions": 147,
+    "customers": 147,
+    "growth_30d_pct": 0.0,
+    "monthly_visitors": null,
+    "churn_pct": null,
+    "margin_pct": 90.0,
+    "domain_rating": null,
+    "age_months": null,
+    "revenue_evidence": "marketplace_attested"
+  },
+  "contact": {
+    "seller_handle": null,
+    "listing_url": "https://trustmrr.com/startup/calzy",
+    "marketplace": "TrustMRR",
+    "method": "TrustMRR offer",
+    "contacted_on": null,
+    "notes": null
+  },
+  "schema_version": "acq-eval-report/1.0",
+  "id": "calzy-trustmrr_2026-08-03_simo73",
+  "scoring_version": "v2",
+  "created_at": "2026-08-03T00:00:00Z",
+  "updated_at": "2026-08-03T20:34:41+00:00",
+  "verdict_detail": {
+    "tier": "PASS",
+    "provisional": true,
+    "out_of_budget": false,
+    "insufficient_data": false
+  },
+  "pipeline": {
+    "status": "passed",
+    "owner": "simo73",
+    "last_updated": "2026-08-03T20:34:41+00:00"
+  }
+}
