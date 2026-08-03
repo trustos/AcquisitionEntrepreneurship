@@ -1,0 +1,169 @@
+{
+  "target": "aprofy",
+  "date": "2026-08-03",
+  "analyst": "simo73",
+  "type": "consumer mobile app",
+  "asking_price": 4000,
+  "budget_ceiling": 10000,
+  "financing_possible": true,
+  "verdict": "MARGINAL (provisional)",
+  "score": 53,
+  "completeness_pct": 55,
+  "one_line_reason": "A 2-month-old iOS study app sold weeks after launch — more code sale than business sale; 30 paying subscribers with 0% MRR growth, crowded category, and no churn or IP-transfer data to confirm upgrade.",
+  "dimensions": {
+    "operability_upside": {
+      "score": 4,
+      "confidence": "high",
+      "note": "React Native / Expo / TypeScript squarely in wheelhouse; RevenueCat, Sentry already integrated. Clear upside: Android, AI study-plan features, web app. This team can extend it without friction."
+    },
+    "pmf_retention": {
+      "score": 2,
+      "confidence": "low",
+      "note": "30 paying subscribers in 2 months, 0% MRR growth last 30 days. 0 US App Store ratings. Website claims 4.8★ and 50k users — unverifiable vs. listing data. Churn completely unknown. Scored neutral per rules; not evidently bad, but nothing verified."
+    },
+    "unit_economics": {
+      "score": 2,
+      "confidence": "low",
+      "note": "85% reported margin (good), ARPU $4.03/mo. LTV unknown without churn data. CoCA unknown — TikTok spend not disclosed. Pricing headroom exists ($6.99 → $9.99 possible). Scored neutral; too early to assess LTV:CoCA ratio."
+    },
+    "moat_defensibility": {
+      "score": 2,
+      "confidence": "med",
+      "note": "Crowded category: Forest (60M users, 49K ratings), Be Focused, Toggl, Pomodoro Timer, Structured. Aprofy's differentiation (subject/grade tracking, exam countdown, stats) is real but replicable. No integrations, no proprietary data. ASO-driven discovery is commodity."
+    },
+    "growth_market": {
+      "score": 3,
+      "confidence": "med",
+      "note": "Education productivity market is stable-growing. AI could be a tailwind (adaptive study plans) or a partial headwind (AI tutors that auto-schedule). Net: flat/moderate market growth. App itself is 0% growth last 30 days."
+    },
+    "tech_ip": {
+      "score": 3,
+      "confidence": "med",
+      "note": "Modern stack (RN/Expo/TS), third-party services (RevenueCat, Sentry) are portable. App Store account transfer is procedurally possible per Apple policy. IP ownership assumed (solo founder, 2 months old) but not confirmed in writing. Moderate score pending confirmation."
+    },
+    "transfer_key_person": {
+      "score": 3,
+      "confidence": "low",
+      "note": "ASO is transferable; TikTok channel is unknown — if founder-persona driven, it walks out the door. Seller has 3 X followers so organic social is tiny. Website claims 50k users, mostly assumed to be ASO-driven. Scored neutral per rules."
+    },
+    "deal_terms": {
+      "score": 3,
+      "confidence": "med",
+      "note": "$4,000 asking = 33x MRR / 2.75x ARR. Payback at current MRR: ~33 months gross. Affordable (40% of $10k ceiling). Price is reasonable for a coded, functioning app with RevenueCat/Sentry infrastructure, but high if growth stays flat. No seller-financing or earnout offered on listing."
+    },
+    "seller_adverse_selection": {
+      "score": 2,
+      "confidence": "med",
+      "note": "Biggest flag: listed for sale ~25 days after launch (app June 4, listed June 29). Founder cited 'shifting to new project' — plausible at 2 months, but also consistent with early pivot-out after seeing stagnant growth. No verifiable Stripe data, no growth story. Interrogate the early exit hard."
+    }
+  },
+  "gates": {
+    "operable": true,
+    "growth_lever_fits": true,
+    "revenue_evidence": "marketplace_attested",
+    "value_transfers": "unknown",
+    "ip_transferable": "unknown",
+    "not_fragile": true
+  },
+  "key_unknowns": [
+    "Churn rate (monthly): if >5%/mo, LTV falls below ~$80/sub and unit economics become unfavorable; if <2%/mo, this upgrades the PMF and unit-economics dimensions meaningfully.",
+    "IP and App Store transfer: if the code has third-party contractor claims or the App Store account cannot transfer cleanly, this hits a MARGINAL cap on ip_transferable.",
+    "TikTok channel ownership: if the 50k user base was driven by founder-persona TikTok content (likely Spanish-language), that channel walks with the seller; if ASO-driven, it transfers fine.",
+    "True download and install count: website claims 50k students, listing shows 30 paying subs. Actual download/DAU data would clarify free-to-paid funnel and whether the install base has residual monetization value.",
+    "Revenue verification from Stripe/RevenueCat source data: marketplace-attested badge is not buyer-reconciled; actual RevenueCat export or Stripe CSV would upgrade revenue_evidence and could clear the provisional flag.",
+    "Why listed 25 days after launch: the seller's true reason for selling this fast is the single biggest uncertainty. A credible answer (rapid boredom, next project fully occupying them) is benign; evasiveness is a hard stop."
+  ],
+  "seller_questions": [
+    "Why are you selling 3–4 weeks after launch, and what specifically triggered the decision to list so soon? — resolves: seller_adverse_selection; this is the deal-breaker question — a vague or evasive answer means pass.",
+    "Can you share the RevenueCat subscriber export (CSV or dashboard screenshot) showing MRR, active subs, churn by cohort, and plan breakdown (monthly vs annual)? — resolves: revenue_evidence → buyer_verified; also unlocks pmf_retention and unit_economics scoring.",
+    "Is 100% of the code owned by you personally (no contractor-written IP, no unlicensed dependencies), and can the App Store developer account transfer to a new entity? — resolves: ip_transferable; a hard gate — if either is 'no,' deal caps at MARGINAL.",
+    "What actually drove the 50k+ installs you claim on the website — TikTok videos, organic ASO, or something else? Can you share App Store Connect analytics (installs by source) and your TikTok account stats? — resolves: transfer_key_person, growth_lever_fits; if TikTok is founder-persona-driven and not transferable, this is a structural issue.",
+    "What are your exact monthly operating costs (RevenueCat, Sentry, Apple developer account, any contractors or tools)? — resolves: unit_economics; confirms the 85% margin claim.",
+    "What is the monthly and annual subscriber churn rate, and can you show a cohort retention chart from RevenueCat? — resolves: pmf_retention, unit_economics (LTV); the most important retention signal.",
+    "Are you open to an earnout or a holdback in escrow (e.g., 70% at close, 30% after 90 days if MRR stays ≥$100)? — resolves: deal_terms; seller willingness to share risk is itself a quality signal; refusal at this price/stage is a yellow flag.",
+    "What would you do to grow this if you were keeping it? — free strategic insight and a reveal about any ceilings you've already hit."
+  ],
+  "inputs_provided": [
+    "VERIFIED — TrustMRR listing .md: MRR $121, ARR $1,452, asking $4,000, 30 active subscriptions, ARPU $4.03, 85% margin, revenue verified via RevenueCat API, last 30-day growth 0%, all-time revenue $485, monthly breakdown Jun $248 / Jul $236",
+    "VERIFIED — App Store listing: iOS only, v1.6.4, 59.1 MB, developer Alejandro Mascort Colomer, 0 ratings US storefront, genre Education, free + $6.99/mo or $39.99/yr Premium",
+    "VERIFIED — Stack: React Native, Expo, TypeScript, RevenueCat, Sentry",
+    "VERIFIED — TikTok + ASO as stated marketing channels",
+    "ASSUMED — aprofy.app website claims 50,000+ students, 4.8★ rating — unverified against App Store or analytics data; likely includes free users across all regions",
+    "ASSUMED — IP owned by solo founder (2-month-old app, no contractor mentions) — not confirmed in writing",
+    "ASSUMED — ASO is primary acquisition channel given seller's tiny social presence (3 X followers)",
+    "UNKNOWN — Churn rate (not disclosed in listing)",
+    "UNKNOWN — TikTok follower count and whether social channel is founder-persona dependent",
+    "UNKNOWN — App Store Connect install/source breakdown",
+    "UNKNOWN — True cost structure (only margin % disclosed)",
+    "UNKNOWN — App Store account transfer feasibility in practice",
+    "VERIFIED (user) — Budget ceiling $10,000, financing possible, analyst simo73, full workup requested"
+  ],
+  "sources": [
+    {
+      "title": "TrustMRR listing .md — Aprofy",
+      "url": "https://trustmrr.com/startup/aprofy.md"
+    },
+    {
+      "title": "TrustMRR listing — Aprofy",
+      "url": "https://trustmrr.com/startup/aprofy"
+    },
+    {
+      "title": "Apple App Store — Aprofy: Study Planner & Timer",
+      "url": "https://apps.apple.com/us/app/aprofy/id6775385787"
+    },
+    {
+      "title": "Aprofy website",
+      "url": "https://aprofy.app"
+    },
+    {
+      "title": "Apple App Store — Forest (benchmark competitor)",
+      "url": "https://apps.apple.com/us/app/forest-stay-focused/id866450515"
+    }
+  ],
+  "deal": {
+    "asking_price_usd": 4000,
+    "currency": "USD",
+    "revenue_multiple": 2.75,
+    "budget_ceiling_usd": 10000,
+    "budget_fit": "in",
+    "financing_possible": true
+  },
+  "metrics": {
+    "mrr_usd": 121,
+    "arr_usd": 1452,
+    "subscriptions": 30,
+    "customers": 30,
+    "growth_30d_pct": 0.0,
+    "monthly_visitors": null,
+    "churn_pct": null,
+    "margin_pct": 85,
+    "domain_rating": null,
+    "age_months": null,
+    "revenue_evidence": "marketplace_attested"
+  },
+  "contact": {
+    "seller_handle": "Alejandro Mascort Colomer",
+    "listing_url": "https://trustmrr.com/startup/aprofy",
+    "marketplace": "TrustMRR",
+    "method": "TrustMRR offer",
+    "contacted_on": null,
+    "notes": null
+  },
+  "scorecard_markdown": "# Acquisition Scorecard (v2) — Aprofy\n\n**Type:** Consumer mobile app (iOS study companion) · **Asking:** $4,000 (2.75× ARR / 33× MRR) · **Budget:** $10,000 · **Date:** 2026-08-03\n**Figures reconciled?** verify_figures ✓ (subs × ARPU = MRR) · note: TrustMRR states 2.0× but this is computed on last-30-day revenue annualized ($163×12=$1,956); ARR-based multiple is 2.75× · **Revenue evidence:** marketplace_attested (RevenueCat API, not buyer-reconciled from source)\n**Sources reviewed:** TrustMRR listing .md, App Store product page, aprofy.app website, Forest benchmark competitor\n\n## Verdict\n\n> **MARGINAL (provisional) — 53/100** (completeness 55%)\n>\n> Aprofy is a well-built iOS study-timer app (React Native/Expo) that launched in June 2026 and was listed for sale within ~25 days of launch. At $4,000 it buys you a working mobile codebase, RevenueCat paywall infrastructure, Sentry monitoring, and 30 paying subscribers generating $121 MRR — but nothing resembling a proven business yet. MRR growth is 0% in the trailing month, churn is unknown, and the category is crowded (Forest alone has 60M users). The single biggest red flag is the ultra-early exit: a founder who sells within weeks of launch is either (a) an experienced app-flipper or (b) someone who saw early metrics and chose to cut losses — and you can't tell which without a direct answer. Revenue is marketplace-attested (RevenueCat API badge), not buyer-reconciled, so the verdict stays provisional. The team can absolutely operate this stack, and the price is within budget, but MARGINAL is the right rating until churn, IP transfer, and the real reason for the early sale are confirmed.\n\n## Scorecard (nine dimensions)\n\n| # | Dimension | Wt | Score /5 | Conf | Weighted | Notes |\n|---|---|---|---|---|---|---|\n| 1 | Operability & product upside | 15 | 4 | high | 12.0 | React Native/Expo/TS squarely in wheelhouse. Upside: Android, AI study plans, web app. |\n| 2 | PMF & retention | 15 | 2 | low | 6.0 | 30 paying subs, 0% MRR growth, 0 US App Store ratings. Churn unknown. Neutral per rules. |\n| 3 | Unit economics & upside | 12 | 2 | low | 4.8 | 85% margin stated. ARPU $4.03/mo. LTV unknown (no churn). CoCA unknown. Scored neutral. |\n| 4 | Moat & defensibility | 12 | 2 | med | 4.8 | Crowded category (Forest 60M users). Differentiation real but replicable. Commodity ASO. |\n| 5 | Growth & market | 8 | 3 | med | 4.8 | Education productivity stable-growing. AI tailwind plausible. App itself flat. |\n| 6 | Tech & IP health | 8 | 3 | med | 4.8 | Modern transferable stack. App Store transfer procedurally possible. IP ownership unconfirmed. |\n| 7 | Transfer / key-person | 10 | 3 | low | 6.0 | ASO transfers; TikTok channel provenance unknown. 50k user claim unverified. Scored neutral. |\n| 8 | Deal terms & value | 10 | 3 | med | 6.0 | $4k = 33× MRR / 2.75× ARR. Affordable (40% of budget). Fair for code+infra; thin for business. |\n| 9 | Seller & adverse-selection | 10 | 2 | med | 4.0 | Listed ~25 days post-launch. \"Shifting focus\" claim is plausible but suspicious at 2 months. |\n| | **Merit total** | **100** | | | **53** | |\n\n**Gates:** operable ✓ · growth-lever-fits ✓ · revenue-evidence marketplace_attested (not buyer-verified) · value-transfers unknown · IP-transferable unknown · not-fragile ✓ · **affordable ✓** ($4k vs $10k ceiling)\n\n## Fit-to-build read (the team's lens)\n\nThis is firmly in the wheelhouse on the engineering side. React Native, Expo, TypeScript — standard mobile stack. RevenueCat for subscriptions and Sentry for monitoring are both industry-standard and already wired in, meaning day-one ops are clean. The obvious product upside (Android expansion, AI-driven study recommendations, adaptive scheduling, spaced-repetition flashcard integration) is exactly the kind of feature work this team executes well.\n\nThe growth question is different. The primary acquisition channel is ASO + TikTok. ASO is transferable and manageable — any team can improve App Store metadata, screenshots, and localization. TikTok is the unknown: if the founder's early installs came from personal Spanish-language content, that channel does not transfer. If ASO alone drove adoption, the team is fine. This team does not have organic social or content-marketing muscle, so TikTok dependency is a fit risk — resolve it before closing.\n\n## Does the value transfer? (key-person check)\n\nThe product is simple and self-contained — study timer, planner, stats. There are no customer relationships, no sales process, no consulting dependency. On the product side, value transfers cleanly. The risk is on the acquisition channel: TikTok content that drove early downloads may be tied to the founder's persona. The seller has only 3 X followers (tiny public social presence), which could mean TikTok is the main channel under a separate account — or it could mean social was never meaningful and ASO was always primary. App Store Connect source analytics would answer this definitively. Until then, the transfer/key-person dimension stays neutral-scored.\n\n## What we know vs. what we're assuming\n\n- **Verified (marketplace-attested):** MRR $121, 30 active subs, ARPU $4.03, 0% MRR growth last 30 days, all-time revenue $485 (Jun $248 + Jul $236), 85% margin, RevenueCat + Sentry stack, React Native/Expo/TypeScript, iOS App Store v1.6.4, asking $4,000, listed 2026-06-29, founded 2026-06-04.\n- **Assumed / unverified:** 50,000+ students (website claim, unconfirmed — likely includes free-tier downloads across non-US storefronts); 4.8★ rating (website claim, contradicts 0 ratings in US App Store — possibly Spanish storefront reviews); IP owned solely by founder (no mention of contractors); ASO as primary driver given seller's tiny social footprint.\n- **Unknown (and how it swings the score):** Churn rate — if >5%/mo, drops this to PASS; if <2%/mo, upgrades PMF to 3 and unit_economics to 3 (→ ~58 merit). TikTok channel details — if persona-dependent, value_transfers may flip false (→ capped MARGINAL or PASS). IP/App Store transfer confirmation — if problematic, ip_transferable = false (→ capped MARGINAL). True reason for ultra-early exit — seller's credibility hangs entirely on this answer.\n\n## Seller questions to send (prioritized)\n\n1. **Why are you selling 3–4 weeks after launch — what specifically triggered the decision to list so soon?** — *resolves: seller_adverse_selection; deal-breaker if evasive or inconsistent. An app-flipper model (intentional) vs. early-exit-on-stagnation (yellow flag) changes everything.*\n\n2. **Can you share the RevenueCat subscriber export (CSV or full dashboard screenshot) showing active subs, churn by cohort, and plan-type breakdown (monthly vs annual)?** — *resolves: revenue_evidence → buyer_verified; unlocks PMF retention and unit economics. Most critical data gap.*\n\n3. **Is 100% of the code owned by you personally (no contractor IP, no unlicensed libraries), and can the App Store developer account transfer to a new legal entity?** — *resolves: ip_transferable; if either is 'no,' the deal caps at MARGINAL regardless of other factors.*\n\n4. **What drove the 50k+ students you cite on your website — TikTok, organic ASO, or something else? Can you share App Store Connect install-source analytics and your TikTok account stats?** — *resolves: transfer_key_person, growth_lever_fits; if TikTok is founder-persona dependent, that channel does not transfer to this team.*\n\n5. **What is the monthly subscriber churn rate, and can you pull a cohort retention chart from RevenueCat?** — *resolves: pmf_retention, unit_economics (LTV); the single biggest number missing from this evaluation.*\n\n6. **What are your exact monthly operating costs — RevenueCat plan, Sentry plan, Apple developer account, any tools or contractors?** — *resolves: unit_economics; confirms the 85% margin claim.*\n\n7. **Are you open to an earnout or holdback — e.g., 70% at close, 30% held 90 days conditional on MRR staying ≥ $100?** — *resolves: deal_terms; willingness to share downside risk is a quality signal. Refusal on a $4k deal is a yellow flag.*\n\n8. **What would you do to grow this if you were keeping it?** — *free strategic insight and a tell about any growth ceilings already hit.*\n\n## Recommended next step\n\nSend questions 1–5 and evaluate the answers before making an offer. Q1 (the real reason for the early exit) and Q2 (RevenueCat export) are the decision-makers: a credible exit story + verified sub/churn data could upgrade this to PROMISING. If churn is below 3%/mo and IP transfers cleanly, the $4,000 ask is reasonable for the infrastructure + install base and the team can grow it on the engineering path. If the seller is evasive on Q1, or if churn is high, or if TikTok is creator-persona-dependent — pass.",
+  "schema_version": "acq-eval-report/1.0",
+  "id": "aprofy_2026-08-03_simo73",
+  "scoring_version": "v2",
+  "created_at": "2026-08-03T00:00:00Z",
+  "updated_at": "2026-08-03T19:10:05+00:00",
+  "verdict_detail": {
+    "tier": "MARGINAL",
+    "provisional": true,
+    "out_of_budget": false,
+    "insufficient_data": false
+  },
+  "pipeline": {
+    "status": "screening",
+    "owner": "simo73",
+    "last_updated": "2026-08-03T19:10:05+00:00"
+  }
+}
