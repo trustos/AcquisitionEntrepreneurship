@@ -1,0 +1,161 @@
+{
+  "target": "Quran Daily",
+  "date": "2026-08-03",
+  "analyst": "simo73",
+  "type": "consumer app (iOS)",
+  "asking_price": "$1,500",
+  "budget_ceiling": 10000,
+  "financing_possible": true,
+  "verdict": "PROMISING (provisional)",
+  "score": 61,
+  "completeness_pct": 62,
+  "one_line_reason": "Dirt-cheap iOS widget app in a real (if crowded) market with clean transferable stack and ASO-organic growth — but only 14 months old, 8 App Store reviews, flat 30-day MRR growth, and an unverified PMF signal that could resolve to either 'nascent gem' or 'stalled side project.'",
+  "dimensions": {
+    "operability_upside": {
+      "score": 4,
+      "confidence": "high",
+      "note": "Swift/SwiftUI + RevenueCat is squarely in the team's mobile wheelhouse. Clear engineering upside: Android port, AI verse personalization, additional content types, widget customisation."
+    },
+    "pmf_retention": {
+      "score": 2,
+      "confidence": "low",
+      "note": "47 active subscribers and a 4.6/5 rating are encouraging, but 8 App Store reviews after 14 months is a thin signal. Monthly cash ($70–77/mo) is flat. Churn is unknown. Score neutral per golden rule."
+    },
+    "unit_economics": {
+      "score": 3,
+      "confidence": "med",
+      "note": "85% reported margin, zero paid CAC (ASO organic), pricing headroom (weekly $1.99 / annual $29.99 — could add higher tiers). Actual monthly cash ~$70–77 vs RevenueCat MRR $144 (subscription-value metric, not cash). LTV unknown."
+    },
+    "moat_defensibility": {
+      "score": 2,
+      "confidence": "med",
+      "note": "Seller claims 'Islam is an untapped niche' but the Quran app space is saturated (Muslim Pro 30M+ users, Quran.com, iQuran, Quran Majeed, etc.). The iOS lock-screen widget format is a modest differentiator, easily replicated. 8 reviews = negligible brand equity."
+    },
+    "growth_market": {
+      "score": 3,
+      "confidence": "med",
+      "note": "Global Muslim population ~1.9B growing to ~2.2B by 2030. Religious/spiritual mobile category secular tailwind. AI could be a product tailwind (verse explanation, reflection). But incumbents dominate, and 30-day MRR growth is 0%."
+    },
+    "tech_ip": {
+      "score": 4,
+      "confidence": "high",
+      "note": "Modern Swift/SwiftUI codebase. RevenueCat = industry-standard subscription tool with clean API. v1.1 suggests simple, low-debt architecture. No known exotic dependencies. iOS app transfer via App Store Connect is Apple-supported but must be confirmed."
+    },
+    "transfer_key_person": {
+      "score": 4,
+      "confidence": "med",
+      "note": "Growth channel is ASO (impersonal, not founder's personal audience). App brand name ('Quran Daily') is the product, not the founder. iOS app transfer, RevenueCat account, and developer assets must formally transfer — process exists but needs execution."
+    },
+    "deal_terms": {
+      "score": 4,
+      "confidence": "med",
+      "note": "Asking $1,500 on a $10,000 budget = very affordable (15% of ceiling). At 1.8x annualized actual cash (~$900/yr) or 0.87x MRR-based ARR ($1,728/yr), this is a low multiple even for an unproven micro-app. No deal structure details available (seller note, earnout)."
+    },
+    "seller_adverse_selection": {
+      "score": 2,
+      "confidence": "low",
+      "note": "App is 14 months old and being sold for $1,500. Seller claims 'untapped niche' — inaccurate (very crowded). 0% 30-day growth. The low price and young age raise the question: is this a side project the founder is moving past, or is growth stalling and they sense it? The seller's 'niche' claim erodes trust in the narrative."
+    }
+  },
+  "gates": {
+    "operable": true,
+    "growth_lever_fits": true,
+    "revenue_evidence": "marketplace_attested",
+    "value_transfers": true,
+    "ip_transferable": "unknown",
+    "not_fragile": true
+  },
+  "key_unknowns": [
+    "Churn / retention rate — if >5%/month, the 47-subscriber base is a leaky bucket and the deal is a PASS; if <2%/month, PMF score rises to 3–4 and verdict could reach PROMISING comfortably confirmed.",
+    "Revenue before TrustMRR tracking (May 2025 – May 2026 = 12 months unobserved) — if the app was earning pre-tracking, it's a better business; if effectively $0 for 12 months, it's extremely early.",
+    "iOS App Store app transfer feasibility — Apple allows 'Transfer an App' in App Store Connect; if the seller's account meets requirements, this is routine; if not (e.g. active subscriptions may complicate), it could block the deal.",
+    "RevenueCat account transfer — RevenueCat supports transferring between accounts but requires their support team; must be confirmed pre-close.",
+    "Real reason for sale — 14-month-old app at $1,500 suggests it's a side project the founder is walking away from; if growth is stalling and they know it, the price starts to look less cheap.",
+    "MRR vs actual cash gap — RevenueCat MRR ($144) overstates monthly cash ($70–77) by ~2x due to annual-plan accounting; buyer needs Stripe/RevenueCat export to reconcile true cash ARR.",
+    "App Store rank and keyword footprint — unknown; no analytics connected on TrustMRR."
+  ],
+  "seller_questions": [
+    "1. [Revenue / IP — deal-breaker] Share a RevenueCat or Stripe export for the full lifetime of the app (May 2025 to present), not just the TrustMRR-tracked period. We need to see all-time cash receipts by month and verify active subscription count and mix (weekly vs annual). — resolves: revenue_evidence → buyer_verified; unit economics",
+    "2. [Transfer — deal-breaker] Walk us through the iOS app transfer: are there any active in-app subscriptions that would block an App Store Connect 'Transfer App' action? What's the plan for the RevenueCat account handover? — resolves: ip_transferable gate",
+    "3. [Churn — high priority] What is the monthly subscriber churn rate? Can you share a RevenueCat subscriber retention chart or cohort data? — resolves: pmf_retention; a churn rate >5%/month changes the verdict to PASS",
+    "4. [Adverse selection] Why are you selling after only 14 months, and why at $1,500? What would you do to grow it if you stayed? — resolves: seller_adverse_selection; the answer is the single biggest swing factor",
+    "5. [Revenue history] What was the app's revenue from May 2025 to May 2026 (before TrustMRR tracking)? Is the $70–77/month run-rate a recent acceleration or the historical norm? — resolves: growth_market; pmf_retention",
+    "6. [Operations] What does running this actually take weekly — support tickets, app updates, ASO maintenance? Is there any content or data dependency (e.g. Quran text source, translation license)? — resolves: operability_upside; any non-transferable content licenses would be a blocker",
+    "7. [Accounts] Confirm all assets can transfer: Apple Developer account (or app transfer), RevenueCat account, any social handles, domain, and the Quran text/translation data source and its license. — resolves: ip_transferable; value_transfers",
+    "8. [Competition / niche] You describe Islam as a 'relatively untapped niche' — the App Store has Muslim Pro (30M+ users), Quran.com, iQuran, and others. What specifically sets Quran Daily apart, and what is your App Store rank for the primary keywords? — resolves: moat_defensibility"
+  ],
+  "inputs_provided": [
+    "TrustMRR listing URL https://trustmrr.com/startup/quran-daily — VERIFIED (primary source)",
+    "TrustMRR .md profile https://trustmrr.com/startup/quran-daily.md — VERIFIED (primary source)",
+    "MRR $144 — MARKETPLACE ATTESTED (RevenueCat API key, not buyer-reconciled)",
+    "Active subscriptions 47 — MARKETPLACE ATTESTED",
+    "Last 30-day revenue $70.38 — MARKETPLACE ATTESTED",
+    "All-time tracked revenue $139 (June + July 2026) — MARKETPLACE ATTESTED",
+    "Asking price $1,500 — VERIFIED (listing)",
+    "85% profit margin — SELLER CLAIMED",
+    "ASO organic growth — SELLER CLAIMED",
+    "Founded May 2025 — VERIFIED (listing)",
+    "App Store rating 4.6/5 (8 ratings) — VERIFIED (App Store Connect via listing)",
+    "Tech stack Swift/SwiftUI + RevenueCat — VERIFIED (listing + bundle ID)",
+    "Budget ceiling $10,000 — USER PROVIDED",
+    "Analyst simo73 — USER PROVIDED",
+    "No private seller material — USER PROVIDED",
+    "Quran app competitive landscape (Muslim Pro, Quran.com, iQuran, etc.) — ASSUMED from public knowledge"
+  ],
+  "sources": [
+    {
+      "title": "TrustMRR listing — Quran Daily",
+      "url": "https://trustmrr.com/startup/quran-daily"
+    },
+    {
+      "title": "TrustMRR .md profile — Quran Daily (financial figures)",
+      "url": "https://trustmrr.com/startup/quran-daily.md"
+    }
+  ],
+  "deal": {
+    "asking_price_usd": 1500,
+    "currency": "USD",
+    "revenue_multiple": 1.8,
+    "budget_ceiling_usd": 10000,
+    "budget_fit": "in",
+    "financing_possible": true
+  },
+  "metrics": {
+    "mrr_usd": 144,
+    "arr_usd": 1728,
+    "subscriptions": 47,
+    "customers": 47,
+    "growth_30d_pct": 0.0,
+    "monthly_visitors": null,
+    "churn_pct": null,
+    "margin_pct": 85,
+    "domain_rating": null,
+    "age_months": null,
+    "revenue_evidence": "marketplace_attested"
+  },
+  "contact": {
+    "seller_handle": null,
+    "listing_url": "https://trustmrr.com/startup/quran-daily",
+    "marketplace": "TrustMRR",
+    "method": "TrustMRR offer",
+    "contacted_on": null,
+    "notes": null
+  },
+  "scorecard_markdown": "# Acquisition Scorecard (v2) — Quran Daily\n\n**Type:** Consumer mobile app (iOS — Swift/SwiftUI)  ·  **Asking:** $1,500 (1.8× annualized cash ARR)  ·  **Budget:** $10,000  ·  **Date:** 2026-08-03  ·  **Analyst:** simo73\n**Figures reconciled?** Two-source checked — MRR ($144) is RevenueCat subscription-value metric; actual monthly cash $70–77 (verified from .md profile); multiple 1.8× is based on annualized cash, not MRR-ARR. Revenue evidence: marketplace_attested (RevenueCat API-verified, not buyer-reconciled from source).  \n**Sources reviewed:** TrustMRR listing, TrustMRR .md profile (primary financial source), public Quran app competitive landscape.\n\n---\n\n## Verdict\n\n> **PROMISING (provisional) — 61/100** (completeness 62%)\n>\n> A $1,500 asking price on a clean iOS widget app with 85% margins, ASO-organic growth, and a transferable tech stack is an interesting micro-bet — the price is so low that even modest PMF would make it work. The team can run, modernize, and expand it (Android, AI features, higher-tier pricing). The provisional flag hangs on two things: (1) churn and historical revenue are unknown — if subscribers churn fast, the 47-sub base is a treadmill, not a foundation; (2) iOS app transfer must be confirmed, as Apple's process has edge-case friction. The biggest trust concern is the seller's claim that \"Islam is a relatively untapped niche\" — this is factually wrong (Muslim Pro has 30M+ users; the category is saturated), which raises questions about the seller's candor and market awareness. At $1,500, the downside is bounded. Send the seller questions before committing; if revenue reconciles from source and the app transfer is confirmed clean, this could move to PROMISING confirmed at or near this score.\n\n---\n\n## Scorecard (nine dimensions)\n\n| # | Dimension | Wt | Score /5 | Conf | Weighted | Notes |\n|---|---|---|---|---|---|---|\n| 1 | Operability & product upside | 15 | 4/5 | high | 12.0 | Swift/SwiftUI + RevenueCat in team's wheelhouse. Clear upside: Android, AI verse features, widget customisation, pricing tiers. |\n| 2 | PMF & retention | 15 | 2/5 | low | 6.0 | 47 subs, 4.6/5 rating (8 reviews) after 14 months = thin signal. $70–77/mo actual cash, 0% 30-day growth. Churn unknown. Scored neutral per rule. |\n| 3 | Unit economics & upside | 12 | 3/5 | med | 7.2 | 85% margin, zero paid CAC (ASO). Actual monthly cash ~$70–77 vs MRR metric $144. Pricing headroom exists. LTV unknown. |\n| 4 | Moat & defensibility | 12 | 2/5 | med | 4.8 | Quran app space is crowded (Muslim Pro 30M+, Quran.com, iQuran, Quran Majeed). Lock-screen widget is a modest differentiator, easily copied. Brand equity near-zero. |\n| 5 | Growth & market | 8 | 3/5 | med | 4.8 | Global Muslim population growing; religious mobile tailwind; AI tailwind for verse reflection. But 0% 30-day MRR growth and dominant incumbents. |\n| 6 | Tech & IP health | 8 | 4/5 | high | 6.4 | Modern Swift/SwiftUI, RevenueCat standard subscription infra. v1.1 = likely simple/clean. iOS app transfer via App Store Connect is supported but unconfirmed for this deal. |\n| 7 | Transfer / key-person | 10 | 4/5 | med | 8.0 | Growth is ASO (impersonal). App brand = product name, not founder. RevenueCat + App Store account transfer must be executed but process exists. |\n| 8 | Deal terms & value | 10 | 4/5 | med | 8.0 | $1,500 = 15% of $10k budget. 1.8× annualized cash or 0.87× MRR-ARR — cheap even for an unproven micro-app. No earnout/holdback details known. |\n| 9 | Seller & adverse-selection | 10 | 2/5 | low | 4.0 | 14-month-old app sold for $1,500. 0% growth. Seller's 'untapped niche' claim is factually wrong (saturated category). Real reason for sale unknown. |\n| | **Merit total** | **100** | | | **61.2** | |\n\n**Gates:** operable ✅ · growth-lever-fits ✅ (ASO organic) · revenue-evidence ⚠️ marketplace_attested (not buyer-verified) · value-transfers ✅ · IP-transferable ❓ unknown · not-fragile ✅ · **affordable ✅** ($1,500 vs $10,000)\n\n---\n\n## Fit-to-build read\n\nStrong fit. The team can run Swift/SwiftUI, integrate RevenueCat, and own the ASO workflow. The path to more value is product engineering: build the Android version, add AI-powered verse reflection and personalization (obvious LLM integration), add a web/desktop companion, introduce higher-value subscription tiers, and improve ASO keyword coverage. None of that requires a sales team or a content treadmill. Growth-lever gate: ASO (App Store search = organic product discovery) — fits. This is not a buy-your-weakness situation.\n\n---\n\n## Does the value transfer? (key-person check)\n\nYes, substantially. The growth engine is App Store organic search (ASO), which is tied to the app's keywords, ratings, and category placement — not the founder's personal audience or relationships. The app name (\"Quran Daily\") is the brand. RevenueCat subscriber data transfers with the account. The Quran text/translation data source needs to be confirmed (most apps use open-source Quran data — this is likely a non-issue, but must be verified). The main transfer risk is procedural (iOS app transfer + RevenueCat account handover), not structural.\n\n---\n\n## What we know vs. what we're assuming\n\n**Verified (marketplace-attested via RevenueCat API):**\n- MRR $144 (subscription-value metric; actual monthly cash $70–77)\n- 47 active subscriptions\n- Last 30-day revenue $70.38; June 2026 $62.14; July 2026 $77.30\n- All-time tracked revenue $139 (TrustMRR tracking from June 2026)\n- Asking price $1,500\n- App Store rating 4.6/5, 8 ratings\n- Tech stack: Swift, SwiftUI, RevenueCat\n- Founded May 2025\n- Pricing: weekly $1.99, annual $29.99\n- 85% profit margin (seller-claimed, plausible for a mobile app with near-zero COGS)\n\n**Assumed / inferred:**\n- Quran app space is crowded (Muslim Pro 30M+, Quran.com, iQuran, etc.) — public knowledge\n- Monthly cash $70–77 is the true run-rate, not the $144 MRR metric\n- iOS app transfer is feasible (Apple supports it) — needs confirmation\n- The Quran text data is likely open-source (standard in the category) — unconfirmed\n- 0% MRR growth in 30 days likely reflects slow organic growth, not active decline\n\n**Unknown (and how it swings the score):**\n- Monthly churn rate: if >5%/month → PMF score drops to 1, verdict likely PASS; if <2%/month → PMF score rises to 3–4, verdict comfortably PROMISING confirmed\n- Revenue before TrustMRR tracking (May 2025–May 2026): if strong → business is proven; if near-zero → app spent a year going nowhere\n- Real reason for sale: benign (side project, moving on) vs. concerning (stall the seller can already sense)\n- App Store rank for primary keywords (\"quran widget\", \"quran daily verse\", etc.)\n- iOS app transfer edge cases (active subscriptions may complicate transfer)\n- Quran text/translation license and source\n\n---\n\n## Seller questions to send (prioritized)\n\n1. **[Revenue / IP — deal-breaker]** Share a RevenueCat or Stripe export covering the full lifetime of the app (May 2025 to present) — all-time cash receipts by month, active subscription count, and plan-mix (weekly vs annual). — *resolves: revenue_evidence → buyer_verified; unit economics*\n\n2. **[Transfer — deal-breaker]** Walk us through the iOS app transfer: does your developer account qualify for an App Store Connect 'Transfer App' action? Are there any active auto-renewable subscriptions that would block or complicate it? What is the plan for the RevenueCat account handover? — *resolves: ip_transferable gate*\n\n3. **[Churn — high priority]** What is monthly subscriber churn? Can you share RevenueCat's subscriber retention chart or a cohort view? — *resolves: pmf_retention; >5%/month changes verdict to PASS*\n\n4. **[Adverse selection — high priority]** Why are you selling after 14 months, and why at $1,500? What would you do to grow this if you were staying? — *resolves: seller_adverse_selection; the single biggest swing factor*\n\n5. **[Revenue history]** What was the app's revenue from May 2025 to May 2026 (before TrustMRR tracking)? Is the $70–77/month run-rate a recent acceleration or has growth been flat since launch? — *resolves: growth_market; pmf_retention*\n\n6. **[Ops and content]** What does running this take weekly — support, updates, ASO maintenance? What is the source of the Quran text and translation data, and does the license permit commercial use and transfer? — *resolves: operability_upside; any non-transferable content license would be a blocker*\n\n7. **[Full asset list]** Confirm everything that transfers: Apple Developer account (or app transfer), RevenueCat account, any social handles, domain, email list, and the Quran text license. Are you open to seller financing, a retention-linked earnout, or a holdback? — *resolves: ip_transferable; value_transfers; deal terms*\n\n8. **[Competition]** You describe Islam as a 'relatively untapped niche,' but Muslim Pro has 30M+ users, Quran.com has a major app, and iQuran/Quran Majeed are established. What specifically differentiates Quran Daily, and what is your current App Store rank for primary keywords? — *resolves: moat_defensibility*\n\n---\n\n## Recommended next step\n\n**At $1,500, the downside is bounded — but send Q1–Q4 before committing.** Questions 1–2 are hard gates: if RevenueCat export shows flat or declining cash and the app transfer is complicated, walk away. If revenue reconciles from source, the app transfer is clean, and churn is below ~3%/month, this is a low-risk learning acquisition for a team that can add Android, AI features, and better pricing — potentially turning a $900/yr asset into something meaningfully larger. Do not buy based on the seller's 'untapped niche' narrative — verify the numbers independently.",
+  "schema_version": "acq-eval-report/1.0",
+  "id": "quran-daily_2026-08-03_simo73",
+  "scoring_version": "v2",
+  "created_at": "2026-08-03T00:00:00Z",
+  "updated_at": "2026-08-03T18:54:04+00:00",
+  "verdict_detail": {
+    "tier": "PROMISING",
+    "provisional": true,
+    "out_of_budget": false,
+    "insufficient_data": false
+  },
+  "pipeline": {
+    "status": "screening",
+    "owner": "simo73",
+    "last_updated": "2026-08-03T18:54:04+00:00"
+  }
+}
