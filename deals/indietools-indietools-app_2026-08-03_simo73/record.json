@@ -1,0 +1,159 @@
+{
+  "target": "IndieTools (indietools.app)",
+  "date": "2026-08-03",
+  "analyst": "simo73",
+  "type": "marketplace / tool-directory",
+  "asking_price": 500,
+  "budget_ceiling": 10000,
+  "financing_possible": true,
+  "verdict": "PASS (provisional)",
+  "score": 49,
+  "completeness_pct": 86,
+  "one_line_reason": "Zero MRR, zero subscribers, and a crowded category where both primary acquisition channels (SEO and founder's personal X) are team weaknesses — the growth-lever kill gate fires and no diligence can reverse it.",
+  "dimensions": {
+    "operability_upside": {
+      "score": 4,
+      "confidence": "high",
+      "note": "Next.js/Tailwind/Postgres/Supabase/Vercel/Stripe — perfectly in the team's wheelhouse. Engineering and product upside exists (AI-powered discovery, better categorization, API layer). Stack is modern and maintainable. High on operability; low on business to operate."
+    },
+    "pmf_retention": {
+      "score": 1,
+      "confidence": "high",
+      "note": "Zero active subscriptions. $110 all-time revenue in 9 months from a handful of one-time featured-listing purchases. No retention: 0 paying customers today. The model can produce a single sale but shows no repeat business. Essentially pre-PMF."
+    },
+    "unit_economics": {
+      "score": 1,
+      "confidence": "high",
+      "note": "$0 MRR. The pricing model ($29/30-day featured slot) carries ~90% margin when it works, but with 0 active subscribers LTV is effectively $0 on an ongoing basis. One-time listing fees are not recurring. LTV:CoCA cannot be computed but is near zero at current volumes."
+    },
+    "moat_defensibility": {
+      "score": 1,
+      "confidence": "high",
+      "note": "Highly saturated category: Product Hunt, BetaList, Microlaunch, There's An AI For That, Futurepedia, Toolify, and dozens more. DR 26, no network effects, no switching costs, no proprietary data. The directory model is fully replicable with no defensible edge."
+    },
+    "growth_market": {
+      "score": 2,
+      "confidence": "med",
+      "note": "Tool/indie-product directories face structural pressure from AI (ChatGPT and Perplexity directly answer 'what tool does X'). The indie-maker-directory niche is flat to declining. Not an immediate existential threat but a persistent headwind."
+    },
+    "tech_ip": {
+      "score": 4,
+      "confidence": "med",
+      "note": "Modern, clean stack (Next.js, Supabase, Vercel, Stripe). Likely 100% founder-owned IP. Transferable. With 0 active subscribers, billing migration (Stripe doesn't transfer) is trivial. No red flags on architecture or dependencies."
+    },
+    "transfer_key_person": {
+      "score": 3,
+      "confidence": "med",
+      "note": "Founder's X/Twitter presence (1,270 followers) is minimal — very little value rides on the person. SEO-side is product-based (directory pages). Domain and code transfer cleanly. Moderate score reflects the unknown status of user email list and account data transferability."
+    },
+    "deal_terms": {
+      "score": 4,
+      "confidence": "high",
+      "note": "$500 asking price; 1.44x annualized trailing-30-day revenue (on non-recurring transactions). Well within $10k budget ceiling. At this price, you're buying the codebase, domain (DR 26), and ~600 free users. Cheap enough that structure barely matters."
+    },
+    "seller_adverse_selection": {
+      "score": 3,
+      "confidence": "med",
+      "note": "Founder (Alex Turovski, Estonia) is an indie maker moving on from a project that never found traction. Transparency is high — 0 active subscriptions displayed openly on the listing. Looks like 'I give up on this side project' rather than concealing a decline. Low adverse-selection risk, partly because there is little of value to hide."
+    }
+  },
+  "gates": {
+    "operable": true,
+    "growth_lever_fits": false,
+    "revenue_evidence": "marketplace_attested",
+    "value_transfers": "unknown",
+    "ip_transferable": "unknown",
+    "not_fragile": true
+  },
+  "key_unknowns": [
+    "ip_transferable (unknown): Is 100% of the code and all assets owned by the selling entity with no contractor-owned IP? Likely yes given the indie solo-founder profile, but unconfirmed. If true, no score impact. If false, capped at MARGINAL (already PASS from growth-lever gate).",
+    "value_transfers (unknown): Does the directory's user/email list transfer, and are there any change-of-control issues with current free users? With 0 paying subscribers this has minimal score impact either way.",
+    "revenue_evidence (marketplace_attested, not buyer_verified): TrustMRR shows Stripe-verified $0 MRR and $110 all-time. Consistent with visible 0-subscription status. A full Stripe export would confirm; given the trivial amounts, risk of fabrication is low.",
+    "Actual user list / email list composition: Are the ~600 'users' registered accounts with emails that transfer? Or just visitor estimates? This affects the asset value at $500 but doesn't move the PASS verdict.",
+    "Why is there $29 last-30-day revenue but $0 MRR: Confirmed — one-time featured listing payment, not a recurring subscription. The model is transactional, not truly subscribed. This is a structural issue, not a data error."
+  ],
+  "seller_questions": [
+    "1. Who actually owns the codebase and all assets (domain, repo, Stripe account, analytics)? Are there any contractor-built components or dependencies with restrictive licenses? [resolves: ip_transferable gate; why: determines if a legal transfer is possible at all]",
+    "2. Can you share a Stripe export showing all transactions since founding? We want to reconcile the $110 all-time figure and understand the revenue pattern. [resolves: revenue_evidence to buyer_verified; why: confirms no hidden MRR decline or inflated figures]",
+    "3. What does the ~600-user figure represent — registered accounts with emails, or visitor estimates? Does an email list exist, and does it convey with the sale? [resolves: value_transfers; why: the email list is the main organic asset beyond the code]",
+    "4. What is the actual weekly time commitment to maintain this — support, curation, manual tasks? And why are you selling now? [resolves: seller_adverse_selection; why: 'I give up' and 'I know something bad is coming' look identical from outside]",
+    "5. The primary acquisition channels you listed are SEO and X/Twitter. How much of the SEO traffic is driven by your personal posting/linking vs. organic directory discovery? [resolves: growth_lever_fits context; why: even though the gate already fires, this clarifies how dead the channel is post-handover]",
+    "6. Are you open to a seller note or holdback (e.g., $400 at close, $100 held 6 months against your reps)? [resolves: deal_terms; why: at $500 this barely matters financially, but refusal at any price is a signal]"
+  ],
+  "inputs_provided": [
+    "TrustMRR listing page https://trustmrr.com/startup/indietools — VERIFIED (primary source)",
+    "TrustMRR .md profile https://trustmrr.com/startup/indietools.md — VERIFIED (cross-check, Stripe-API-attested figures)",
+    "Asking price $500, revenue multiple 1.4x — VERIFIED (both sources consistent)",
+    "MRR $0, active subscriptions 0 — VERIFIED (Stripe API, marketplace_attested)",
+    "All-time revenue $110, last-30-day $29 — VERIFIED (both sources consistent)",
+    "Tech stack: Next.js, Tailwind, Postgres, Supabase, Vercel, Stripe — ASSUMED (stated by seller on listing, not independently confirmed)",
+    "Founder: Alex Turovski, Estonia, 1,270 X/Twitter followers — VERIFIED (listing)",
+    "Domain Rating 26 (Ahrefs) — MARKETPLACE_ATTESTED (TrustMRR field)",
+    "~600 estimated B2C users — ASSUMED (listing claim; nature of 'users' unverified)",
+    "Acquisition channels: SEO and X/Twitter — STATED by seller",
+    "Founded: October 2025 — VERIFIED (listing)",
+    "Budget ceiling: $10,000 — user-provided",
+    "Financing possible: yes — user-provided",
+    "Figure reconciliation flag: rev30 ($29) vs MRR ($0) — RECONCILED as expected: the $29 is a one-time featured listing purchase, not a recurring subscription. MRR = $0 is arithmetically correct. No data integrity concern."
+  ],
+  "sources": [
+    {
+      "title": "IndieTools — TrustMRR listing (live page)",
+      "url": "https://trustmrr.com/startup/indietools"
+    },
+    {
+      "title": "IndieTools — TrustMRR markdown profile (Stripe-attested figures)",
+      "url": "https://trustmrr.com/startup/indietools.md"
+    },
+    {
+      "title": "IndieTools product site",
+      "url": "https://indietools.app"
+    }
+  ],
+  "deal": {
+    "asking_price_usd": 500,
+    "currency": "USD",
+    "revenue_multiple": 1.44,
+    "budget_ceiling_usd": 10000,
+    "budget_fit": "in",
+    "financing_possible": true
+  },
+  "metrics": {
+    "mrr_usd": 0,
+    "arr_usd": 0,
+    "subscriptions": 0,
+    "customers": 0,
+    "growth_30d_pct": 0.0,
+    "monthly_visitors": null,
+    "churn_pct": null,
+    "margin_pct": 90.0,
+    "domain_rating": 26,
+    "age_months": null,
+    "revenue_evidence": "marketplace_attested"
+  },
+  "contact": {
+    "seller_handle": "Alex Turovski",
+    "listing_url": "https://trustmrr.com/startup/indietools",
+    "marketplace": "TrustMRR",
+    "method": "TrustMRR offer",
+    "contacted_on": null,
+    "notes": null
+  },
+  "scorecard_markdown": "# Acquisition Scorecard (v2) — IndieTools (indietools.app)\n\n**Type:** Tool directory / marketplace  ·  **Asking:** $500 (1.44× annualized trailing revenue)  ·  **Budget:** $10,000  ·  **Date:** 2026-08-03  \n**Analyst:** simo73  \n**Figures reconciled?** Two-source ✓ (listing page + .md profile cross-checked) · verify_figures ✓ (flag resolved: rev30 vs MRR discrepancy confirmed as expected one-time transaction, not data error) · Revenue evidence: marketplace_attested (Stripe-API per TrustMRR; not buyer-reconciled from source)  \n**Sources reviewed:** TrustMRR listing page, TrustMRR .md profile (Stripe-attested), indietools.app product site\n\n---\n\n## Verdict\n\n> **PASS (provisional) — 49/100** (completeness 86%)\n>\n> IndieTools is a hand-built tool directory with $0 MRR, zero active subscriptions, and $110 in total revenue across nine months of operation. The technology stack is a perfect fit (Next.js, Supabase, Vercel, Stripe) and the $500 asking price is trivially affordable — but none of that saves it. The primary acquisition channels are SEO and the founder's 1,270-follower X/Twitter account, both squarely in this team's weakness zone. The **growth-lever-fits kill gate fires** and caps the verdict at PASS regardless of merit. The base merit score of 49/100 already reflects a pre-traction project with no moat in a crowded, AI-pressured category; even if the gate were somehow cleared, it would only reach MARGINAL. At $500 the asset has scrap value (clean codebase, DR 26 domain, ~600 free users), but as an operating business acquisition it is not viable for this team.\n\n---\n\n## Scorecard (nine dimensions)\n\n| # | Dimension | Wt | Score /5 | Conf | Weighted | Notes |\n|---|---|---|---|---|---|---|\n| 1 | Operability & product upside | 15 | 4/5 | high | 12.0 | Stack perfectly in-wheelhouse (Next.js/Supabase/Vercel/Stripe). Clear engineering/product upside exists. High on operability; low on business to actually operate. |\n| 2 | PMF & retention | 15 | 1/5 | high | 3.0 | Zero active subscriptions. $110 all-time in 9 months. A few one-time purchases but zero repeat business. Pre-traction, not a retention story. |\n| 3 | Unit economics & upside | 12 | 1/5 | high | 2.4 | $0 MRR. The $29/30-day model has ~90% margin in theory but 0 paying customers means LTV ≈ $0. One-time fees, not recurring. |\n| 4 | Moat & defensibility | 12 | 1/5 | high | 2.4 | Saturated category (Product Hunt, BetaList, Microlaunch, There's An AI For That, Futurepedia, Toolify…). DR 26. No network effects, no switching costs, no proprietary data. |\n| 5 | Growth & market | 8 | 2/5 | med | 3.2 | AI (ChatGPT/Perplexity) directly answers 'what tool does X,' reducing demand for directories. Flat-to-declining niche. Not instantly terminal but a structural headwind. |\n| 6 | Tech & IP health | 8 | 4/5 | med | 6.4 | Clean modern stack, likely 100% founder-owned. Transferable. Stripe migration trivial with 0 active subscribers. No red flags. |\n| 7 | Transfer / key-person | 10 | 3/5 | med | 6.0 | Founder's X following (1,270) is tiny — minimal personal-audience risk. SEO and domain transfer cleanly. Moderate score on unknown email list composition. |\n| 8 | Deal terms & value | 10 | 4/5 | high | 8.0 | $500 asking; 1.44× annualized trailing-30-day (non-recurring) revenue. Comfortably within $10k budget. Essentially buying a codebase + domain + ~600 free users. |\n| 9 | Seller & adverse-selection | 10 | 3/5 | med | 6.0 | Founder openly shows $0 MRR and 0 subscriptions. Looks like 'project didn't take off, moving on,' not concealed decline. Low adverse-selection risk. |\n| | **Merit total** | **100** | | | **49.4** | |\n\n**Gates:**\n- operable: ✅ true\n- growth-lever-fits: ❌ **false** ← KILL GATE — primary channels are SEO and founder's personal X (both team weaknesses) → caps verdict to **PASS**\n- revenue-evidence: ⚠️ marketplace_attested (Stripe-API per TrustMRR; not buyer-reconciled) → provisional\n- value-transfers: ❓ unknown → provisional\n- IP-transferable: ❓ unknown → provisional\n- not-fragile: ✅ true\n- **affordable:** ✅ yes ($500 well within $10,000 budget)\n\n---\n\n## Fit-to-build read (the team's lens)\n\nThe technology is ideal: Next.js, Tailwind, Postgres, Supabase, Vercel, Stripe is precisely this team's stack. Operating and modernizing the codebase — adding AI-powered discovery, better categorization, an API layer — is straightforward.\n\nBut operating the tech is not the problem. The problem is customer acquisition. A tool directory grows through two things: (1) SEO dominance (appearing when indie makers search for directories or tool categories) and (2) personal brand / community presence (a founder with a large, trusted audience driving submissions and listings). Both are exactly what this team does not do. The team's strength is in building product, not in climbing Google rankings or growing a Twitter/X audience from 1,270 followers to something meaningful.\n\nThe growth-lever kill gate fires. There is no engineering solution to the distribution problem here.\n\n---\n\n## Does the value transfer? (key-person check)\n\nThe founder (Alex Turovski) has 1,270 X/Twitter followers — a small personal following with limited promotional reach. The SEO component is product-based (directory pages, tool listings), not founder-post-dependent, so it conveys. The domain (indietools.app, DR 26), code, and Stripe integration all transfer cleanly.\n\nThe risk of value walking away with the founder is low, primarily because there is not much value to walk away. The ~600 free users' transferability (email list, account data) is unconfirmed but likely fine for a simple directory. Net assessment: the asset transfers, the thin business does not.\n\n---\n\n## What we know vs. what we're assuming\n\n**Verified (two-source, Stripe-API attested):**\n- $0 current MRR (0 active subscriptions — Stripe API via TrustMRR)\n- $110 all-time revenue, $29 last 30 days (both sources consistent)\n- Asking price $500, stated multiple 1.4× (listing page + .md profile)\n- Founded October 2025; founder Alex Turovski (Estonia); X: 1,270 followers\n- Domain Rating 26 (Ahrefs, marketplace field)\n- Figure reconciliation: rev30 vs MRR flag confirmed as expected — $29 is a one-time featured listing purchase, not a subscription. MRR = $0 is correct.\n\n**Assumed / seller-stated:**\n- Tech stack: Next.js, Tailwind, Postgres, Supabase, Vercel, Stripe (seller-stated on listing, not independently confirmed)\n- ~600 B2C users (listing claim; nature of 'users' — registered accounts vs. visitor estimates — unverified)\n- Acquisition channels: SEO and X/Twitter (seller-stated)\n- ~90% margin (derived from near-zero hosting costs on Vercel/Supabase free tiers; plausible)\n\n**Unknown (and how it swings the score):**\n- IP ownership and transferability: Likely fully founder-owned given solo-indie profile, but unconfirmed. If true: no change (PASS stays PASS). If false: already PASS, no further drop.\n- Email list / user data composition and transferability: Minimal impact on verdict either way at $500.\n- True weekly ops load: Likely near-zero for a dormant directory, but unverified.\n- Actual reason for sale: Declared exit from a stalled project; consistent with the numbers, but worth asking directly.\n\n---\n\n## Seller questions to send (prioritized)\n\n1. **IP ownership — who owns everything?** Is 100% of the code and all assets (domain registrar, repo, Stripe account, analytics, any social accounts) owned by you personally or the selling entity, with no contractor-built components or restrictive-license dependencies? *(resolves: ip_transferable gate; why: basic transfer prerequisite — everything else is moot if IP can't move)*\n\n2. **Stripe export — can you share the full transaction history?** A CSV export from Stripe showing every charge since founding, so we can reconcile the $110 all-time figure independently. *(resolves: revenue_evidence to buyer_verified; why: even at $500, we want to confirm the figures rather than inherit surprises)*\n\n3. **What are the ~600 users?** Are these registered accounts with emails in a database, or a visitor/pageview estimate? Does an email list exist, and does it convey with the sale? *(resolves: value_transfers; why: the email list is the main warm-audience asset beyond the codebase)*\n\n4. **Why are you selling, and what's the real weekly time commitment?** What does maintaining this actually take (support, curation, updates), and what's your honest reason for moving on? *(resolves: seller_adverse_selection; why: 'project stalled and I'm moving on' and 'I know the SEO is about to tank' look identical from outside)*\n\n5. **SEO vs. personal promotion split:** How much of the directory's traffic is driven by organic search (tool-category pages) vs. your X posts and personal promotion? What happens to inbound after you stop posting? *(resolves: growth_lever_fits context; why: confirms post-handover channel death, relevant even though the gate already fired)*\n\n6. **Open to a holdback?** Would you accept $400 at close + $100 held 30–60 days against your representations? *(resolves: deal_terms; why: at $500 it barely matters financially, but refusal at any price is a signal)*\n\n---\n\n## Recommended next step\n\n**Pass.** The growth-lever kill gate is structural: the #1 way this business would acquire paying customers (SEO + personal X promotion) is exactly what this team cannot execute. Diligence won't change this gate — it would require a fundamental pivot in the acquisition model, which is a build problem, not a buy problem.\n\nIf the team wants a directory-style product in this space, building one on top of the team's existing organic reach (developer communities, product integrations, word-of-mouth) would be a better fit than buying one designed around channels they can't run.\n\nAt $500 the codebase has marginal scrap value as a boilerplate for a Next.js + Supabase + Stripe project — but that's not an acquisition thesis, it's a template purchase.\n",
+  "schema_version": "acq-eval-report/1.0",
+  "id": "indietools-indietools-app_2026-08-03_simo73",
+  "scoring_version": "v2",
+  "created_at": "2026-08-03T00:00:00Z",
+  "updated_at": "2026-08-03T15:18:38+00:00",
+  "verdict_detail": {
+    "tier": "PASS",
+    "provisional": true,
+    "out_of_budget": false,
+    "insufficient_data": false
+  },
+  "pipeline": {
+    "status": "passed",
+    "owner": "simo73",
+    "last_updated": "2026-08-03T15:18:38+00:00"
+  }
+}
